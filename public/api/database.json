@@ -1,0 +1,209 @@
+{
+  "techStack": [
+    {
+      "id": 1,
+      "name": "HTML5",
+      "devType": "All"
+    },
+    {
+      "id": 2,
+      "name": "CSS3",
+      "devType": "All"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "devType": "All"
+    },
+    {
+      "id": 4,
+      "name": "Git",
+      "devType": "All"
+    },
+    {
+      "id": 5,
+      "name": "GitHub",
+      "devType": "All"
+    },
+    {
+      "id": 6,
+      "name": "ReactJS",
+      "devType": "All"
+    },
+    {
+      "id": 7,
+      "name": "React Hooks",
+      "devType": "All"
+    },
+    {
+      "id": 8,
+      "name": "VS Code",
+      "devType": "All"
+    },
+    {
+      "id": 9,
+      "name": "JSON Server",
+      "devType": "All"
+    },
+    {
+      "id": 10,
+      "name": "NPM",
+      "devType": "All"
+    },
+    {
+      "id": 11,
+      "name": "Postman",
+      "devType": "All"
+    },
+    {
+      "id": 12,
+      "name": "dbdiagram",
+      "devType": "All"
+    },
+    {
+      "id": 13,
+      "name": "Bootstrap",
+      "devType": "All"
+    },
+    {
+      "id": 14,
+      "name": "API",
+      "devType": "All"
+    },
+    {
+      "id": 15,
+      "name": "Wireframing",
+      "devType": "All"
+    },
+    {
+      "id": 16,
+      "name": "Team Collab",
+      "devType": "All"
+    },
+    {
+      "id": 17,
+      "name": "CRUD",
+      "devType": "All"
+    },
+    {
+      "id": 18,
+      "name": "Agile",
+      "devType": "All"
+    },
+    {
+      "id": 19,
+      "name": "Semantic UI",
+      "devType": "All"
+    },
+    {
+      "id": 20,
+      "name": "Figma",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 21,
+      "name": "SASS",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 22,
+      "name": "Responsive",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 23,
+      "name": "User Testing",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 24,
+      "name": "UX Research",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 25,
+      "name": "Prototyping",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 26,
+      "name": "Reactstrap",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 27,
+      "name": "Info Architecture",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 28,
+      "name": "Mockups",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 29,
+      "name": "Media Queries",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 30,
+      "name": "CSS Libraries",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 31,
+      "name": "CSS Flexbox",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 32,
+      "name": "CSS Grid",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 33,
+      "name": "Adobe Illustrator",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 34,
+      "name": "Adobe XD",
+      "devType": "UI/UX Front-End Developer"
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "name": "",
+      "projectOverview": "",
+      "thumbnail": ".jpg",
+      "desktopMobileImage": ".jpg",
+      "linkToSite": "",
+      "linkRepo": "",
+      "myRole": "",
+      "challengeStatement": "",
+      "wireframeImage1": ".jpg",
+      "wireframeImage2": ".jpg",
+      "wireframeImage3": ".jpg",
+      "lessonsLearned": ""
+    }
+  ],
+  "personas": [
+    {
+      "id": 1,
+      "name": "",
+      "projectId": 1,
+      "photo": ".png or .pdf",
+      "goals": "",
+      "pain points": ""
+    }
+  ],
+  "navTaglines": [
+    {
+      "id": 1,
+      "text": "Michael Wright is a User Interface Engineer based in Huntsville."
+    }
+  ],
+  "heroTaglines": [{ "id": 1, "text": "I solve UX problems" }],
+  "testimonials": [{ "id": 1, "personName": "", "testimony": "" }]
+}
