@@ -76,11 +76,6 @@
       "devType": "All"
     },
     {
-      "id": 16,
-      "name": "Team Collab",
-      "devType": "All"
-    },
-    {
       "id": 17,
       "name": "CRUD",
       "devType": "All"
@@ -168,6 +163,11 @@
     {
       "id": 34,
       "name": "Adobe XD",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 35,
+      "name": "React Router",
       "devType": "UI/UX Front-End Developer"
     }
   ],
