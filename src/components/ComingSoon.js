@@ -12,7 +12,6 @@ import {
   Divider,
 } from "@mui/material";
 import React from "react";
-import a from "sass-node/lib/a";
 
 export const ComingSoon = () => {
   let pageURL = encodeURI(document.location.href);
