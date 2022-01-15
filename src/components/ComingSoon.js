@@ -105,9 +105,10 @@ export const ComingSoon = () => {
           </CardContent>
           <CardActions>
             <Button color="primary" component="a" href={pageURL} title="share my card">
-              SHARE THIS CARD{" "}
+                {/* I want this to be a dropdown with the links to share my card via linkedin, email, SMS, facebook messenger, twitter DM, instagram DM */}
+              Share My Card{" "}
             </Button>
-            <Button color="primary" variant="contained">DOWNLOAD RÉSUMÉ</Button>
+            <Button color="primary" variant="contained">Download Résumé</Button>
           </CardActions>
         </Card>
         <Card>
