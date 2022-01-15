@@ -1,23 +1,15 @@
-import {
-    Devices,
-  Email,
-  GitHub,
-  LinkedIn,
-  Share,
-} from "@mui/icons-material";
+import { Devices, Email, GitHub, LinkedIn, Share } from "@mui/icons-material";
 import {
   Box,
   Card,
   CardActions,
   CardContent,
   Button,
-  CardHeader,
   Chip,
-  Avatar,
   Stack,
   ListItem,
   Typography,
-  Link,
+  Divider,
 } from "@mui/material";
 import React from "react";
 import a from "sass-node/lib/a";
@@ -58,19 +50,26 @@ export const ComingSoon = () => {
         }}
       >
         <Card sx={{ maxWidth: 345, m: 1 }} className="card">
-          <CardContent className="card-content__block">
-            <Box className="card-header__block"
+          <CardContent className="card-content__block" sx={{ p: 0 }}>
+            <Box
+              className="card-header__block"
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                py: 2,
+                pb: 4,
                 alignItems: "center",
               }}
             >
               {" "}
-              <Devices fontSize="large" sx={{m:2}} />
-              <Typography variant="h5" component="div" className="card__title text__all-caps">Let's Connect</Typography>
+              <Devices fontSize="large" sx={{ m: 2 }} />
+              <Typography
+                variant="h5"
+                component="div"
+                className="card__title text__all-caps"
+              >
+                Let's Connect!
+              </Typography>
             </Box>
             <Stack className="card-content__action-stack">
               {socialChips.map((data) => {
@@ -85,25 +84,30 @@ export const ComingSoon = () => {
                 }
 
                 return (
-                  <ListItem key={data.key}>
-                    <Chip
-                      icon={icon}
-                      label={data.label}
-                      component="a"
-                      href={data.url}
-                      target="_blank"
-                      clickable
-                      color="info"
-                      size="large"
-                    />
-                  </ListItem>
+                  <>
+                    <ListItem key={data.key}>
+                      <Chip
+                        icon={icon}
+                        label={data.label}
+                        component="a"
+                        href={data.url}
+                        target="_blank"
+                        clickable
+                        color="default"
+                        size="medium"
+                      />
+                    </ListItem>
+                    <Divider light />
+                  </>
                 );
               })}
             </Stack>
           </CardContent>
           <CardActions>
-            <Button component="a" href={pageURL} title="share my card">SHARE THIS CARD </Button>
-            <Button variant="contained">DOWNLOAD RÉSUMÉ</Button>
+            <Button color="primary" component="a" href={pageURL} title="share my card">
+              SHARE THIS CARD{" "}
+            </Button>
+            <Button color="primary" variant="contained">DOWNLOAD RÉSUMÉ</Button>
           </CardActions>
         </Card>
         <Card>
