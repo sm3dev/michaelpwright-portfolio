@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { Portfolio } from "./components/Portfolio";
-import "./styles/Portfolio.css";
+import "./styles/Portfolio.scss";
 
 ReactDOM.render(<Portfolio />, document.getElementById("root"));
 
