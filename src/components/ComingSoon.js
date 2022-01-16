@@ -18,6 +18,8 @@ import {
   Typography,
   IconButton,
   Tooltip,
+  CardHeader,
+  Divider,
 } from "@mui/material";
 import React from "react";
 
@@ -26,19 +28,19 @@ export const ComingSoon = () => {
   const socialChips = [
     {
       key: 1,
-      label: "Connect on LinkedIn",
+      label: "LinkedIn",
       url: "https://www.linkedin.com/in/mpw?trk=public-profile-badge-profile-badge-view-profile-cta",
       connectType: "LinkedIn",
     },
     {
       key: 2,
-      label: "Follow on GitHub",
+      label: "GitHub",
       url: "https://github.com/sm3dev",
       connectType: "GitHub",
     },
     {
       key: 3,
-      label: "Email Me",
+      label: "Email",
       url: "mailto:mrwry7@gmail.com",
       connectType: "Email",
     },
@@ -81,21 +83,21 @@ export const ComingSoon = () => {
       >
         <Card
           sx={{
-            maxWidth: 345,
+            // maxWidth: 345,
             m: 1,
             flexGrow: 0,
             flexShrink: 0,
           }}
           className="card social__card"
         >
-          <CardContent className="card-content__block" sx={{ p: 0 }}>
+          <CardContent className="card-content__block" sx={{ p: 0, my: 2 }}>
             <Box
               className="card-header__block"
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                pb: 4,
+                pb: 2,
                 alignItems: "center",
               }}
             >
@@ -136,13 +138,15 @@ export const ComingSoon = () => {
                       target="_blank"
                       clickable
                       color="info"
-                      size="medium"
+                      size="large"
                     />
                   </ListItem>
                 );
               })}
             </Stack>
           </CardContent>
+          <Divider light />
+
           <CardActions>
             <IconButton
               color="info"
@@ -157,7 +161,15 @@ export const ComingSoon = () => {
             >
               <Share />
             </IconButton>
-            <Button disabled color="info" variant="outlined" startIcon={<Download />}>
+            <Button
+              color="info"
+              variant="outlined"
+              startIcon={<Download />}
+              component="a"
+              href="https://drive.google.com/file/d/1q0FZIR742rX9uwlIdSna8WdBnAZ3fW1y/view"
+              target="_blank"
+              title="View/Download My Résumé"
+            >
               Résumé PDF
             </Button>
           </CardActions>
@@ -171,6 +183,7 @@ export const ComingSoon = () => {
           }}
           className="card card__c51-info"
         >
+          <CardHeader title="Cohort 51, Student, Nashville Software School"></CardHeader>
           <CardContent>
             <Typography variant="body1">
               Have you visited the{" "}
