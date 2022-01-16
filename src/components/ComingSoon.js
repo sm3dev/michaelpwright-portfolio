@@ -54,7 +54,8 @@ export const ComingSoon = () => {
           flexDirection: "column",
           p: 4,
           alignItems: "center",
-          backgroundColor: "primary.light",
+          backgroundColor: blueGrey.A100,
+          backgroundImage: `linear-gradient(to bottom right, ${blueGrey.A100}, ${blueGrey.A300})`,
         }}
       >
         <Card
@@ -64,7 +65,7 @@ export const ComingSoon = () => {
             flexGrow: 1,
             flexShrink: 0,
           }}
-          className="card"
+          className="card social__card"
         >
           <CardContent className="card-content__block" sx={{ p: 0 }}>
             <Box
@@ -139,7 +140,7 @@ export const ComingSoon = () => {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{backgroundColor: blueGrey.A100}} color={blueGrey}>
+        <Card className="card card__c51-info">
           <CardContent>
             <Typography>
               Have you visited the NSS Cohort 51 Website built by me and my 3
