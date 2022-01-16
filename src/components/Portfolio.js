@@ -1,10 +1,10 @@
 import React from "react";
+import { ComingSoon } from "./ComingSoon";
 
 export const Portfolio = () => {
   return (
     <div className="page">
-      <h1>Hi, this is my Portfolio!</h1>
-      
+      <ComingSoon />
     </div>
   );
 };

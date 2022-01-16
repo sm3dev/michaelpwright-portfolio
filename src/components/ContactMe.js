@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AboveTheFold = () => {
+export const ContactMe = () => {
     return (
         <div>
             
