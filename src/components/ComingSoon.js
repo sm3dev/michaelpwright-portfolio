@@ -19,6 +19,7 @@ import {
   Divider,
   IconButton,
 } from "@mui/material";
+import { blueGrey } from "@mui/material/colors";
 import React from "react";
 
 export const ComingSoon = () => {
@@ -57,7 +58,15 @@ export const ComingSoon = () => {
           backgroundColor: "primary.light",
         }}
       >
-        <Card sx={{ maxWidth: 345, m: 1 }} className="card">
+        <Card
+          sx={{
+            maxWidth: 345,
+            m: 1,
+            flexGrow: 1,
+            flexShrink: 0,
+          }}
+          className="card"
+        >
           <CardContent className="card-content__block" sx={{ p: 0 }}>
             <Box
               className="card-header__block"
@@ -115,7 +124,7 @@ export const ComingSoon = () => {
           </CardContent>
           <CardActions>
             <IconButton
-              color="secondary"
+              color="info"
               aria-label="share"
               component="a"
               // href={pageURL}
@@ -126,12 +135,12 @@ export const ComingSoon = () => {
             >
               <Share />
             </IconButton>
-            <Button color="primary" variant="outlined" startIcon={<Download />}>
+            <Button color="info" variant="outlined" startIcon={<Download />}>
               Résumé PDF
             </Button>
           </CardActions>
         </Card>
-        <Card>
+        <Card sx={{backgroundColor: blueGrey.A100}} color={blueGrey}>
           <CardContent>
             <Typography>
               Have you visited the NSS Cohort 51 Website built by me and my 3
