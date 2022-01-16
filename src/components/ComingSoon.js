@@ -52,7 +52,7 @@ export const ComingSoon = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
-          p: 1,
+          p: 2,
         }}
       >
         {" "}
@@ -65,8 +65,8 @@ export const ComingSoon = () => {
           >
             Hi, Michael P Wright!
           </Typography>
-          <Typography color="info" variant="caption">
-            Welcome to my portfolio. We're under constructionat at the moment.{" "}
+          <Typography color="info" variant="subtitle2">
+            Welcome to my portfolio. We're under construction at the moment.{" "}
           </Typography>
         </section>
       </Box>
@@ -75,7 +75,7 @@ export const ComingSoon = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          p: 4,
+          p: 2,
           alignItems: "center",
         }}
       >
@@ -157,7 +157,7 @@ export const ComingSoon = () => {
             >
               <Share />
             </IconButton>
-            <Button color="info" variant="outlined" startIcon={<Download />}>
+            <Button disabled color="info" variant="outlined" startIcon={<Download />}>
               Résumé PDF
             </Button>
           </CardActions>
