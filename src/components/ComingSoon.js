@@ -1,4 +1,11 @@
-import { Devices, Email, GitHub, LinkedIn, Share } from "@mui/icons-material";
+import {
+  Devices,
+  Download,
+  Email,
+  GitHub,
+  LinkedIn,
+  Share,
+} from "@mui/icons-material";
 import {
   Box,
   Card,
@@ -10,6 +17,7 @@ import {
   ListItem,
   Typography,
   Divider,
+  IconButton,
 } from "@mui/material";
 import React from "react";
 
@@ -46,6 +54,7 @@ export const ComingSoon = () => {
           flexDirection: "column",
           p: 4,
           alignItems: "center",
+          backgroundColor: "primary.light",
         }}
       >
         <Card sx={{ maxWidth: 345, m: 1 }} className="card">
@@ -70,7 +79,11 @@ export const ComingSoon = () => {
                 Let's Connect!
               </Typography>
             </Box>
-            <Stack className="card-content__action-stack">
+            <Stack
+              className="card-content__action-stack"
+              direction="column"
+              spacing={1}
+            >
               {socialChips.map((data) => {
                 let icon;
 
@@ -83,38 +96,48 @@ export const ComingSoon = () => {
                 }
 
                 return (
-                  <>
-                    <ListItem key={data.key}>
-                      <Chip
-                        icon={icon}
-                        label={data.label}
-                        component="a"
-                        href={data.url}
-                        target="_blank"
-                        clickable
-                        color="default"
-                        size="medium"
-                      />
-                    </ListItem>
-                    <Divider light />
-                  </>
+                  <ListItem key={data.key}>
+                    <Chip
+                      key={data.key}
+                      icon={icon}
+                      label={data.label}
+                      component="a"
+                      href={data.url}
+                      target="_blank"
+                      clickable
+                      color="info"
+                      size="medium"
+                    />
+                  </ListItem>
                 );
               })}
             </Stack>
           </CardContent>
           <CardActions>
-            <Button color="primary" component="a" href={pageURL} title="share my card">
-                {/* I want this to be a dropdown with the links to share my card via linkedin, email, SMS, facebook messenger, twitter DM, instagram DM */}
-              Share My Card{" "}
+            <IconButton
+              color="secondary"
+              aria-label="share"
+              component="a"
+              // href={pageURL}
+              title="share my card"
+              onClick={() => {
+                console.log(pageURL);
+              }}
+            >
+              <Share />
+            </IconButton>
+            <Button color="primary" variant="outlined" startIcon={<Download />}>
+              Résumé PDF
             </Button>
-            <Button color="primary" variant="contained">Download Résumé</Button>
           </CardActions>
         </Card>
         <Card>
-          <Typography>
-            Have you visited the NSS Cohort 51 Website built by me and my 3
-            UI/UX Front-End <del>teammates</del> wizards?
-          </Typography>
+          <CardContent>
+            <Typography>
+              Have you visited the NSS Cohort 51 Website built by me and my 3
+              UI/UX Front-End <del>teammates</del> wizards?
+            </Typography>
+          </CardContent>
         </Card>
       </Box>
     </>
