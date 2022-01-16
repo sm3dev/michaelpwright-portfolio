@@ -17,8 +17,8 @@ import {
   ListItem,
   Typography,
   IconButton,
+  Tooltip,
 } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
 import React from "react";
 
 export const ComingSoon = () => {
@@ -48,23 +48,45 @@ export const ComingSoon = () => {
   return (
     <>
       <Box
-        className="mainBox"
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          p: 1,
+        }}
+      >
+        {" "}
+        <section>
+          <Typography
+            color="default"
+            variant="subtitle1"
+            fontSize="18"
+            component="div"
+          >
+            Hi, Michael P Wright!
+          </Typography>
+          <Typography color="info" variant="caption">
+            Welcome to my portfolio. We're under constructionat at the moment.{" "}
+          </Typography>
+        </section>
+      </Box>
+      <Box
+        id="mainBox"
         sx={{
           display: "flex",
           flexDirection: "column",
           p: 4,
           alignItems: "center",
-          backgroundColor: "primary.light",
         }}
       >
         <Card
           sx={{
             maxWidth: 345,
             m: 1,
-            flexGrow: 1,
+            flexGrow: 0,
             flexShrink: 0,
           }}
-          className="card"
+          className="card social__card"
         >
           <CardContent className="card-content__block" sx={{ p: 0 }}>
             <Box
@@ -131,6 +153,7 @@ export const ComingSoon = () => {
               onClick={() => {
                 console.log(pageURL);
               }}
+              disabled
             >
               <Share />
             </IconButton>
@@ -139,13 +162,51 @@ export const ComingSoon = () => {
             </Button>
           </CardActions>
         </Card>
-        <Card sx={{backgroundColor: blueGrey.A100}} color={blueGrey}>
+        <Card
+          sx={{
+            maxWidth: 480,
+            m: 1,
+            flexGrow: 0,
+            flexShrink: 1,
+          }}
+          className="card card__c51-info"
+        >
           <CardContent>
-            <Typography>
-              Have you visited the NSS Cohort 51 Website built by me and my 3
-              UI/UX Front-End <del>teammates</del> wizards?
+            <Typography variant="body1">
+              Have you visited the{" "}
+              <Tooltip
+                title="Nashville Software School"
+                disableFocusListener
+                disableTouchListener
+                arrow
+                placement="top"
+              >
+                <span>NSS</span>
+              </Tooltip>{" "}
+              Cohort 51 Website built by me and my three UI/UX Front-End{" "}
+              <del>teammates</del> student-friend-wizards?
             </Typography>
           </CardContent>
+          <CardActions>
+            <Button
+              variant="outlined"
+              component="a"
+              target="_blank"
+              title="Visit C51 Website"
+              href="https://nss-day-cohort-51.github.io/"
+            >
+              Live NSS C51 Website
+            </Button>
+            <Button
+              variant="outlined"
+              component="a"
+              target="_blank"
+              title="Visit C51 GitHub Repository"
+              href="https://github.com/nss-day-cohort-51/nss-day-cohort-51.github.io"
+            >
+              NSS Cohort 51 Repo
+            </Button>
+          </CardActions>
         </Card>
       </Box>
     </>
