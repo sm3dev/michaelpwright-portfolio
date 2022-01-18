@@ -1,6 +1,6 @@
 import React from "react";
-import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png"
-import "../styles/NavBar.scss"
+import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
+import "../styles/NavBar.scss";
 
 export const NavBar = () => {
   return (
@@ -20,17 +20,17 @@ export const NavBar = () => {
       <section className="">
         <ul class="">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
+            <a class="nav-link" aria-current="page" href="/Projects">
               Portfolio
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/About-Me">
               About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/Contact">
               Contact
             </a>
           </li>
