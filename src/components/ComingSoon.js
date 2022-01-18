@@ -162,8 +162,8 @@ export const ComingSoon = () => {
               <Share />
             </IconButton>
             <Button
-              color="info"
-              variant="outlined"
+              color="secondary"
+              variant="contained"
               startIcon={<Download />}
               component="a"
               href="https://drive.google.com/file/d/1q0FZIR742rX9uwlIdSna8WdBnAZ3fW1y/view"
@@ -183,7 +183,7 @@ export const ComingSoon = () => {
           }}
           className="card card__c51-info"
         >
-          <CardHeader title="Cohort 51, Student, Nashville Software School"></CardHeader>
+          <CardHeader title="Student, Cohort 51" subheader="Nashville Software School, Nashville, TN, USA"></CardHeader>
           <CardContent>
             <Typography variant="body1">
               Have you visited the{" "}
@@ -208,16 +208,16 @@ export const ComingSoon = () => {
               title="Visit C51 Website"
               href="https://nss-day-cohort-51.github.io/"
             >
-              Live NSS C51 Website
+              C51 Website
             </Button>
             <Button
               variant="outlined"
               component="a"
               target="_blank"
-              title="Visit C51 GitHub Repository"
+              title="Visit C51 Website GitHub Repository"
               href="https://github.com/nss-day-cohort-51/nss-day-cohort-51.github.io"
             >
-              NSS Cohort 51 Repo
+              C51 Repo
             </Button>
           </CardActions>
         </Card>
