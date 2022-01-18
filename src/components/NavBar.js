@@ -1,11 +1,16 @@
 import React from "react";
+import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png"
 
 export const NavBar = () => {
   return (
     <div className="nav__block">
-      <section className="logo_block">
-        <div>
-          <img src="./" alt="" className="nav__logo" />
+      <section className="logo-tagline__block">
+        <div className="logo__block">
+          <img
+            src={mpwMinecraft3DGoldLogo512}
+            alt="logo home button"
+            className="nav__logo"
+          />
         </div>
         <p className="nav__tag-line">
           Michael Wright is a UI/UX Front-End Developer based in Huntsville.
@@ -15,21 +20,18 @@ export const NavBar = () => {
         <ul class="">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Active
+              Portfolio
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Link
+              About
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              Link
+              Contact
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
       </section>
