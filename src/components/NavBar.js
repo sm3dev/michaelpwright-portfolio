@@ -1,5 +1,6 @@
 import React from "react";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png"
+import "../styles/NavBar.scss"
 
 export const NavBar = () => {
   return (
