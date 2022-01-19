@@ -1,4 +1,6 @@
-{
+{ "users": [
+  { "id": 1, "firstName": "Michael", "middleInitial": "P", "lastName": "Wright", "headshot":"#"}
+],
   "techStack": [
     {
       "id": 1,
@@ -171,7 +173,7 @@
       "devType": "UI/UX Front-End Developer"
     }
   ],
-  "project": [
+  "projects": [
     {
       "id": 1,
       "name": "",
