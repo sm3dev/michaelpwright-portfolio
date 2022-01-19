@@ -1,5 +1,10 @@
 { "users": [
   { "id": 1, "firstName": "Michael", "middleInitial": "P", "lastName": "Wright", "headshot":"#"}
+], "userAccolades": [
+  {"id": 1, "accoladeText": ""},
+  {"id": 2, "accoladeText": ""},
+  {"id": 3, "accoladeText": ""},
+  {"id": 4, "accoladeText": ""}
 ],
   "techStack": [
     {
@@ -203,9 +208,35 @@
   "navTaglines": [
     {
       "id": 1,
+      "text": "Michael Wright wants to rule the world, so it can be measured and improved."
+    },
+    {
+      "id": 2,
       "text": "Michael Wright is a User Interface Engineer based in Huntsville."
+    },
+    {
+      "id": 3,
+      "text": "Michael Wright is a UI/UX Front-End Developer based in Huntsville."
+    },
+    {
+      "id": 4,
+      "text": "Michael Wright wants “w” to be prounced WUH."
     }
   ],
-  "heroTaglines": [{ "id": 1, "text": "I solve UX problems" }],
-  "testimonials": [{ "id": 1, "personName": "", "testimony": "" }]
+  "heroTaglines": [
+    { "id": 1, "text": "But you can call me with a job offer" },
+    { "id": 2, "text": "I’m a User Interface Engineer" },
+    { "id": 3, "text": "I’m a Front-End Developer" },
+    { "id": 4, "text": "I solve UX problems" },
+    { "id": 5, "text": "I’m not super in to labels" },
+    { "id": 6, "text": "I would name a dog Bears or Bambi" },
+    { "id": 7, "text": "I’ve probably looked at your work first" },
+    { "id": 8, "text": "I type “?” after questions" }
+  ],
+  "testimonials": [{ "id": 1, "personName": "", "testimony": "" }],
+  "aboutQuotes": [
+    {"id":1, "author":"", "quoteText":""},
+    {"id":2, "author":"", "quoteText":""},
+    {"id":3, "author":"", "quoteText":""}
+  ]
 }
