@@ -15,7 +15,7 @@ export const Footer = () => {
         <ul className="social-media__list">
           <li className="social__list-item">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/mpw/"
               className="social-media__link link__linkedin"
               title="Michael P. Wright on LinkedIn"
               target="_blank"
@@ -25,7 +25,7 @@ export const Footer = () => {
           </li>
           <li className="social__list-item">
             <a
-              href="#"
+              href="https://github.com/sm3dev"
               className="social-media__link link__github"
               title="Michael P. Wright on GitHub"
               target="_blank"
@@ -35,7 +35,7 @@ export const Footer = () => {
           </li>
           <li className="social__list-item">
             <a
-              href="#"
+              href="mailto:mrwry7@gmail.com"
               className="social-media__link link__email"
               title="Email Michael P. Wright"
               target="_blank"
