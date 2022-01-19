@@ -181,13 +181,61 @@
   "projects": [
     {
       "id": 1,
-      "name": "",
+      "name": "React Portfolio Website",
       "projectOverview": "",
-      "thumbnail": ".jpg",
-      "desktopMobileImage": ".jpg",
-      "linkToSite": "",
-      "linkRepo": "",
-      "myRole": "",
+      "thumbnail": "thiscouldbealogo.jpg",
+      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "linkToSite": "https://sm3dev.github.io/michaelpwright-portfolio/",
+      "linkRepo": "https://github.com/sm3dev/michaelpwright-portfolio",
+      "myRole": "Sole Designer, Sole Developer",
+      "challengeStatement": "",
+      "wireframeImage1": ".jpg",
+      "wireframeImage2": ".jpg",
+      "wireframeImage3": ".jpg",
+      "lessonsLearned": "",
+      "video": ""
+    },
+    {
+      "id": 2,
+      "name": "NSS Cohort 51 Website",
+      "projectOverview": "",
+      "thumbnail": "thiscouldbealogo.jpg",
+      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "linkToSite": "https://nss-day-cohort-51.github.io/",
+      "linkRepo": "https://github.com/nss-day-cohort-51/nss-day-cohort-51.github.io",
+      "myRole": "Sole Designer, Sole Developer",
+      "challengeStatement": "",
+      "wireframeImage1": ".jpg",
+      "wireframeImage2": ".jpg",
+      "wireframeImage3": ".jpg",
+      "lessonsLearned": "",
+      "video": ""
+    },
+    {
+      "id": 3,
+      "name": "Smilestones App",
+      "projectOverview": "",
+      "thumbnail": "thiscouldbealogo.jpg",
+      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "linkToSite": "https://nss-day-cohort-51.github.io/",
+      "linkRepo": "https://github.com/sm3dev/smilestones-app",
+      "myRole": "Sole Designer, Sole Developer",
+      "challengeStatement": "",
+      "wireframeImage1": ".jpg",
+      "wireframeImage2": ".jpg",
+      "wireframeImage3": ".jpg",
+      "lessonsLearned": "",
+      "video": ""
+    },
+    {
+      "id": 4,
+      "name": "Password Inspiration Generator",
+      "projectOverview": "",
+      "thumbnail": "thiscouldbealogo.jpg",
+      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "linkToSite": "https://nss-day-cohort-51.github.io/",
+      "linkRepo": "https://github.com/sm3dev/smilestones-app",
+      "myRole": "Sole Designer, Sole Developer",
       "challengeStatement": "",
       "wireframeImage1": ".jpg",
       "wireframeImage2": ".jpg",
@@ -198,11 +246,23 @@
   "personas": [
     {
       "id": 1,
-      "name": "",
-      "projectId": 1,
-      "photo": ".png or .pdf",
-      "goals": "",
-      "pain points": ""
+      "name": "Malcom Small",
+      "jobTitle": "Front-End, Engineer",
+      "projectId": [1, 2],
+      "thumbnail": ".png or .pdf",
+      "fullCardPhoto": ".png or jpg",
+      "goals": "Match candidate’s demonstrated skills to role \n Suggest most suitable candidate to Hiring Manager \nAssess candidate for fit with team members",
+      "painPoints": "Lack of candidate demonstrated skills many applicants for one position \n Scheduling conflicts with joining Hiring Manager on interviews\n Single online source to get candidate personality and skillset"
+    },
+    {
+      "id": 2,
+      "name": "Margie Walker",
+      "jobTitle": "Hiring Manager",
+      "projectId": [1, 2],
+      "thumbnail": ".png or .pdf",
+      "fullCardPhoto": ".png or jpg",
+      "goals": "Find the best candidates for job roles \nMatch company needs to candidate skillsets \nAssess candidate for fit with team members",
+      "painPoints": "Contacting candidates to schedule multiple-rounds of interviews \nHiring for senior and specialty roles \nDifficulties retaining talent and minimizing turnover"
     }
   ],
   "navTaglines": [
@@ -233,7 +293,7 @@
     { "id": 7, "text": "I’ve probably looked at your work first" },
     { "id": 8, "text": "I type “?” after questions" }
   ],
-  "testimonials": [{ "id": 1, "personName": "", "testimony": "" }],
+  "testimonials": [{ "id": 1, "personFullName": "", "testimony": "" }],
   "aboutQuotes": [
     {"id":1, "author":"", "quoteText":""},
     {"id":2, "author":"", "quoteText":""},
