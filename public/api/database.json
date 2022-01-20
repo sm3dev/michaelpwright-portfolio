@@ -257,7 +257,7 @@
       "id": 1,
       "name": "Malcom Small",
       "jobTitle": "Front-End, Engineer",
-      "projectId": [1, 2],
+      "projectId": 1,
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "fullCardPhoto": "placeholder-image.gif",
       "goals": "Match candidate’s demonstrated skills to role \n Suggest most suitable candidate to Hiring Manager \nAssess candidate for fit with team members",
@@ -267,7 +267,7 @@
       "id": 2,
       "name": "Margie Walker",
       "jobTitle": "Hiring Manager",
-      "projectId": [1, 2],
+      "projectId": 1,
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "fullCardPhoto": "placeholder-image.gif",
       "goals": "Find the best candidates for job roles \nMatch company needs to candidate skillsets \nAssess candidate for fit with team members",
@@ -277,19 +277,19 @@
   "navTaglines": [
     {
       "id": 1,
-      "text": "Michael Wright wants to rule the world, so it can be measured and improved."
+      "tagline": "Michael Wright wants to rule the world, so it can be measured and improved."
     },
     {
       "id": 2,
-      "text": "Michael Wright is a User Interface Engineer based in Huntsville."
+      "tagline": "Michael Wright is a User Interface Engineer based in Huntsville."
     },
     {
       "id": 3,
-      "text": "Michael Wright is a UI/UX Front-End Developer based in Huntsville."
+      "tagline": "Michael Wright is a UI/UX Front-End Developer based in Huntsville."
     },
     {
       "id": 4,
-      "text": "Michael Wright wants “w” to be prounced WUH."
+      "tagline": "Michael Wright wants “w” to be prounced WUH."
     }
   ],
   "heroTaglines": [

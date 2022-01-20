@@ -18,19 +18,19 @@ export const NavBar = () => {
         </p>
       </section>
       <section className="">
-        <ul class="">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/Projects">
+        <ul className="">
+          <li className="nav-item">
+            <a className="nav-link" aria-current="page" href="/Projects">
               Portfolio
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/About-Me">
+          <li className="nav-item">
+            <a className="nav-link" href="/About-Me">
               About
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Contact">
+          <li className="nav-item">
+            <a className="nav-link" href="/Contact">
               Contact
             </a>
           </li>
