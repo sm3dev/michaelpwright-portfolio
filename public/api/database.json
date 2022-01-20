@@ -1,11 +1,19 @@
-{ "users": [
-  { "id": 1, "firstName": "Michael", "middleInitial": "P", "lastName": "Wright", "headshot":"#"}
-], "userAccolades": [
-  {"id": 1, "accoladeText": ""},
-  {"id": 2, "accoladeText": ""},
-  {"id": 3, "accoladeText": ""},
-  {"id": 4, "accoladeText": ""}
-],
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Michael",
+      "middleInitial": "P",
+      "lastName": "Wright",
+      "headshot": "#"
+    }
+  ],
+  "userAccolades": [
+    { "id": 1, "accoladeText": "" },
+    { "id": 2, "accoladeText": "" },
+    { "id": 3, "accoladeText": "" },
+    { "id": 4, "accoladeText": "" }
+  ],
   "techStack": [
     {
       "id": 1,
@@ -183,64 +191,65 @@
       "id": 1,
       "name": "React Portfolio Website",
       "projectOverview": "",
-      "thumbnail": "thiscouldbealogo.jpg",
-      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://sm3dev.github.io/michaelpwright-portfolio/",
       "linkRepo": "https://github.com/sm3dev/michaelpwright-portfolio",
       "myRole": "Sole Designer, Sole Developer",
       "challengeStatement": "",
-      "wireframeImage1": ".jpg",
-      "wireframeImage2": ".jpg",
-      "wireframeImage3": ".jpg",
+      "wireframeImage1": "placeholder-image.gif",
+      "wireframeImage2": "placeholder-image.gif",
+      "wireframeImage3": "placeholder-image.gif",
       "lessonsLearned": "",
-      "video": ""
+      "video": "placeholder-video.gif"
     },
     {
       "id": 2,
       "name": "NSS Cohort 51 Website",
       "projectOverview": "",
-      "thumbnail": "thiscouldbealogo.jpg",
-      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
       "linkRepo": "https://github.com/nss-day-cohort-51/nss-day-cohort-51.github.io",
       "myRole": "Sole Designer, Sole Developer",
       "challengeStatement": "",
-      "wireframeImage1": ".jpg",
-      "wireframeImage2": ".jpg",
-      "wireframeImage3": ".jpg",
+      "wireframeImage1": "placeholder-image.gif",
+      "wireframeImage2": "placeholder-image.gif",
+      "wireframeImage3": "placeholder-image.gif",
       "lessonsLearned": "",
-      "video": ""
+      "video": "placeholder-video.gif"
     },
     {
       "id": 3,
       "name": "Smilestones App",
       "projectOverview": "",
-      "thumbnail": "thiscouldbealogo.jpg",
-      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
       "linkRepo": "https://github.com/sm3dev/smilestones-app",
       "myRole": "Sole Designer, Sole Developer",
       "challengeStatement": "",
-      "wireframeImage1": ".jpg",
-      "wireframeImage2": ".jpg",
-      "wireframeImage3": ".jpg",
+      "wireframeImage1": "placeholder-image.gif",
+      "wireframeImage2": "placeholder-image.gif",
+      "wireframeImage3": "placeholder-image.gif",
       "lessonsLearned": "",
-      "video": ""
+      "video": "placeholder-video.gif"
     },
     {
       "id": 4,
       "name": "Password Inspiration Generator",
       "projectOverview": "",
-      "thumbnail": "thiscouldbealogo.jpg",
-      "desktopMobileImage": "theimage with both desktop and mobile previews in an image template.jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
       "linkRepo": "https://github.com/sm3dev/smilestones-app",
       "myRole": "Sole Designer, Sole Developer",
       "challengeStatement": "",
-      "wireframeImage1": ".jpg",
-      "wireframeImage2": ".jpg",
-      "wireframeImage3": ".jpg",
-      "lessonsLearned": ""
+      "wireframeImage1": "placeholder-image.gif",
+      "wireframeImage2": "placeholder-image.gif",
+      "wireframeImage3": "placeholder-image.gif",
+      "lessonsLearned": "",
+      "video": "placeholder-video.gif"
     }
   ],
   "personas": [
@@ -249,8 +258,8 @@
       "name": "Malcom Small",
       "jobTitle": "Front-End, Engineer",
       "projectId": [1, 2],
-      "thumbnail": ".png or .pdf",
-      "fullCardPhoto": ".png or jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "fullCardPhoto": "placeholder-image.gif",
       "goals": "Match candidate’s demonstrated skills to role \n Suggest most suitable candidate to Hiring Manager \nAssess candidate for fit with team members",
       "painPoints": "Lack of candidate demonstrated skills many applicants for one position \n Scheduling conflicts with joining Hiring Manager on interviews\n Single online source to get candidate personality and skillset"
     },
@@ -259,8 +268,8 @@
       "name": "Margie Walker",
       "jobTitle": "Hiring Manager",
       "projectId": [1, 2],
-      "thumbnail": ".png or .pdf",
-      "fullCardPhoto": ".png or jpg",
+      "thumbnail": "mpwMinecraft3DGoldLogo512.png",
+      "fullCardPhoto": "placeholder-image.gif",
       "goals": "Find the best candidates for job roles \nMatch company needs to candidate skillsets \nAssess candidate for fit with team members",
       "painPoints": "Contacting candidates to schedule multiple-rounds of interviews \nHiring for senior and specialty roles \nDifficulties retaining talent and minimizing turnover"
     }
@@ -295,8 +304,8 @@
   ],
   "testimonials": [{ "id": 1, "personFullName": "", "testimony": "" }],
   "aboutQuotes": [
-    {"id":1, "author":"", "quoteText":""},
-    {"id":2, "author":"", "quoteText":""},
-    {"id":3, "author":"", "quoteText":""}
+    { "id": 1, "author": "", "quoteText": "" },
+    { "id": 2, "author": "", "quoteText": "" },
+    { "id": 3, "author": "", "quoteText": "" }
   ]
 }
