@@ -1,6 +1,5 @@
 {
   "name": "michael-wright-react-portfolio",
-  "homepage": "https://sm3dev.github.io/michaelpwright-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

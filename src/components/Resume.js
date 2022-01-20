@@ -34,20 +34,18 @@ export const Resume = () => {
           <p className="tech-section__location-name">
             Nashville Software School
           </p>
-          <p className="tech-section__dates">
-            2019-Present
-            <ul className="tech-section__bullet-points-list">
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-            </ul>
-          </p>
+          <p className="tech-section__dates">2019-Present</p>
+          <ul className="tech-section__bullet-points-list">
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+          </ul>
         </section>
         <section className="tech-experience__job">
           <p className="tech-section__title text__all-caps">
@@ -56,20 +54,19 @@ export const Resume = () => {
           <p className="tech-section__location-name">
             Nashville Software School
           </p>
-          <p className="tech-section__dates">
-            2019-Present
-            <ul className="tech-section__bullet-points-list">
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-            </ul>
-          </p>
+          <p className="tech-section__dates">2019-Present </p>
+
+          <ul className="tech-section__bullet-points-list">
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+          </ul>
         </section>
         <section className="tech-experience__job">
           <p className="tech-section__title text__all-caps">
@@ -78,20 +75,19 @@ export const Resume = () => {
           <p className="tech-section__location-name">
             Nashville Software School
           </p>
-          <p className="tech-section__dates">
-            2019-Present
-            <ul className="tech-section__bullet-points-list">
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-              <li className="tech__list-item">
-                Lorem ipsum dolor sit amet, consectetur{" "}
-              </li>
-            </ul>
-          </p>
+          <p className="tech-section__dates">2019-Present </p>
+
+          <ul className="tech-section__bullet-points-list">
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+            <li className="tech__list-item">
+              Lorem ipsum dolor sit amet, consectetur{" "}
+            </li>
+          </ul>
         </section>
       </section>
       <section className="resume skills__block"></section>
