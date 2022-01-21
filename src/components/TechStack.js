@@ -1,7 +1,7 @@
 import React from "react";
 
 export const TechStack = ({ allTechObjects }) => {
-  const techUsedArray = [1, 4, 5, 6,8,10,20,27,35];
+  const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
   // If any allTechObjects.id value matches an integer in array techUsedArray,
   // then display the list item with the added class "usedHere".
