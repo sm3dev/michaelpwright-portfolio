@@ -5,7 +5,7 @@
       "firstName": "Michael",
       "middleInitial": "P",
       "lastName": "Wright",
-      "headshot": "#"
+      "headshot": "michaelpwright-laugh-selfie-800px.jpg"
     }
   ],
   "userAccolades": [
@@ -92,7 +92,7 @@
     },
     {
       "id": 17,
-      "name": "CRUD SPA",
+      "name": "CRUD",
       "devType": "All"
     },
     {
@@ -183,6 +183,16 @@
     {
       "id": 35,
       "name": "React Router",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 36,
+      "name": "Team Collab",
+      "devType": "UI/UX Front-End Developer"
+    },
+    {
+      "id": 37,
+      "name": "Single Page Application",
       "devType": "UI/UX Front-End Developer"
     }
   ],
