@@ -21,8 +21,9 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-      <HeaderLogo allNavTaglines={allNavTaglines} />
+      {" "}
       <TechStack allTechObjects={allTechObjects} />
+      <HeaderLogo allNavTaglines={allNavTaglines} />
       <ComingSoon />
       <Resume />
       <Footer />
