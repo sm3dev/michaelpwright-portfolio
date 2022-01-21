@@ -22,8 +22,8 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-      <ProjectCard allTechObjects={allTechObjects} />
-      {/* <TechStack allTechObjects={allTechObjects} /> */}
+      {/* <ProjectCard allTechObjects={allTechObjects} /> */}
+      <TechStack allTechObjects={allTechObjects} />
       <HeaderLogo allNavTaglines={allNavTaglines} />
       <ComingSoon />
       <Resume />
