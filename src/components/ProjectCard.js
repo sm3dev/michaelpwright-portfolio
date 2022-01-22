@@ -5,7 +5,7 @@ export const ProjectCard = () => {
   const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
   return (
-    <section className="project__card">
+    <article className="project__card">
       <section className="project-card__thumbmail">
         {" "}
         <a
@@ -45,6 +45,6 @@ export const ProjectCard = () => {
           </button>
         </a>
       </section>
-    </section>
+    </article>
   );
 };
