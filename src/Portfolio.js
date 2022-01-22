@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
 import HeaderLogo from "./components/HeaderLogo";
+import { ProjectCard } from "./components/ProjectCard";
 import { Resume } from "./components/Resume";
 import { TechStack } from "./components/TechStack";
 
@@ -21,7 +22,7 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-      {" "}
+      {/* <ProjectCard allTechObjects={allTechObjects} /> */}
       <TechStack allTechObjects={allTechObjects} />
       <HeaderLogo allNavTaglines={allNavTaglines} />
       <ComingSoon />
