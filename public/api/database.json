@@ -256,6 +256,7 @@
     {
       "id": 2,
       "name": "NSS Cohort 51 Website",
+      "description": "Break the internet with the first ever ever created",
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
@@ -272,6 +273,8 @@
     {
       "id": 3,
       "name": "Smilestones App",
+      "description": "Break the internet with the first ever ever created",
+
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
@@ -288,6 +291,8 @@
     {
       "id": 4,
       "name": "Password Inspiration Generator",
+      "description": "Break the internet with the first ever ever created",
+
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
