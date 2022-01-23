@@ -5,7 +5,11 @@
       "firstName": "Michael",
       "middleInitial": "P",
       "lastName": "Wright",
-      "headshot": "michaelpwright-laugh-selfie-800px.jpg"
+      "headshot": "michaelpwright-laugh-selfie-800px.jpg",
+      "homepageURL": "https://www.michaelpwright.com",
+      "linkedIn": "https://www.linkedin.com/in/mpw",
+      "gitHub": "https://github.com/sm3dev",
+      "email": "mrwry7@gmail.com"
     }
   ],
   "userAccolades": [
@@ -18,182 +22,217 @@
     {
       "id": 1,
       "name": "Semantic HTML",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 2,
       "name": "CSS3",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 3,
       "name": "JavaScript",
-      "devType": "All"
+      "skillLevel": 4
     },
     {
       "id": 4,
       "name": "Git",
-      "devType": "All"
+      "skillLevel": 4
     },
     {
       "id": 5,
       "name": "GitHub",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 6,
       "name": "ReactJS",
-      "devType": "All"
+      "skillLevel": 3
     },
     {
       "id": 7,
       "name": "React Hooks",
-      "devType": "All"
+      "skillLevel": 3
     },
     {
       "id": 8,
       "name": "VS Code",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 9,
       "name": "JSON Server",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 10,
       "name": "NPM",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 11,
       "name": "Postman",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 12,
       "name": "dbdiagram",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 13,
       "name": "Bootstrap",
-      "devType": "All"
+      "skillLevel": 5
     },
     {
       "id": 14,
       "name": "API",
-      "devType": "All"
+      "skillLevel": 3
     },
     {
       "id": 15,
       "name": "Wireframing",
-      "devType": "All"
+      "skillLevel": 4
     },
     {
       "id": 17,
       "name": "CRUD",
-      "devType": "All"
+      "skillLevel": 4
     },
     {
       "id": 18,
       "name": "Agile",
-      "devType": "All"
+      "skillLevel": 3
     },
     {
       "id": 19,
-      "name": "Semantic UI",
-      "devType": "All"
+      "name": "Material UI",
+      "skillLevel": 3
     },
     {
       "id": 20,
       "name": "Figma",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 21,
       "name": "SASS",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 22,
-      "name": "Responsive",
-      "devType": "UI/UX Front-End Developer"
+      "name": "Responsive Design",
+      "skillLevel": 5
     },
     {
       "id": 23,
       "name": "User Testing",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 3
     },
     {
       "id": 24,
       "name": "UX Research",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 2
     },
     {
       "id": 25,
       "name": "Prototyping",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 26,
       "name": "Reactstrap",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 5
     },
     {
       "id": 27,
       "name": "Info Architecture",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 28,
       "name": "Mockups",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 5
     },
     {
       "id": 29,
       "name": "Media Queries",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 5
     },
     {
       "id": 30,
-      "name": "CSS Libraries",
-      "devType": "UI/UX Front-End Developer"
+      "name": "Tailwind CSS",
+      "skillLevel": 2
     },
     {
       "id": 31,
       "name": "CSS Flexbox",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 32,
       "name": "CSS Grid",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 3
     },
     {
       "id": 33,
       "name": "Adobe Illustrator",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 5
     },
     {
       "id": 34,
       "name": "Adobe XD",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
     },
     {
       "id": 35,
       "name": "React Router",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 3
     },
     {
       "id": 36,
       "name": "Team Collab",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 5
     },
     {
       "id": 37,
       "name": "Single Page Application",
-      "devType": "UI/UX Front-End Developer"
+      "skillLevel": 4
+    },
+    {
+      "id": 38,
+      "name": "CodePen",
+      "skillLevel": 5
+    },
+    {
+      "id": 39,
+      "name": "Material Design",
+      "skillLevel": 3
+    },
+    {
+      "id": 40,
+      "name": "Next,js",
+      "skillLevel": 1
+    },
+    {
+      "id": 41,
+      "name": "Supabase",
+      "skillLevel": 1
+    },
+    {
+      "id": 42,
+      "name": "Next,js",
+      "skillLevel": 1
+    },
+    {
+      "id": 43,
+      "name": "Storybook",
+      "skillLevel": 1
+    },
+    {
+      "id": 44,
+      "name": "DevTools",
+      "skillLevel": 3
     }
   ],
   "projects": [
@@ -217,6 +256,7 @@
     {
       "id": 2,
       "name": "NSS Cohort 51 Website",
+      "description": "Break the internet with the first ever ever created",
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
@@ -233,6 +273,8 @@
     {
       "id": 3,
       "name": "Smilestones App",
+      "description": "Break the internet with the first ever ever created",
+
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
@@ -249,6 +291,8 @@
     {
       "id": 4,
       "name": "Password Inspiration Generator",
+      "description": "Break the internet with the first ever ever created",
+
       "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
