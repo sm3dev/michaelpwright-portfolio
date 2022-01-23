@@ -1,5 +1,5 @@
 import React from "react";
-import { TechStack } from "./TechStack";
+// import { TechStack } from "./TechStack";
 
 export const ProjectCard = () => {
   const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
