@@ -27,13 +27,13 @@ export const Portfolio = () => {
   return (
     <div className="page">
       <ProjectDetail allProjects={allProjects} />
-      <TechSkillLevels allTechObjects={allTechObjects} />
+      {/* <TechSkillLevels allTechObjects={allTechObjects} />
       <ProjectList />
       <TechStack allTechObjects={allTechObjects} />
       <HeaderLogo allNavTaglines={allNavTaglines} />
       <ComingSoon />
       <Resume />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
