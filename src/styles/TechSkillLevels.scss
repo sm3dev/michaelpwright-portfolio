@@ -1,0 +1,24 @@
+#tech-skill-levels__block {
+  padding: 1rem;
+
+  .tech-list-item__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .tech__list-item {
+    border-block-end: #00000025 1px dashed;
+    flex: 1 0 300px;
+  }
+
+  .tech__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0.5rem;
+  }
+}

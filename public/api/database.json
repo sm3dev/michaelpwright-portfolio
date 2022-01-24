@@ -211,7 +211,7 @@
     },
     {
       "id": 40,
-      "name": "Next,js",
+      "name": "Next.js",
       "skillLevel": 1
     },
     {
@@ -221,16 +221,11 @@
     },
     {
       "id": 42,
-      "name": "Next,js",
-      "skillLevel": 1
-    },
-    {
-      "id": 43,
       "name": "Storybook",
       "skillLevel": 1
     },
     {
-      "id": 44,
+      "id": 43,
       "name": "DevTools",
       "skillLevel": 3
     }
