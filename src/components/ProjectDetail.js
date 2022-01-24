@@ -51,7 +51,7 @@ export const ProjectDetail = () => {
         </figure>
         <h2 className="challenge__heading">Showcase NSS C51 Students</h2>
         <p className="challenge__text">
-          he Cohort website is a staple in the NSS Web Developer Program
+          The Cohort website is a staple in the NSS Web Developer Program
           cirriculum.
           <br />
           The UI/UX Students of Cohort 51 were charged with creating a hub for

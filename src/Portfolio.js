@@ -12,6 +12,7 @@ import { TechStack } from "./components/TechStack";
 export const Portfolio = () => {
   const [allNavTaglines, setAllNavTaglines] = useState([]);
   const [allTechObjects, setAllTechObjects] = useState([]);
+  const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
     fetch("api/database.json")
@@ -19,12 +20,13 @@ export const Portfolio = () => {
       .then((data) => {
         setAllNavTaglines(data.navTaglines);
         setAllTechObjects(data.techStack);
+        setAllProjects(data.projects)
       });
   }, []);
 
   return (
     <div className="page">
-      <ProjectDetail />
+      <ProjectDetail allProjects={allProjects} />
       <TechSkillLevels allTechObjects={allTechObjects} />
       <ProjectList />
       <TechStack allTechObjects={allTechObjects} />
