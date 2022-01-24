@@ -235,7 +235,6 @@
       "id": 1,
       "name": "React Portfolio Website",
       "description": "Break the internet with the first ever ever created",
-      "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://sm3dev.github.io/michaelpwright-portfolio/",
@@ -261,7 +260,6 @@
       "id": 2,
       "name": "NSS Cohort 51 Website",
       "description": "Break the internet with the first ever ever created",
-      "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
@@ -287,8 +285,6 @@
       "id": 3,
       "name": "Smilestones App",
       "description": "Break the internet with the first ever ever created",
-
-      "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
@@ -314,7 +310,6 @@
       "id": 4,
       "name": "Password Inspiration Generator",
       "description": "Break the internet with the first ever ever created",
-      "projectOverview": "",
       "thumbnail": "mpwMinecraft3DGoldLogo512.png",
       "desktopMobileImage": "placeholder-image.gif",
       "linkToSite": "https://nss-day-cohort-51.github.io/",
@@ -385,7 +380,8 @@
     { "id": 5, "text": "I’m not super in to labels" },
     { "id": 6, "text": "I would name a dog Bears or Bambi" },
     { "id": 7, "text": "I’ve probably looked at your work first" },
-    { "id": 8, "text": "I type “?” after questions" }
+    { "id": 8, "text": "I type “?” after questions" },
+    { "id": 9, "text": "My brain is locked in Solution Orientation" }
   ],
   "testimonials": [{ "id": 1, "personFullName": "", "testimony": "" }],
   "aboutQuotes": [
