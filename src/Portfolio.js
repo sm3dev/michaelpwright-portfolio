@@ -5,6 +5,7 @@ import HeaderLogo from "./components/HeaderLogo";
 import { ProjectCard } from "./components/ProjectCard";
 import { ProjectList } from "./components/ProjectList";
 import { Resume } from "./components/Resume";
+import { TechSkillLevels } from "./components/TechSkillLevels";
 import { TechStack } from "./components/TechStack";
 
 export const Portfolio = () => {
@@ -22,7 +23,8 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-<ProjectList />
+      <TechSkillLevels allTechObjects={allTechObjects} />
+      <ProjectList />
       <TechStack allTechObjects={allTechObjects} />
       <HeaderLogo allNavTaglines={allNavTaglines} />
       <ComingSoon />
@@ -31,5 +33,3 @@ export const Portfolio = () => {
     </div>
   );
 };
-
-// export default Portfolio;

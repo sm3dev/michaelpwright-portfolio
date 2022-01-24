@@ -1,4 +1,6 @@
 @import "/src/styles/ComingSoon.scss";
+@import "/src/styles/TechSkillLevels.scss";
+@import "/src/styles/TechStack.scss";
 
 * {
   box-sizing: border-box;
@@ -30,4 +32,16 @@ img {
 
 .text__all-caps {
   text-transform: uppercase;
+}
+.list-item__no-bullet {
+  list-style: none;
+}
+
+.text__white-space--no-wrap {
+  white-space: nowrap;
+}
+
+.list--no-padding-inline-left {
+  padding-inline-start: 0;
+  padding-left: 0;
 }
