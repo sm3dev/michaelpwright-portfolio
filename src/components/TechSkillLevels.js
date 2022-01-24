@@ -22,7 +22,7 @@ export const TechSkillLevels = ({ allTechObjects }) => {
                 high="5"
                 optimum="3"
                 value={techObj.skillLevel}
-                title={`Skill Level ${techObj.skillLevel} out of 5`}
+                title={`Skill Level ${techObj.skillLevel} out of 5 in ${techObj.name}`}
               >
                 Skill Level &nbsp;{techObj.skillLevel}
               </meter>
