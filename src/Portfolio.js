@@ -3,6 +3,7 @@ import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
 import HeaderLogo from "./components/HeaderLogo";
 import { ProjectCard } from "./components/ProjectCard";
+import { ProjectDetail } from "./components/ProjectDetail";
 import { ProjectList } from "./components/ProjectList";
 import { Resume } from "./components/Resume";
 import { TechSkillLevels } from "./components/TechSkillLevels";
@@ -23,6 +24,7 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
+      <ProjectDetail />
       <TechSkillLevels allTechObjects={allTechObjects} />
       <ProjectList />
       <TechStack allTechObjects={allTechObjects} />
