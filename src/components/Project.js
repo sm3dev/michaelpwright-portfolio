@@ -108,6 +108,32 @@ export const Project = ({ projectObj }) => {
       <h2 className="process__heading">{projectObj.processHeading}</h2>
       <p className="process__subtitle heading__subtitle">The Process</p>
       <p className="process__text">{projectObj.processText}</p>
+      <hr className="section__divider" />{" "}
+      <h2 className="lessons-learned__heading">{projectObj.lessonsHeading}</h2>
+      <p className="lessons-learned__subtitle heading__subtitle">
+        Lessons Learned
+      </p>
+      <p className="lessons-learned__text">{projectObj.lessonsText}</p>
+      <section className="project-links-button__block">
+        <a
+          href={projectObj.linkToSite}
+          className="project-button__link"
+          target="_blank"
+          title="Visit live website"
+        >
+          {" "}
+          <button className="project-links__button">Live Site</button>
+        </a>
+        <a
+          href={projectObj.linkRepo}
+          className="project-button__link"
+          target="_blank"
+          title="Visit GitHub Repository"
+        >
+          {" "}
+          <button className="project-links__button">GitHub Repo</button>
+        </a>
+      </section>
     </section>
   );
 };
