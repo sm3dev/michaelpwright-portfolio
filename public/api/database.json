@@ -5,15 +5,33 @@
       "firstName": "Michael",
       "middleInitial": "P",
       "lastName": "Wright",
+      "displayName": "Michael P. Wright",
+      "jobTitle": "UX Developer",
       "headshot": "michaelpwright-laugh-selfie-800px.jpg",
       "homepageURL": "https://www.michaelpwright.com",
       "linkedIn": "https://www.linkedin.com/in/mpw",
       "gitHub": "https://github.com/sm3dev",
-      "email": "mrwry7@gmail.com"
+      "email": "mrwry7@gmail.com",
+      "aboutMeIntro": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub. \nfor getting students employment and showcasing the UI/UX knowledge and talent.",
+      "personalInfo1": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "personalInfo2": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "photoCollage": "placeholder-image.gif",
+      "photoCollageLink": "https://github.com/sm3dev",
+      "accoladeIntroText": "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment",
+      "testimonialsIntroText": "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment",
+      "additionalPhoto": "placeholder-image.gif",
+      "additionalPhotoLink": "https://github.com/sm3dev"
     }
   ],
+  "testimonials": [
+    { "id": 1, "personFullName": "", "testimony": "", "userId": 1 },
+    { "id": 2, "personFullName": "", "testimony": "", "userId": 1 },
+    { "id": 3, "personFullName": "", "testimony": "", "userId": 1 },
+    { "id": 4, "personFullName": "", "testimony": "", "userId": 1 }
+  ],
+
   "userAccolades": [
-    { "id": 1, "accoladeText": "" },
+    { "id": 1, "accoladeText": "", "userId": 1 },
     { "id": 2, "accoladeText": "" },
     { "id": 3, "accoladeText": "" },
     { "id": 4, "accoladeText": "" }
@@ -253,7 +271,7 @@
       "processImage": "placeholder-image.gif",
       "processImageLink": "https://google.com",
       "lessonsHeading": "Lessons Learned",
-      "leassonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "lessonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
       "video": "placeholder-video.gif"
     },
     {
@@ -278,7 +296,7 @@
       "processImage": "placeholder-image.gif",
       "processImageLink": "https://google.com",
       "lessonsHeading": "Lessons Learned",
-      "leassonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "lessonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
       "video": "placeholder-video.gif"
     },
     {
@@ -303,7 +321,7 @@
       "processImage": "placeholder-image.gif",
       "processImageLink": "https://google.com",
       "lessonsHeading": "Lessons Learned",
-      "leassonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "lessonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
       "video": "placeholder-video.gif"
     },
     {
@@ -328,7 +346,7 @@
       "processImage": "placeholder-image.gif",
       "processImageLink": "https://google.com",
       "lessonsHeading": "Lessons Learned",
-      "leassonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
+      "lessonsText": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
       "video": "placeholder-video.gif"
     }
   ],
@@ -361,7 +379,7 @@
     },
     {
       "id": 2,
-      "tagline": "Michael Wright is a User Interface Engineer based in Huntsville."
+      "tagline": "Michael Wright is a UX Developer based in Huntsville."
     },
     {
       "id": 3,
@@ -383,7 +401,6 @@
     { "id": 8, "text": "I type “?” after questions" },
     { "id": 9, "text": "My brain is locked in Solution Orientation" }
   ],
-  "testimonials": [{ "id": 1, "personFullName": "", "testimony": "" }],
   "aboutQuotes": [
     { "id": 1, "author": "", "quoteText": "" },
     { "id": 2, "author": "", "quoteText": "" },

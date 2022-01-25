@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { About } from "./components/About";
 import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
 import HeaderLogo from "./components/HeaderLogo";
@@ -26,7 +27,8 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-      <ProjectDetail allProjects={allProjects} />
+      <About />
+      {/* <ProjectDetail allProjects={allProjects} /> */}
       {/* <TechSkillLevels allTechObjects={allTechObjects} />
       <ProjectList />
       <TechStack allTechObjects={allTechObjects} />
