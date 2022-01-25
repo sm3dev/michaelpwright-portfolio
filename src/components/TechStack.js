@@ -21,7 +21,7 @@ export const TechStack = () => {
   return (
     <section className="technologies__block">
       <p className="technologies__title">Technologies Used Here</p>
-      <ul className="technologies__list">
+      <ul className="technologies__list list-item__no-bullet list--no-padding-inline-left">
         {allTechObjects.map((techObj) => (
           <li
             key={techObj.id}
