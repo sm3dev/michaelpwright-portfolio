@@ -62,7 +62,7 @@ export const Project = ({ projectObj }) => {
         </figcaption>
       </figure>
       <h2 className="challenge__heading">{projectObj.challengeHeading}</h2>
-      <p className="challenge__subtitle heading__subtitle">The Challenge</p>
+      <p className="challenge__subtitle subheading__text">The Challenge</p>
       <p className="challenge__text">{projectObj.challengeText}</p>
       <hr className="section__divider" />{" "}
       <figure className="goals-image__block">
@@ -84,7 +84,7 @@ export const Project = ({ projectObj }) => {
         </figcaption>
       </figure>
       <h2 className="goals__heading">{projectObj.goalsHeading}</h2>
-      <p className="goals__subtitle heading__subtitle">Goals and Constraints</p>
+      <p className="goals__subtitle subheading__text">Goals and Constraints</p>
       <p className="goals__text">{projectObj.goalsText}</p>
       <hr className="section__divider" />{" "}
       <figure className="process-image__block">
@@ -106,11 +106,11 @@ export const Project = ({ projectObj }) => {
         </figcaption>
       </figure>
       <h2 className="process__heading">{projectObj.processHeading}</h2>
-      <p className="process__subtitle heading__subtitle">The Process</p>
+      <p className="process__subtitle subheading__text">The Process</p>
       <p className="process__text">{projectObj.processText}</p>
       <hr className="section__divider" />{" "}
       <h2 className="lessons-learned__heading">{projectObj.lessonsHeading}</h2>
-      <p className="lessons-learned__subtitle heading__subtitle">
+      <p className="lessons-learned__subtitle subheading__text">
         Lessons Learned
       </p>
       <p className="lessons-learned__text">{projectObj.lessonsText}</p>

@@ -1,6 +1,7 @@
 @import "/src/styles/ComingSoon.scss";
 @import "/src/styles/TechSkillLevels.scss";
 @import "/src/styles/TechStack.scss";
+@import "/src/styles/_colors.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
@@ -59,4 +60,11 @@ img {
 .list--no-padding-inline-left {
   padding-inline-start: 0;
   padding-left: 0;
+}
+
+.subheading__text {
+  margin-block-start: 0;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  color: grey;
 }
