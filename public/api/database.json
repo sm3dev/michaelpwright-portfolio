@@ -5,7 +5,7 @@
       "firstName": "Michael",
       "middleInitial": "P",
       "lastName": "Wright",
-      "displayName":"Michael P. Wright",
+      "displayName": "Michael P. Wright",
       "jobTitle": "UX Developer",
       "headshot": "michaelpwright-laugh-selfie-800px.jpg",
       "homepageURL": "https://www.michaelpwright.com",
@@ -18,12 +18,16 @@
       "photoCollage": "placeholder-image.gif",
       "photoCollageLink": "https://github.com/sm3dev",
       "accoladeIntroText": "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment",
-      "testimonialsIntroText": "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment"
+      "testimonialsIntroText": "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment",
+      "additionalPhoto": "placeholder-image.gif",
+      "additionalPhotoLink": "https://github.com/sm3dev"
     }
   ],
   "testimonials": [
     { "id": 1, "personFullName": "", "testimony": "", "userId": 1 },
-    { "id": 2, "personFullName": "", "testimony": "", "userId": 1 }
+    { "id": 2, "personFullName": "", "testimony": "", "userId": 1 },
+    { "id": 3, "personFullName": "", "testimony": "", "userId": 1 },
+    { "id": 4, "personFullName": "", "testimony": "", "userId": 1 }
   ],
 
   "userAccolades": [
@@ -375,7 +379,7 @@
     },
     {
       "id": 2,
-      "tagline": "Michael Wright is a User Interface Engineer based in Huntsville."
+      "tagline": "Michael Wright is a UX Developer based in Huntsville."
     },
     {
       "id": 3,
