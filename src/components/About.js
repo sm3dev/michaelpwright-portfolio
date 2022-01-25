@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import HeaderLogo from "./HeaderLogo";
 
 export const About = () => {
   const [aboutUser, setaboutUser] = useState({});
@@ -14,19 +15,25 @@ export const About = () => {
   }, []);
 
   return (
-    <section className="about__content">
-      <div className="about-headshot__block">
-        <img
-          src={`../images/${aboutUser.headshot}`}
-          alt="Michael P Wright headshot"
-          className="about-headshot__image"
-        />
-      </div>
+    <>
+      <HeaderLogo />
+      <section className="about__content">
+        <div className="about-headshot__block">
+          <img
+            src={`../images/${aboutUser.headshot}`}
+            alt="Michael P Wright headshot"
+            className="about-headshot__image"
+          />
+        </div>
 
-      <section className="about__greeting-text">
-        <h2 className="greeting__heading">I'm {aboutUser.displayName}</h2>
-        <p className="greeting__job-title subheading__text">{aboutUser.jobTitle}</p>
+        <section className="about__greeting-text">
+          <h2 className="greeting__heading">I'm {aboutUser.displayName}</h2>
+          <p className="greeting__job-title subheading__text">
+            {aboutUser.jobTitle}
+          </p>
+          <p className="about__intro-text">{aboutUser.aboutMeIntro}</p>
+        </section>
       </section>
-    </section>
+    </>
   );
 };
