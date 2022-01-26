@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { About } from "./components/About";
 import { ComingSoon } from "./components/ComingSoon";
 import { Footer } from "./components/Footer";
-import HeaderLogo from "./components/HeaderLogo";
 import { HomeHero } from "./components/HomeHero";
 import { ProjectCard } from "./components/ProjectCard";
 import { ProjectDetail } from "./components/ProjectDetail";
