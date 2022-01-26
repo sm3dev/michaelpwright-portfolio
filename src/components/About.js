@@ -87,7 +87,7 @@ export const About = () => {
           </blockquote>
         </section>
 
-        <section className="testimonies__block">
+        <section className="testimonial__block">
           <h2 className="testimony__heading">What Teammates Say</h2>
           <section className="testimony-item__block">
             <p className="accolade__text">Sometimes right!</p>

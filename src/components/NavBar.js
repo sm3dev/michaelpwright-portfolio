@@ -3,7 +3,7 @@ import "../styles/HeaderNav.scss";
 
 export const NavBar = () => {
   return (
-    <section className="nav__block">
+    <section id="navBar">
       <ul className="">
         <li className="nav-item">
           <a className="nav-link" aria-current="page" href="/Projects">
