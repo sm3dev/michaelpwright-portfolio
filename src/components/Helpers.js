@@ -15,3 +15,12 @@ export const getMatch = (id, comparisonArray) => {
 export const getRandomObj = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
+
+// The function should accept an array, a string(name of an object property), and an array(the initial state array to be set by useState)
+export const getArrayFromValues = (
+  originalArray,
+  propertyName
+) => {
+  let newArray = originalArray.map((object) => object.propertyName);
+  return newArray;
+};

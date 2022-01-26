@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getRandomObj } from "./Helpers";
+import { getArrayFromValues, getRandomObj } from "./Helpers";
 
 export const HeroTagline = () => {
   const [heroTaglines, setHeroTaglines] = useState([]);
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
-  //   const getNewRandomTagline =
   const taglinesTextArray = (arrayOfTaglines) => {
     let newArray = arrayOfTaglines.map((taglineObj) => taglineObj.text);
     console.log(newArray);
