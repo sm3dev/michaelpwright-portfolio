@@ -4,22 +4,20 @@ import { getRandomObj } from "./Helpers";
 export const HeroTagline = () => {
   const [heroTaglines, setHeroTaglines] = useState([]);
 
-  const getNewRandomTagline = () => {
+  //   const getNewRandomTagline =
+  const taglinesTextArray = () => {
+    let newArray = [];
+    heroTaglines.map((taglineObj) => newArray.push(taglineObj.text));
 
-    const taglinesText = [];
-    // for every "text" property push the string into a new array
-
-    // then return the array
-
-    getRandomObj(heroTaglines);
+    return newArray;
   };
 
   useEffect(() => {
     fetch("api/database.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.heroTaglines);
         setHeroTaglines(data.heroTaglines);
+        taglinesTextArray();
       });
   }, []);
 
