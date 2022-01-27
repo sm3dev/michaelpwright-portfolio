@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeaderLogo from "./HeaderLogo";
 
-export const About = () => {
+export const About = ({ user }) => {
   const [aboutUser, setaboutUser] = useState({});
 
   useEffect(() => {

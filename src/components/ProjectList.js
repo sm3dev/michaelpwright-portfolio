@@ -1,23 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { NavBar } from "./NavBar";
 import { ProjectCard } from "./ProjectCard";
 
-export const ProjectList = () => {
-  const [allProjects, setAllProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setAllProjects(data.projects);
-        console.log(data.projects);
-      });
-  }, []);
-
+export const ProjectList = ({ allProjects }) => {
   return (
-    <main className="project-list__block">
-      {allProjects.map((projectObj) => (
-        <ProjectCard key={projectObj.id} projectObj={projectObj} />
-      ))}
-    </main>
+    <>
+      <NavBar />
+      <main className="project-list__block">
+        {allProjects.map((projectObj) => (
+          <ProjectCard key={projectObj.id} projectObj={projectObj} />
+        ))}
+      </main>
+    </>
   );
 };
