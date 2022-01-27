@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import { TechStack } from "./TechStack";
 
 export const ProjectCard = ({ projectObj }) => {
@@ -24,12 +25,10 @@ export const ProjectCard = ({ projectObj }) => {
       <h3 className="project-card-title__text">
         {" "}
         <a href="" className="project-detail__link">
-        {projectObj.name}
+          {projectObj.name}
         </a>{" "}
       </h3>
-      <p className="project-card__description">
-        {projectObj.description}
-      </p>
+      <p className="project-card__description">{projectObj.description}</p>
       <p className="project-card-read-more__block">
         {" "}
         <a href="#" className="project-detail__link">

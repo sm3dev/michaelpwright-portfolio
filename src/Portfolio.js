@@ -4,6 +4,8 @@ import { About } from "./components/About";
 import { ContactMe } from "./components/ContactMe";
 import { Footer } from "./components/Footer";
 import { HomeHero } from "./components/HomeHero";
+import { Project } from "./components/Project";
+import { ProjectDetail } from "./components/ProjectDetail";
 import { ProjectList } from "./components/ProjectList";
 
 export const Portfolio = () => {
@@ -31,15 +33,6 @@ export const Portfolio = () => {
 
   return (
     <div className="page">
-      <Routes>
-        <Route path="/" element={<HomeHero user={user} />} />
-        <Route
-          path="projects"
-          element={<ProjectList allProjects={allProjects} />}
-        ></Route>
-        <Route path="/about-me" element={<About user={user} />} />
-        <Route path="/contact" element={<ContactMe />} />
-      </Routes>
       {/* <About /> */}
       {/* <ProjectDetail allProjects={allProjects} /> */}
       {/* <TechSkillLevels allTechObjects={allTechObjects} /> */}
