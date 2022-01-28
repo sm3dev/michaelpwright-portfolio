@@ -6,6 +6,7 @@ import { ContactMe } from "./components/ContactMe";
 import { HomeHero } from "./components/HomeHero";
 import { NavBar } from "./components/NavBar";
 import { Project } from "./components/Project";
+import { ProjectDetail } from "./components/ProjectDetail";
 import { ProjectList } from "./components/ProjectList";
 import { Portfolio } from "./Portfolio";
 import "./styles/_global.scss";
@@ -16,6 +17,8 @@ ReactDOM.render(
       <Route path="/" element={<Portfolio />}>
         <Route index element={<HomeHero />} />
         <Route path="projects" element={<ProjectList />}>
+          <Route index element={<ProjectList />} />
+          <Route path="project-focus" element={<ProjectDetail />} />
           <Route path=":projectId" element={<Project />} />
         </Route>
         <Route path="about-me" element={<About />} />

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { NavBar } from "./NavBar";
+import { Outlet } from "react-router-dom";
+import HeaderLogo from "./HeaderLogo";
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectList = () => {
   const [allProjects, setAllProjects] = useState([]);
-  const [projectList, setProjectList] = useState([]);
 
   useEffect(() => {
     fetch("api/database.json")
@@ -12,18 +12,19 @@ export const ProjectList = () => {
       .then((data) => {
         console.log(data.projects);
         setAllProjects(data.projects);
-        setProjectList(data.projects);
       });
   }, []);
 
   return (
     <>
-      {/* <NavBar /> */}
+      <HeaderLogo />
+      
       <section className="project-list__block">
-        {projectList.map((projectObj) => (
+        {allProjects.map((projectObj) => (
           <ProjectCard key={projectObj.id} projectObj={projectObj} />
         ))}
       </section>
+      <Outlet />
     </>
   );
 };

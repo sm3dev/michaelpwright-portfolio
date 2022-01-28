@@ -1,8 +1,11 @@
 import React from "react";
-// import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { TechStack } from "./TechStack";
 
 export const ProjectCard = ({ projectObj }) => {
+  let { projectId } = useParams();
+  let navigate = useNavigate()
+
   // const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
   return (
@@ -19,6 +22,7 @@ export const ProjectCard = ({ projectObj }) => {
             src={require(`../images/${projectObj.thumbnail}`).default}
             alt={`${projectObj.name} thumbnail`}
             className="project-card__thumbnail-image"
+            onClick={() => navigate(`${projectId}`)}
           />
         </a>
       </section>
