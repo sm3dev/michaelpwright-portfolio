@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
-import { Footer } from "./components/Footer";
 
-export const Portfolio = () => {
+export const DataManager = () => {
   const [allNavTaglines, setAllNavTaglines] = useState([]);
   const [allTechObjects, setAllTechObjects] = useState([]);
   const [allProjects, setAllProjects] = useState([]);
@@ -25,16 +23,5 @@ export const Portfolio = () => {
       });
   }, []);
 
-  return (
-    <div className="page">
-      {/* <About /> */}
-      {/* <ProjectDetail allProjects={allProjects} /> */}
-      {/* <TechSkillLevels allTechObjects={allTechObjects} /> */}
-      {/* <ProjectList /> */}
-      {/* <TechStack allTechObjects={allTechObjects} /> */}
-      {/* <ComingSoon /> */}
-      <Outlet />
-      <Footer />
-    </div>
-  );
+  return <></>;
 };

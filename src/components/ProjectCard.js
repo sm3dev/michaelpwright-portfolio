@@ -1,9 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { TechStack } from "./TechStack";
 
 export const ProjectCard = ({ projectObj }) => {
-  const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
+  // const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
   return (
     <article className="project__card">

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import HeaderLogo from "./HeaderLogo";
 
-export const About = ({ user }) => {
-  const [aboutUser, setaboutUser] = useState({});
+export const About = () => {
+  const [aboutUser, setAboutUser] = useState({});
 
   useEffect(() => {
     fetch("api/database.json")
@@ -10,7 +10,7 @@ export const About = ({ user }) => {
       .then((data) => {
         let firstUser = data.users[0];
         console.log(firstUser);
-        setaboutUser(firstUser);
+        setAboutUser(firstUser);
       });
   }, []);
 
