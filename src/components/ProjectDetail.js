@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Project } from "./Project";
+import { ProjectNav } from "./ProjectNav";
 
 export const ProjectDetail = () => {
   const [allProjects, setAllProjects] = useState([]);
@@ -16,12 +17,7 @@ export const ProjectDetail = () => {
 
   return (
     <section className="project-detail-view-">
-      <nav className="project__nav">
-        <div className="nav-left__arrow">&#60;</div>
-        <p className="project-name__page-title">Page Title</p>
-        <div className="nav-right__arrow">&#62;</div>
-        <Link to="project-focus">OK</Link>
-      </nav>
+      <ProjectNav />
       <Outlet />
       {allProjects.map((projectObj) => (
         <Project key={projectObj.id} projectObj={projectObj} />

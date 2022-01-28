@@ -19,10 +19,10 @@ export const ProjectCard = ({ projectObj }) => {
         >
           {" "}
           <img
-            src={require(`../images/${projectObj.thumbnail}`).default}
+            src={`./images/${projectObj.thumbnail}`}
             alt={`${projectObj.name} thumbnail`}
             className="project-card__thumbnail-image"
-            onClick={() => navigate(`${projectId}`)}
+            onClick={() => navigate(`${projectObj.id}`)}
           />
         </a>
       </section>

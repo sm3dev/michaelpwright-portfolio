@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import HeaderLogo from "./HeaderLogo";
 import { ProjectCard } from "./ProjectCard";
 
@@ -18,6 +18,7 @@ export const ProjectList = () => {
   return (
     <>
       <HeaderLogo />
+      <Link to="project-focus">Details Page</Link>
       
       <section className="project-list__block">
         {allProjects.map((projectObj) => (
