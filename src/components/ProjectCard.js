@@ -13,7 +13,7 @@ export const ProjectCard = ({ projectObj }) => {
       <section className="project-card__thumbmail">
         {" "}
         <Link
-          to={`project-focus/${projectObj.id}`}
+          to={`${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="project-card__link project-detail__link"
         >
@@ -26,7 +26,7 @@ export const ProjectCard = ({ projectObj }) => {
       </section>
       <h3 className="project-card-title__text">
         {" "}
-        <a href={`project-focus/${projectObj.id}`} className="project-detail__link">
+        <a href={`${projectObj.id}`} className="project-detail__link">
           {projectObj.name}
         </a>{" "}
       </h3>
