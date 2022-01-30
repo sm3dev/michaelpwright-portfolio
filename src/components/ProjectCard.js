@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { TechStack } from "./TechStack";
 
 export const ProjectCard = ({ projectObj }) => {
   let { projectId } = useParams();
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
   // const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
@@ -12,23 +12,21 @@ export const ProjectCard = ({ projectObj }) => {
     <article className="project__card">
       <section className="project-card__thumbmail">
         {" "}
-        <a
-          href="#"
-          title="Project Name Details"
+        <Link
+          to={`project-focus/${projectObj.id}`}
+          title={`${projectObj.name} Details`}
           className="project-card__link project-detail__link"
         >
-          {" "}
           <img
             src={`./images/${projectObj.thumbnail}`}
             alt={`${projectObj.name} thumbnail`}
             className="project-card__thumbnail-image"
-            onClick={() => navigate(`${projectObj.id}`)}
           />
-        </a>
+        </Link>
       </section>
       <h3 className="project-card-title__text">
         {" "}
-        <a href="" className="project-detail__link">
+        <a href={`project-focus/${projectObj.id}`} className="project-detail__link">
           {projectObj.name}
         </a>{" "}
       </h3>

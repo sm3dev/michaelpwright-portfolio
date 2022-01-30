@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import HeaderLogo from "./HeaderLogo";
 import { ProjectNav } from "./ProjectNav";
 
 export const Project = ({ projectObj }) => {
+  const { projectId } = useParams();
+
+  const [currentProject, setCurrentProject] = useState({});
+
+  useEffect(() => {
+    fetch("api/database.json/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data.projects);
+        setCurrentProject(data.projects);
+      });
+  }, []);
+
   return (
     <>
-      {" "}
-      <ProjectNav />
       <section className="project__content">
         <section className="project-overview__section">
           <h1 className="project__name">{projectObj?.name}</h1>
           <div className="desktopMobile-image__block">
             <img
-              src={`./images/${projectObj?.thumbnail}`}
+              src={`../images/${projectObj?.thumbnail}`}
               alt={`${projectObj?.name} thumbnail image`}
               className="desktopMobile__image"
             />

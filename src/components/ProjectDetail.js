@@ -17,10 +17,10 @@ export const ProjectDetail = () => {
 
   return (
     <section className="project-detail-view-">
-      <ProjectNav />
-      <Outlet />
       {allProjects.map((projectObj) => (
-        <Project key={projectObj.id} projectObj={projectObj} />
+        <>
+          <Project key={projectObj.id} projectObj={projectObj} />
+        </>
       ))}
     </section>
   );

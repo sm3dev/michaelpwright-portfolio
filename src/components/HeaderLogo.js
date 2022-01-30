@@ -1,6 +1,7 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 import "../styles/HeaderNav.scss";
+import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png"
 
 
 const HeaderLogo = ({ allNavTaglines }) => {
@@ -11,7 +12,7 @@ const HeaderLogo = ({ allNavTaglines }) => {
       <div className="logo__block">
         {" "}
         <img
-          src="logo512.png"
+          src={mpwMinecraft3DGoldLogo512}
           alt="MPW website logo"
           className="header__logo"
           w="60"
