@@ -1,46 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import HeaderLogo from "./HeaderLogo";
-import { ProjectNav } from "./ProjectNav";
-import projects from "../../public/api/database.json"
+import { getProjectbyID } from "./DataManager";
 
 export const Project = () => {
-  const { projectId } = useParams();
+  const { projectId } = parseInt(useParams());
 
-  const [currentProject, setCurrentProject] = useState({});
-  const [allProjects, setAllProjects] = useState([]);
+  const [projectObj, setProjectObj] = useState({});
 
-  // const getProject = () => {
-  //   let obj = allProjects.find((projectObj) => projectObj.id === projectId);
-  //   setCurrentProject(obj);
-  // };
+  const getProject = () => {
+    getProjectbyID(2);
+  };
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data.projects);
-        setAllProjects(data.projects);
-        const theProjects = data.projects;
-        let obj = theProjects.map((projectObj) => projectObj.id === projectId);
-      setCurrentProject(obj);
-      });
-      
+    setProjectObj(getProject());
   }, []);
 
   return (
     <>
       <section className="project__content">
         <section className="project-overview__section">
-          <h1 className="project__name">{currentProject?.name}</h1>
+          <h1 className="project__name">{projectObj?.name}</h1>
           <div className="desktopMobile-image__block">
             <img
-              src={`../images/${currentProject?.thumbnail}`}
-              alt={`${currentProject?.name} thumbnail image`}
+              src={`../images/${projectObj?.thumbnail}`}
+              alt={`${projectObj?.name} thumbnail image`}
               className="desktopMobile__image"
             />
           </div>
-          <p className="project__description">{currentProject?.description}</p>
+          <p className="project__description">{projectObj?.description}</p>
           <section className="project-video__iframe">
             {/* This could be a good place for the demo video. Ideally the video would sit above the fold */}
 
@@ -52,7 +39,7 @@ export const Project = () => {
           </section>
           <section className="project-links-button__block">
             <a
-              href={currentProject?.linkToSite}
+              href={projectObj?.linkToSite}
               className="project-button__link"
               target="_blank"
               title="Visit live website"
@@ -61,7 +48,7 @@ export const Project = () => {
               <button className="project-links__button">Live Site</button>
             </a>
             <a
-              href={currentProject?.linkRepo}
+              href={projectObj?.linkRepo}
               className="project-button__link"
               target="_blank"
               title="Visit GitHub Repository"
@@ -77,14 +64,14 @@ export const Project = () => {
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
           <img
-            src={`./images/${currentProject?.challengeImage}`}
+            src={`./images/${projectObj?.challengeImage}`}
             alt=""
             className="challenge__image"
           />
           <figcaption>
             {" "}
             <a
-              href={currentProject?.challengeImageLink}
+              href={projectObj?.challengeImageLink}
               className="full-size-image__link"
               target="_blank"
               title="View High Res Image in New Tab"
@@ -93,22 +80,20 @@ export const Project = () => {
             </a>
           </figcaption>
         </figure>
-        <h2 className="challenge__heading">
-          {currentProject?.challengeHeading}
-        </h2>
+        <h2 className="challenge__heading">{projectObj?.challengeHeading}</h2>
         <p className="challenge__subtitle subheading__text">The Challenge</p>
-        <p className="challenge__text">{currentProject?.challengeText}</p>
+        <p className="challenge__text">{projectObj?.challengeText}</p>
         <hr className="section__divider" />{" "}
         <figure className="goals-image__block">
           <img
-            src={`./images/${currentProject?.goalsImage}`}
+            src={`./images/${projectObj?.goalsImage}`}
             alt="goals and constraints image"
             className="goals__image"
           />
           <figcaption>
             {" "}
             <a
-              href={currentProject?.goalsImageLink}
+              href={projectObj?.goalsImageLink}
               className="full-size-image__link"
               target="_blank"
               title="View High Res Image in New Tab"
@@ -117,22 +102,22 @@ export const Project = () => {
             </a>
           </figcaption>
         </figure>
-        <h2 className="goals__heading">{currentProject?.goalsHeading}</h2>
+        <h2 className="goals__heading">{projectObj?.goalsHeading}</h2>
         <p className="goals__subtitle subheading__text">
           Goals and Constraints
         </p>
-        <p className="goals__text">{currentProject?.goalsText}</p>
+        <p className="goals__text">{projectObj?.goalsText}</p>
         <hr className="section__divider" />{" "}
         <figure className="process-image__block">
           <img
-            src={`./images/${currentProject?.processImage}`}
+            src={`./images/${projectObj?.processImage}`}
             alt="project process image "
             className="process__image"
           />
           <figcaption>
             {" "}
             <a
-              href={currentProject?.processImageLink}
+              href={projectObj?.processImageLink}
               className="full-size-image__link"
               target="_blank"
               title="View High Res Image in New Tab"
@@ -141,20 +126,20 @@ export const Project = () => {
             </a>
           </figcaption>
         </figure>
-        <h2 className="process__heading">{currentProject?.processHeading}</h2>
+        <h2 className="process__heading">{projectObj?.processHeading}</h2>
         <p className="process__subtitle subheading__text">The Process</p>
-        <p className="process__text">{currentProject?.processText}</p>
+        <p className="process__text">{projectObj?.processText}</p>
         <hr className="section__divider" />{" "}
         <h2 className="lessons-learned__heading">
-          {currentProject?.lessonsHeading}
+          {projectObj?.lessonsHeading}
         </h2>
         <p className="lessons-learned__subtitle subheading__text">
           Lessons Learned
         </p>
-        <p className="lessons-learned__text">{currentProject?.lessonsText}</p>
+        <p className="lessons-learned__text">{projectObj?.lessonsText}</p>
         <section className="project-links-button__block">
           <a
-            href={currentProject?.linkToSite}
+            href={projectObj?.linkToSite}
             className="project-button__link"
             target="_blank"
             title="Visit live website"
@@ -163,7 +148,7 @@ export const Project = () => {
             <button className="project-links__button">Live Site</button>
           </a>
           <a
-            href={currentProject?.linkRepo}
+            href={projectObj?.linkRepo}
             className="project-button__link"
             target="_blank"
             title="Visit GitHub Repository"

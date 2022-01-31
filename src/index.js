@@ -18,17 +18,8 @@ ReactDOM.render(
         <Route index element={<HomeHero />} />
         <Route path="about-me" element={<About />} />
         <Route path="contact" element={<ContactMe />} />
-        <Route path="projects" element={<ProjectList />}>
-          <Route
-            index
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>Select a Project for More</p>
-              </main>
-            }
-          />
-        </Route>
-        <Route path="projects/:projectId" element={<Project />} />
+        <Route path="projects" element={<ProjectList />} />
+        <Route path="/projects/:projectId" element={<Project />} />
         <Route
           path="*"
           element={

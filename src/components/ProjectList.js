@@ -2,17 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import HeaderLogo from "./HeaderLogo";
 import { ProjectCard } from "./ProjectCard";
+import { getAllProjects } from "./DataManager";
 
 export const ProjectList = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data.projects);
-        setAllProjects(data.projects);
-      });
+    setAllProjects(getAllProjects);
   }, []);
 
   return (

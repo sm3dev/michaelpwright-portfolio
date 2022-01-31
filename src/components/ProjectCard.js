@@ -46,6 +46,7 @@ export const ProjectCard = ({ projectObj }) => {
           </button>
         </a>
       </section>
+      {/* <Project projectObj={projectObj} /> */}
     </article>
   );
 };

@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import HeaderLogo from "./HeaderLogo";
+import { getUserByID } from "./DataManager";
 
 export const About = () => {
   const [aboutUser, setAboutUser] = useState({});
 
+  const getTheUser = () => {
+    return getUserByID(1);
+  };
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let firstUser = data.users[0];
-        console.log(firstUser);
-        setAboutUser(firstUser);
-      });
+    setAboutUser(getTheUser())
   }, []);
 
   return (
