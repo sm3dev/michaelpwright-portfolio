@@ -35,7 +35,7 @@ export const About = () => {
         <figure className="photo-collage__block">
           <img
             src={`../images/${aboutUser.photoCollage}`}
-            alt={`${aboutUser.displayName} personal photo collage`}
+            alt={`${aboutUser.displayName} personal collage`}
             className="photo-collage__image"
           />
           <figcaption>

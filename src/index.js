@@ -1,39 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About } from "./components/About";
-import { ContactMe } from "./components/ContactMe";
-import { HomeHero } from "./components/HomeHero";
-import { NavBar } from "./components/NavBar";
-import { Project } from "./components/Project";
-import { ProjectDetail } from "./components/ProjectDetail";
-import { ProjectList } from "./components/ProjectList";
 import { Portfolio } from "./Portfolio";
 import "./styles/_global.scss";
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Portfolio />}>
-        <Route index element={<HomeHero />} />
-        <Route path="about-me" element={<About />} />
-        <Route path="contact" element={<ContactMe />} />
-        <Route path="projects" element={<ProjectList />} />
-        <Route path="/projects/:projectId" element={<Project />} />
-        <Route
-          path="*"
-          element={
-            <>
-              {" "}
-              <NavBar />
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
-              </main>
-            </>
-          }
-        />
-      </Route>
+      <Route path="/" element={<Portfolio />} />
     </Routes>
   </BrowserRouter>,
-  document.getElementById("root")
+  rootElement
 );

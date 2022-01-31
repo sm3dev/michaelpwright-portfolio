@@ -3,17 +3,19 @@ import { useParams } from "react-router-dom";
 import { getProjectbyID } from "./DataManager";
 
 export const Project = () => {
-  const { projectId } = parseInt(useParams());
-
+  const { projectId } = useParams();
+  console.log(projectId);
   const [projectObj, setProjectObj] = useState({});
 
   const getProject = () => {
-    getProjectbyID(2);
+    return getProjectbyID(projectId);
   };
 
   useEffect(() => {
-    setProjectObj(getProject());
-  }, []);
+    setProjectObj(getProjectbyID(projectId));
+
+    // setProjectObj(getProject());
+  }, [projectId]);
 
   return (
     <>
@@ -23,7 +25,7 @@ export const Project = () => {
           <div className="desktopMobile-image__block">
             <img
               src={`../images/${projectObj?.thumbnail}`}
-              alt={`${projectObj?.name} thumbnail image`}
+              alt={`${projectObj?.name} thumbnail`}
               className="desktopMobile__image"
             />
           </div>
