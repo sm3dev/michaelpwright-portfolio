@@ -1,33 +1,33 @@
 import React, { useEffect, useState } from "react";
-import { getArrayFromValues, getRandomObj } from "./Helpers";
+import { getRandomObj } from "./Helpers";
+import { getHeroTaglines } from "./DataManager";
 
 export const HeroTagline = () => {
-  const [heroTaglines, setHeroTaglines] = useState([]);
+  const [originalTaglineObjects, setOriginalTaglineObjects] = useState([]);
   const [taglineTextArray, setTaglineTextArray] = useState([]);
+  const [oneTagline, setOneTagline] = useState("");
 
-  const taglinesTextArray = (arrayOfTaglines) => {
-    let newArray = arrayOfTaglines.map((taglineObj) => taglineObj.text);
+  const makeTaglinesTextArray = () => {
+    let newArray = originalTaglineObjects.map((taglineObj) => taglineObj.text);
     console.log(newArray);
-    setTaglineTextArray(newArray);
+    return newArray;
+  };
+
+  const grabOneTagline = () => {
+    return getRandomObj(taglineTextArray);
   };
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setHeroTaglines(data.heroTaglines);
-        taglinesTextArray(data.heroTaglines);
-      });
+    setOriginalTaglineObjects(getHeroTaglines);
+    setTaglineTextArray(makeTaglinesTextArray);
   }, []);
 
+  useEffect(() => {
+    setOneTagline(grabOneTagline());
+  }, []);
   return (
-    <>
-      <p>{getRandomObj(taglineTextArray)}</p>
-      {/* {heroTaglines.map((tagLineObj) => (
-        <p key={tagLineObj.id} className="hero__tagline">
-          {tagLineObj.text}
-        </p>
-      ))} */}
-    </>
+    <div>
+      <p>{oneTagline}</p>
+    </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Resume = () => {
   return (
-    <div className="resume__block theme__dark">
+    <article className="resume__block theme__dark">
       <h2 className="resume__title">Résumé</h2>
       <section className="download-resume__block">
         <button className="download-resume__button">
@@ -98,6 +98,6 @@ export const Resume = () => {
           <span className="icon pdf__icon">😄</span> Download PDF
         </button>
       </section>
-    </div>
+    </article>
   );
 };

@@ -1,25 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import { Project } from "./Project";
+import { ProjectNav } from "./ProjectNav";
 
 export const ProjectDetail = () => {
   const [allProjects, setAllProjects] = useState([]);
+
   useEffect(() => {
     fetch("api/database.json")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data.projects);
         setAllProjects(data.projects);
       });
   }, []);
 
   return (
     <section className="project-detail-view-">
-      <section className="project__nav">
-        <div className="nav-left__arrow">&#60;</div>
-        <p className="project-name__page-title"></p>
-        <div className="nav-right__arrow">&#62;</div>
-      </section>
       {allProjects.map((projectObj) => (
-        <Project key={projectObj.id} projectObj={projectObj} />
+        <>
+          <Project key={projectObj.id} projectObj={projectObj} />
+        </>
       ))}
     </section>
   );

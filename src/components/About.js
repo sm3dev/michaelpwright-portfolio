@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
-import HeaderLogo from "./HeaderLogo";
+import { getUserByID } from "./DataManager";
+import { HeaderLogo } from "./HeaderLogo.js";
 
 export const About = () => {
-  const [aboutUser, setaboutUser] = useState({});
+  const [aboutUser, setAboutUser] = useState({});
 
+  const getTheUser = () => {
+    return getUserByID(1);
+  };
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let firstUser = data.users[0];
-        console.log(firstUser);
-        setaboutUser(firstUser);
-      });
+    setAboutUser(getTheUser())
   }, []);
 
   return (
     <>
-      <HeaderLogo />
+      <HeaderLogo user={aboutUser} />
       <section className="about__content">
         <div className="about-headshot__block">
           <img
@@ -37,7 +35,7 @@ export const About = () => {
         <figure className="photo-collage__block">
           <img
             src={`../images/${aboutUser.photoCollage}`}
-            alt={`${aboutUser.displayName} personal photo collage`}
+            alt={`${aboutUser.displayName} personal collage`}
             className="photo-collage__image"
           />
           <figcaption>
