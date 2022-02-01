@@ -18,12 +18,10 @@ export const getUserByID = (id) => {
 export const getAllProjects = () => {
   return projectsArray;
 };
-export const getProjectbyID = (id) => {
-  console.log(projectsArray);
 
-  const projectObj = projectsArray.find((project) => project.id === id);
-  console.log(projectObj);
-  return projectObj;
+export const getProjectbyID = (id) => {
+  let bingoProject = projectsArray.find((data) => data.id == id);
+  return bingoProject;
 };
 
 export const getNavTaglines = () => {
@@ -44,7 +42,7 @@ export const getTestimonies = () => {
 
 // this function needs to put the useState items into separate arrays
 const getData = () => {
-  fetch("api/database.json")
+  return fetch("api/database.json")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);

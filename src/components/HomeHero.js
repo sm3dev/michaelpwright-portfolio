@@ -12,7 +12,6 @@ export const HomeHero = ({ user }) => {
         .then((res) => res.json())
         .then((data) => {
           let firstUser = data.users[0];
-          console.log(firstUser);
           setPortfolioAuthor(firstUser);
         });
     }, []);

@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProjectbyID } from "./DataManager";
+import { HeaderLogo } from "./HeaderLogo";
 
 export const Project = () => {
-  const { projectId } = useParams();
-  console.log(projectId);
+  let { projectId } = useParams();
   const [projectObj, setProjectObj] = useState({});
-
-  const getProject = () => {
-    return getProjectbyID(projectId);
-  };
 
   useEffect(() => {
     setProjectObj(getProjectbyID(projectId));
-
-    // setProjectObj(getProject());
-  }, [projectId]);
+  }, []);
 
   return (
     <>
+      <HeaderLogo />
       <section className="project__content">
         <section className="project-overview__section">
           <h1 className="project__name">{projectObj?.name}</h1>

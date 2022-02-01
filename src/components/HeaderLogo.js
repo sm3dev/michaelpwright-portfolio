@@ -4,7 +4,7 @@ import "../styles/HeaderNav.scss";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
 import { getNavTaglines } from "./DataManager";
 
-const HeaderLogo = () => {
+export const HeaderLogo = () => {
   const [navTaglines, setNavTaglines] = useState([]);
 
   const taglinesTextArray = () => {
@@ -33,5 +33,3 @@ const HeaderLogo = () => {
     </section>
   );
 };
-
-export default HeaderLogo;
