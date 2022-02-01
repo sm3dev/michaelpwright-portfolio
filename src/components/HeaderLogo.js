@@ -9,7 +9,8 @@ export const HeaderLogo = () => {
   const [navTaglinesTextOnly, setNavTaglinesTextOnly] = useState([]);
 
   const taglinesTextArray = (originalArray) => {
-    let newArray = originalArray.map((taglineObj) => taglineObj.text);
+    let newArray = originalArray.map((taglineObj) => taglineObj.tagline);
+    console.log(newArray);
     return newArray;
   };
 

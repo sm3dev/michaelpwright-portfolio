@@ -46,6 +46,14 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  // color: pink;
+}
+a:visited {
+  color: none;
+}
+
 .text__all-caps {
   text-transform: uppercase;
 }

@@ -4,7 +4,7 @@ import "../styles/HeaderNav.scss";
 
 export const NavBar = () => {
   return (
-    <nav id="navBar" className="nav-lislist-item__no-bullet">
+    <nav id="navBar" className="nav-list list-item__no-bullet text__all-caps">
       <NavLink
         className={({ isActive }) => (isActive ? "activeLink" : "notActive")}
         to="/"
