@@ -1,13 +1,20 @@
 import React from "react";
 
-export const Footer = () => {
+export const Footer = ({ user }) => {
   return (
     <div id="footer">
       <section className="resume__block">
         {" "}
         <p className="resume__text">
-          {" "}
-          <span className="icon pdf__icon">😄</span> Download Résumé
+          <a
+            href={user?.resumeLink}
+            className="download-resume__link"
+            target="_blank"
+            title="Download/View My Résumé"
+            rel="noreferrer"
+          >
+            <span className="icon pdf__icon">😄</span> Download Résumé
+          </a>
         </p>
       </section>
       <section className="social-media__block">
@@ -15,30 +22,33 @@ export const Footer = () => {
         <ul className="social-media__list">
           <li className="social__list-item">
             <a
-              href="https://www.linkedin.com/in/mpw/"
+              href={user?.linkedinIn}
               className="social-media__link link__linkedin"
-              title="Michael P. Wright on LinkedIn"
+              title={`${user?.Michael} on LinkedIn`}
               target="_blank"
+              rel="noreferrer"
             >
               <span className="icon linkedin__icon">😄</span> /mpw
             </a>
           </li>
           <li className="social__list-item">
             <a
-              href="https://github.com/sm3dev"
+              href={user?.gitHub}
               className="social-media__link link__github"
-              title="Michael P. Wright on GitHub"
+              title={`${user?.Michael} on GitHub`}
               target="_blank"
+              rel="noreferrer"
             >
               <span className="icon github__icon">😄</span> /sm3dev
             </a>
           </li>
           <li className="social__list-item">
             <a
-              href="mailto:mrwry7@gmail.com"
+              href={`mailto:${user?.email}`}
               className="social-media__link link__email"
-              title="Email Michael P. Wright"
+              title={`Email ${user?.Michael}`}
               target="_blank"
+              rel="noreferrer"
             >
               <span className="icon email__icon">😄</span> email
             </a>
@@ -50,10 +60,11 @@ export const Footer = () => {
         <p className="copyright__text">
           Copyright&copy; 2022{" "}
           <a
-            href="https://michaelpwright.com"
+            href={user?.homepageURL}
             className="personal-site__link"
-            title="Michael P. Wright Personal Website"
+            title={`${user?.displayName} Personal Website`}
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             Michael P. Wright

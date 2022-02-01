@@ -9,6 +9,8 @@ export const Resume = ({ portfolioAuthor }) => {
           href={portfolioAuthor.resumeLink}
           className="download-resume__link"
           target="_blank"
+          title="Download/View My Résumé"
+          rel="noreferrer"
         >
           <button className="download-resume__button">
             <span className="icon pdf__icon">😄</span> Download PDF
@@ -102,6 +104,8 @@ export const Resume = ({ portfolioAuthor }) => {
           href={portfolioAuthor.resumeLink}
           className="download-resume__link"
           target="_blank"
+          title="Download/View My Résumé"
+          rel="noreferrer"
         >
           <button className="download-resume__button">
             <span className="icon pdf__icon">😄</span> Download PDF

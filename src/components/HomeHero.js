@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 import { HeroTagline } from "./HeroTagline";
 import { NavBar } from "./NavBar";
@@ -31,13 +32,22 @@ export const HomeHero = () => {
           tagline={getRandomObj(taglineTextArray)}
         />
         <figure className="hero headshot__block">
-          <img src={`../images/${portfolioAuthor.headshot}`} alt="headshot" className="hero headshot__image" />
+          <Link to="/about">
+            <img
+              src={`../images/${portfolioAuthor.headshot}`}
+              alt="headshot"
+              className="hero headshot__image"
+            />
+          </Link>
         </figure>
 
         <TechStack />
       </section>{" "}
       <NavBar />
-      <Resume portfolioAuthor={portfolioAuthor} resumeLink={portfolioAuthor.resumeLink} />
+      <Resume
+        portfolioAuthor={portfolioAuthor}
+        resumeLink={portfolioAuthor.resumeLink}
+      />
     </>
   );
 };

@@ -8,9 +8,10 @@
       "displayName": "Michael P. Wright",
       "jobTitle": "UX Developer",
       "headshot": "michaelpwright-laugh-selfie-800px.jpg",
-      "homepageURL": "https://www.michaelpwright.com",
+      "homepageURL": "https://www.michaelpwright.com/",
       "linkedIn": "https://www.linkedin.com/in/mpw",
       "gitHub": "https://github.com/sm3dev",
+      "twitter": "",
       "email": "mrwry7@gmail.com",
       "aboutMeIntro": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub. \nfor getting students employment and showcasing the UI/UX knowledge and talent.",
       "personalInfo1": "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment and showcasing the UI/UX knowledge and talent.",
@@ -25,7 +26,12 @@
     }
   ],
   "testimonials": [
-    { "id": 1, "personFullName": "Brenda L.", "testimony": "You are so determined!", "userId": 1 },
+    {
+      "id": 1,
+      "personFullName": "Brenda L.",
+      "testimony": "You are so determined!",
+      "userId": 1
+    },
     { "id": 2, "personFullName": "", "testimony": "", "userId": 1 },
     { "id": 3, "personFullName": "", "testimony": "", "userId": 1 },
     { "id": 4, "personFullName": "", "testimony": "", "userId": 1 }
@@ -376,19 +382,19 @@
   "navTaglines": [
     {
       "id": 1,
-      "tagline": "Michael Wright wants to rule the world, so it can be measured and improved."
+      "tagline": "Michael wants the Metric System to be as cool as Capitalism."
     },
     {
       "id": 2,
-      "tagline": "Michael Wright is a UX Developer based in Huntsville."
+      "tagline": "Michael is a UX Developer based in Huntsville."
     },
     {
       "id": 3,
-      "tagline": "Michael Wright is a UI/UX Front-End Developer based in Huntsville."
+      "tagline": "Michael is a UI/UX Front-End Developer based in Huntsville."
     },
     {
       "id": 4,
-      "tagline": "Michael Wright wants “w” to be prounced WUH."
+      "tagline": "Michael thinks “w” should be prounced WUH."
     }
   ],
   "heroTaglines": [
@@ -396,7 +402,7 @@
     { "id": 2, "tagline": "I’m a User Interface Engineer" },
     { "id": 3, "tagline": "I’m a Front-End Developer" },
     { "id": 4, "tagline": "I solve UX problems" },
-    { "id": 5, "tagline": "I’m not super in to labels" },
+    { "id": 5, "tagline": "I’m not super into labels" },
     { "id": 6, "tagline": "I would name a dog Bears or Bambi" },
     { "id": 7, "tagline": "I’ve probably looked at your work first" },
     { "id": 8, "tagline": "I type “?” after questions" },
@@ -427,6 +433,11 @@
       "id": 5,
       "author": "Michael P. Wright",
       "quoteText": "I believe in the power of grandiose dreams."
+    },
+    {
+      "id": 6,
+      "author": "M. Night Shyamalan",
+      "quoteText": "Give everything you have in what you do, and don't worry about the outcome...and then do it again."
     }
   ]
 }

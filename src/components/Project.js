@@ -9,7 +9,7 @@ export const Project = () => {
 
   useEffect(() => {
     setProjectObj(getProjectbyID(projectId));
-  }, []);
+  }, [projectId]);
 
   return (
     <>
@@ -39,6 +39,7 @@ export const Project = () => {
               href={projectObj?.linkToSite}
               className="project-button__link"
               target="_blank"
+              rel="noreferrer"
               title="Visit live website"
             >
               {" "}
@@ -48,6 +49,7 @@ export const Project = () => {
               href={projectObj?.linkRepo}
               className="project-button__link"
               target="_blank"
+              rel="noreferrer"
               title="Visit GitHub Repository"
             >
               {" "}
@@ -71,6 +73,7 @@ export const Project = () => {
               href={projectObj?.challengeImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -84,7 +87,7 @@ export const Project = () => {
         <figure className="goals-image__block">
           <img
             src={`../images/${projectObj?.goalsImage}`}
-            alt="goals and constraints image"
+            alt="goals and constraints"
             className="goals__image"
           />
           <figcaption>
@@ -93,6 +96,7 @@ export const Project = () => {
               href={projectObj?.goalsImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -108,7 +112,7 @@ export const Project = () => {
         <figure className="process-image__block">
           <img
             src={`../images/${projectObj?.processImage}`}
-            alt="project process image "
+            alt="project process"
             className="process__image"
           />
           <figcaption>
@@ -117,6 +121,7 @@ export const Project = () => {
               href={projectObj?.processImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -139,6 +144,7 @@ export const Project = () => {
             href={projectObj?.linkToSite}
             className="project-button__link"
             target="_blank"
+            rel="noreferrer"
             title="Visit live website"
           >
             {" "}
@@ -148,6 +154,7 @@ export const Project = () => {
             href={projectObj?.linkRepo}
             className="project-button__link"
             target="_blank"
+            rel="noreferrer"
             title="Visit GitHub Repository"
           >
             {" "}
