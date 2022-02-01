@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { getHeroTaglines } from "./DataManager";
 import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 import { HeroTagline } from "./HeroTagline";
 import { NavBar } from "./NavBar";
@@ -16,10 +15,10 @@ export const HomeHero = () => {
       .then((res) => res.json())
       .then((data) => {
         let firstUser = data.users[0];
+        setPortfolioAuthor(firstUser);
         let taglineOnlyArray = getTaglinesTextArray(data.heroTaglines);
         setTaglineTextArray(taglineOnlyArray);
         setAllHeroTaglines(data.heroTaglines);
-        setPortfolioAuthor(firstUser);
       });
   }, []);
 
@@ -31,14 +30,14 @@ export const HomeHero = () => {
           taglineTextArray={taglineTextArray}
           tagline={getRandomObj(taglineTextArray)}
         />
-        <div className="hero headshot__block">
+        <figure className="hero headshot__block">
           <img src={`../images/${portfolioAuthor.headshot}`} alt="headshot" className="hero headshot__image" />
-        </div>
+        </figure>
 
         <TechStack />
       </section>{" "}
       <NavBar />
-      <Resume resumeLink={portfolioAuthor.resumeLink} />
+      <Resume portfolioAuthor={portfolioAuthor} resumeLink={portfolioAuthor.resumeLink} />
     </>
   );
 };

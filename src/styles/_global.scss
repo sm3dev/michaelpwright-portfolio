@@ -54,6 +54,11 @@ a:visited {
   color: none;
 }
 
+button {
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
 .text__all-caps {
   text-transform: uppercase;
 }
@@ -76,3 +81,4 @@ a:visited {
   letter-spacing: .05rem;
   color: grey;
 }
+
