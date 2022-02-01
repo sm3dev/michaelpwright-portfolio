@@ -61,7 +61,7 @@ export const Project = () => {
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
           <img
-            src={`./images/${projectObj?.challengeImage}`}
+            src={`../images/${projectObj?.challengeImage}`}
             alt=""
             className="challenge__image"
           />
@@ -83,7 +83,7 @@ export const Project = () => {
         <hr className="section__divider" />{" "}
         <figure className="goals-image__block">
           <img
-            src={`./images/${projectObj?.goalsImage}`}
+            src={`../images/${projectObj?.goalsImage}`}
             alt="goals and constraints image"
             className="goals__image"
           />
@@ -107,7 +107,7 @@ export const Project = () => {
         <hr className="section__divider" />{" "}
         <figure className="process-image__block">
           <img
-            src={`./images/${projectObj?.processImage}`}
+            src={`../images/${projectObj?.processImage}`}
             alt="project process image "
             className="process__image"
           />
