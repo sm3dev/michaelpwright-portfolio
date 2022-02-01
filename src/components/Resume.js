@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Resume = () => {
+export const Resume = ({ resumeLink }) => {
   return (
     <article className="resume__block theme__dark">
       <h2 className="resume__title">Résumé</h2>

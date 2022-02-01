@@ -3,14 +3,19 @@ import { NavBar } from "./NavBar";
 import "../styles/HeaderNav.scss";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
 import { getNavTaglines } from "./DataManager";
+import { getRandomObj } from "./Helpers";
 
 export const HeaderLogo = () => {
-  const [navTaglines, setNavTaglines] = useState([]);
+  const [navTaglinesTextOnly, setNavTaglinesTextOnly] = useState([]);
 
-  const taglinesTextArray = () => {
-    let newArray = getNavTaglines.map((taglineObj) => taglineObj.text);
-    setNavTaglines(newArray);
+  const taglinesTextArray = (originalArray) => {
+    let newArray = originalArray.map((taglineObj) => taglineObj.tagline);
+    return newArray;
   };
+
+  useEffect(() => {
+    setNavTaglinesTextOnly(taglinesTextArray(getNavTaglines()));
+  }, []);
 
   return (
     <section className="header">
@@ -27,7 +32,7 @@ export const HeaderLogo = () => {
       <div className="nav-tagline__block">
         {" "}
         {/* This has to has to map through the array object allNavTaglines. Helper function will perform this -- Issue #32 */}
-        <p className="nav-tagline__text"></p>
+        <p className="nav-tagline__text">{getRandomObj(navTaglinesTextOnly)}</p>
       </div>
       <NavBar />
     </section>

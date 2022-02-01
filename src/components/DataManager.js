@@ -39,13 +39,15 @@ export const getHeroTaglines = () => {
 export const getTestimonies = () => {
   return testimonialsArray;
 };
+export const getQuotes = () => {
+  return quotesArray;
+};
 
 // this function needs to put the useState items into separate arrays
 const getData = () => {
   return fetch("api/database.json")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       navTaglinesArray = data.navTaglines;
       techStackObjectsArray = data.techStack;
       projectsArray = data.projects;
