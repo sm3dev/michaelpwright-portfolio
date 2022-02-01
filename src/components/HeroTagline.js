@@ -19,7 +19,7 @@ export const HeroTagline = () => {
 
   useEffect(() => {
     setOriginalTaglineObjects(getHeroTaglines);
-    setTaglineTextArray(makeTaglinesTextArray);
+    setTaglineTextArray(makeTaglinesTextArray());
   }, []);
 
   useEffect(() => {
