@@ -26,7 +26,7 @@ export const Portfolio = () => {
         setAllTechObjects(data.techStack);
         setAllProjects(data.projects);
         setAllUsers(data.users);
-        getFirstUser();
+        setUser(getFirstUser());
         setAllHeroTaglines(data.heroTaglines);
         setAllQuotes(data.aboutQuotes);
         setAllTestimonials(data.testimonials);
@@ -35,7 +35,7 @@ export const Portfolio = () => {
 
   return (
     <>
-      <Outlet databaseData={databaseData} />
+      <Outlet databaseData={databaseData} allNavTaglines={allNavTaglines} />
       <Footer />
     </>
   );

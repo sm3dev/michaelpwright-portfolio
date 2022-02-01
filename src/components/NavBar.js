@@ -4,7 +4,7 @@ import "../styles/HeaderNav.scss";
 
 export const NavBar = () => {
   return (
-    <section id="navBar">
+    <nav id="navBar">
       <ul className="nav-lislist-item__no-bullet">
         <li className="nav-item">
           <NavLink to="/" className="nav-link" aria-current="page">Home</NavLink>
@@ -19,6 +19,6 @@ export const NavBar = () => {
           <NavLink to="/contact" className="nav-link" aria-current="page">Contact</NavLink>
         </li>
       </ul>
-    </section>
+    </nav>
   );
 };
