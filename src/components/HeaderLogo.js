@@ -10,7 +10,6 @@ export const HeaderLogo = () => {
 
   const taglinesTextArray = (originalArray) => {
     let newArray = originalArray.map((taglineObj) => taglineObj.tagline);
-    console.log(newArray);
     return newArray;
   };
 

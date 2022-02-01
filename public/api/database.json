@@ -391,19 +391,41 @@
     }
   ],
   "heroTaglines": [
-    { "id": 1, "text": "But you can call me with a job offer" },
-    { "id": 2, "text": "I’m a User Interface Engineer" },
-    { "id": 3, "text": "I’m a Front-End Developer" },
-    { "id": 4, "text": "I solve UX problems" },
-    { "id": 5, "text": "I’m not super in to labels" },
-    { "id": 6, "text": "I would name a dog Bears or Bambi" },
-    { "id": 7, "text": "I’ve probably looked at your work first" },
-    { "id": 8, "text": "I type “?” after questions" },
-    { "id": 9, "text": "My brain is locked in Solution Orientation" }
+    { "id": 1, "tagline": "But you can call me with a job offer" },
+    { "id": 2, "tagline": "I’m a User Interface Engineer" },
+    { "id": 3, "tagline": "I’m a Front-End Developer" },
+    { "id": 4, "tagline": "I solve UX problems" },
+    { "id": 5, "tagline": "I’m not super in to labels" },
+    { "id": 6, "tagline": "I would name a dog Bears or Bambi" },
+    { "id": 7, "tagline": "I’ve probably looked at your work first" },
+    { "id": 8, "tagline": "I type “?” after questions" },
+    { "id": 9, "tagline": "My brain is locked in Solution Orientation" }
   ],
   "aboutQuotes": [
-    { "id": 1, "author": "", "quoteText": "" },
-    { "id": 2, "author": "", "quoteText": "" },
-    { "id": 3, "author": "", "quoteText": "" }
+    {
+      "id": 1,
+      "author": "Kezia Williams",
+      "quoteText": "Any hand that has the power to feed you has the power to starve you."
+    },
+    {
+      "id": 2,
+      "author": "Seth Godin",
+      "quoteText": "Every good idea starts as a new idea."
+    },
+    {
+      "id": 3,
+      "author": "Aiden M. Wright",
+      "quoteText": "Sometimes, I sleep on myself."
+    },
+    {
+      "id": 4,
+      "author": "Maddalyn H. Wright, when asked if she slept well",
+      "quoteText": "Yes, but I had 0% dreams."
+    },
+    {
+      "id": 5,
+      "author": "Michael P. Wright",
+      "quoteText": "I believe in the power of grandiose dreams."
+    }
   ]
 }

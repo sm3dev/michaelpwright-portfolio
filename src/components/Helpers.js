@@ -16,3 +16,8 @@ export const getRandomObj = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
+// Creates a new Array with only the values from the given property "tagline"
+export const getTaglinesTextArray = (array) => {
+  let newArray = array.map((taglineObj) => taglineObj.tagline);
+    return newArray;
+} 
