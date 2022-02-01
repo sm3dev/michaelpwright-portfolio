@@ -36,6 +36,8 @@ export const Portfolio = () => {
   return (
     <>
       <Outlet databaseData={databaseData} allNavTaglines={allNavTaglines} />
+
+      {/* Footer needs to have user prop passed into it */}
       <Footer />
     </>
   );
