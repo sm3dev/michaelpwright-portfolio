@@ -67,7 +67,7 @@ export const Footer = ({ user }) => {
             rel="noreferrer"
           >
             {" "}
-            Michael P. Wright
+            {user?.displayName}
           </a>
         </p>{" "}
       </section>
