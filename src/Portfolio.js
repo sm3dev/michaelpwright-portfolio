@@ -24,7 +24,6 @@ export const Portfolio = () => {
       .then((data) => {
         let usersArray = data.users;
         setUser(getUserById(usersArray, 1));
-        console.log(data.projects);
         setAllProjects(data.projects);
         setAllNavTaglines(data.navTaglines);
         setAllHeroTaglines(data.heroTaglines);
@@ -57,16 +56,24 @@ export const Portfolio = () => {
         <Route path="/contact" element={<ContactMe user={user} />} />
         <Route
           path="/projects"
-          element={<ProjectsMain allNavTaglines={allNavTaglines} />}
+          element={
+            <>
+              <HeaderLogo allNavTaglines={allNavTaglines} />
+              <ProjectsMain />
+            </>
+          }
         />
         <Route
           path="/projects/all-projects"
           element={
-            <ProjectList
-              allProjects={allProjects}
-              allTechStackItems={allTechStackItems}
-              allNavTaglines={allNavTaglines}
-            />
+            <>
+              <HeaderLogo allNavTaglines={allNavTaglines} />
+              <ProjectList
+                allProjects={allProjects}
+                allTechStackItems={allTechStackItems}
+                allNavTaglines={allNavTaglines}
+              />
+            </>
           }
         />
         <Route
@@ -76,7 +83,6 @@ export const Portfolio = () => {
               <HeaderLogo allNavTaglines={allNavTaglines} />
               <Project
                 allProjects={allProjects}
-                allNavTaglines={allNavTaglines}
               />
             </>
           }

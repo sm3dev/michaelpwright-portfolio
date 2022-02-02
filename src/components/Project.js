@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-export const Project = ({ allProjects, allNavTaglines }) => {
+export const Project = ({ allProjects }) => {
   const { projectId } = useParams();
   const [projectObj, setProjectObj] = useState({});
+  console.log(allProjects)
 
   useEffect(() => {
-    setProjectObj(allProjects.find((obj) => parseInt(obj.id )=== parseInt(projectId)));
+    let theProject = allProjects.find(
+      (obj) => parseInt(obj.id) === parseInt(projectId)
+    );
+
+    setProjectObj(theProject);
   }, [projectId, allProjects]);
 
   return (

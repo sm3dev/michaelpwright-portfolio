@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectList = ({ allProjects }) => {
-  // const [allProjects, setAllProjects] = useState([]);
+  const [projectsArray, setProjectsArray] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("api/database.json").then((res) => res.json()).then((data) => {
-  //       setAllProjects(data.projects);
-  //     });
-  // }, []);
+  useEffect(() => {
+    setProjectsArray(allProjects);
+  }, [projectsArray, allProjects]);
 
   return (
     <>
