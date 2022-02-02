@@ -9,8 +9,7 @@ export const HeaderLogo = () => {
 
   useEffect(() => {
     fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
+      .then((res) => res.json()).then((data) => {
         let taglineOnlyArray = getTaglinesTextArray(data.navTaglines);
         setNavTaglinesTextOnly(taglineOnlyArray);
       });

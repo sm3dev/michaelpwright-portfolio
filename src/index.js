@@ -16,10 +16,12 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Portfolio />}>
         <Route index element={<HomeHero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactMe />} />
-        <Route path="/projects" element={<ProjectList />} />
-        <Route path="/project/:projectId" element={<Project />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<ContactMe />} />
+        <Route path="projects" element={<h2>View My Work</h2>}>
+          <Route index element={<ProjectList />} />
+          <Route path=":projectId" element={<Project />} />
+        </Route>
         <Route
           path="*"
           element={
