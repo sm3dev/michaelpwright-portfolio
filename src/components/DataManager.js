@@ -12,10 +12,10 @@ export const getUserById = (array, id) => {
   return userObj;
 };
 
-export const getProjectById = (array, id) => {
-  let bingoProject = array.find((data) => data.id == id);
-  return bingoProject;
-};
+// export const getProjectById = (array, id) => {
+//   let bingoProject = array.find((data) => data.id == id);
+//   return bingoProject;
+// };
 
 export const getNavTaglines = () => {
   return navTaglinesArray;
@@ -33,13 +33,13 @@ export const getQuotes = () => {
 };
 
 // this function needs to put the useState items into separate arrays
-const getData = () => {
-  return fetch("api/database.json").then((res) => res.json()).then((data) => {
-      navTaglinesArray = data.navTaglines;
-      techStackObjectsArray = data.techStack;
-      quotesArray = data.aboutQuotes;
-      testimonialsArray = data.testimonials;
-    });
-};
+// const getData = () => {
+//   return fetch("api/database.json").then((res) => res.json()).then((data) => {
+//       navTaglinesArray = data.navTaglines;
+//       techStackObjectsArray = data.techStack;
+//       quotesArray = data.aboutQuotes;
+//       testimonialsArray = data.testimonials;
+//     });
+// };
 
-getData();
+// getData();

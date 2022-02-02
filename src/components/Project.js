@@ -1,33 +1,32 @@
 import React, { useEffect, useState } from "react";
-import { useOutletContext, useParams } from "react-router-dom";
-import { getProjectById } from "./DataManager";
+import { useParams } from "react-router-dom";
 import { HeaderLogo } from "./HeaderLogo";
 
 export const Project = () => {
-  const [allProjects, setAllProjects] = useOutletContext();
   const { projectId } = useParams();
-  console.log(projectId)
   const [projectObj, setProjectObj] = useState({});
 
-  const getProject = () => {
-    let bingoProject = allProjects.find((data) => parseInt(data.id) === projectId);
+  const getProject = (array) => {
+    let bingoProject = array.find((data) => data.id == projectId);
     return bingoProject;
   };
 
   useEffect(() => {
-    setProjectObj(getProject());
-    // fetch("api/database.json").then((res) => res.json()).then((data) => {
-    //     let projectsArray = data.projects;
-    //     let theProject = getProjectbyId(projectsArray, projectId);
-    //     console.log(projectsArray);
-    //     console.log(theProject);
-    //     setProjectObj(theProject);
-    //   });
-  }, [allProjects, projectId]);
+    fetch("api/database.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let projectsArray = data.projects;
+        setProjectObj(projectsArray.find((obj) => obj.id === projectId));
+        // let theProject = getProject(projectsArray);
+        // console.log(projectsArray);
+        // console.log(theProject);
+        // setProjectObj(getProject(projectsArray));
+      });
+  }, [projectId]);
 
   return (
     <>
-      {/* <HeaderLogo /> */}
+      <HeaderLogo />
       <section className="project__content">
         <section className="project-overview__section">
           <h1 className="project__name">{projectObj?.name}</h1>

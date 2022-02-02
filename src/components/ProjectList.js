@@ -15,7 +15,7 @@ export const ProjectList = () => {
   return (
     <>
       <HeaderLogo />
-      <Outlet context={[allProjects, setAllProjects]} />
+      <Outlet />
       <section className="project-list__block">
         {allProjects.map((projectObj) => (
           <ProjectCard key={projectObj.id} projectObj={projectObj} />
