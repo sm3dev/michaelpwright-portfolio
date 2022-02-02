@@ -17,6 +17,7 @@ export const Portfolio = () => {
   const [allNavTaglines, setAllNavTaglines] = useState([]);
   const [allHeroTaglines, setAllHeroTaglines] = useState([]);
   const [allTechStackItems, setAllTechStackItems] = useState([]);
+  const [allQuotes, setAllQuotes] = useState([]);
 
   useEffect(() => {
     fetch("api/database.json")
@@ -28,6 +29,7 @@ export const Portfolio = () => {
         setAllNavTaglines(data.navTaglines);
         setAllHeroTaglines(data.heroTaglines);
         setAllTechStackItems(data.techStack);
+        setAllQuotes(data.aboutQuotes);
       });
   }, []);
 
@@ -49,7 +51,7 @@ export const Portfolio = () => {
           element={
             <>
               <HeaderLogo allNavTaglines={allNavTaglines} />
-              <About user={user} />
+              <About user={user} allQuotes={allQuotes} />
             </>
           }
         />
@@ -81,9 +83,7 @@ export const Portfolio = () => {
           element={
             <>
               <HeaderLogo allNavTaglines={allNavTaglines} />
-              <Project
-                allProjects={allProjects}
-              />
+              <Project allProjects={allProjects} />
             </>
           }
         />

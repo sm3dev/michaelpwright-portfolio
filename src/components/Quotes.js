@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { getQuotes } from "./DataManager";
 
 
-export const Quotes = () => {
+export const Quotes = ({ allQuotes }) => {
     
-  return <div></div>;
+  return <div className="blockquote__container">
+    <blockquote id="blockquote">
+      <cite></cite>
+    </blockquote>
+  </div>;
 };
