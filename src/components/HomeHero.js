@@ -6,20 +6,14 @@ import { NavBar } from "./NavBar";
 import { Resume } from "./Resume";
 import { TechStack } from "./TechStack";
 
-export const HomeHero = () => {
+export const HomeHero = ({ allHeroTaglines, user, allTechStackItems }) => {
   const [portfolioAuthor, setPortfolioAuthor] = useState({});
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let firstUser = data.users[0];
-        setPortfolioAuthor(firstUser);
-        let taglineOnlyArray = getTaglinesTextArray(data.heroTaglines);
-        setTaglineTextArray(taglineOnlyArray);
-      });
-  }, []);
+    setPortfolioAuthor(user);
+    setTaglineTextArray(getTaglinesTextArray(allHeroTaglines));
+  }, [user, allHeroTaglines]);
 
   return (
     <>
@@ -36,7 +30,7 @@ export const HomeHero = () => {
           </Link>
         </figure>
 
-        <TechStack />
+        <TechStack allTechStackItems={allTechStackItems} />
       </section>{" "}
       <NavBar />
       <Resume

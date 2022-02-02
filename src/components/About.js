@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getUserById } from "./DataManager";
-import { HeaderLogo } from "./HeaderLogo.js";
 
 export const About = () => {
   const [aboutUser, setAboutUser] = useState({});
@@ -16,7 +15,6 @@ export const About = () => {
 
   return (
     <>
-      <HeaderLogo user={aboutUser} />
       <section className="about__content">
         <div className="about-headshot__block">
           <img

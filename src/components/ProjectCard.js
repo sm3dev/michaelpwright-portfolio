@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TechStack } from "./TechStack";
+// import { TechStack } from "./TechStack";
 
 export const ProjectCard = ({ projectObj }) => {
   // const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
@@ -10,7 +10,7 @@ export const ProjectCard = ({ projectObj }) => {
       <section className="project-card__thumbmail">
         {" "}
         <Link
-          to={`${projectObj.id}`}
+          to={`/projects/${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="project-card__link project-detail__link"
         >
@@ -23,7 +23,7 @@ export const ProjectCard = ({ projectObj }) => {
       </section>
       <h3 className="project-card-title__text">
         {" "}
-        <a href={`project/${projectObj.id}`} className="project-detail__link">
+        <a href={`/projects/${projectObj.id}`} className="project-detail__link">
           {projectObj.name}
         </a>{" "}
       </h3>
@@ -31,7 +31,7 @@ export const ProjectCard = ({ projectObj }) => {
       <p className="project-card-read-more__block">
         {" "}
         <Link
-          to={`${projectObj.id}`}
+          to={`/projects/${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="project-detail__link"
         >
@@ -41,9 +41,9 @@ export const ProjectCard = ({ projectObj }) => {
       </p>
       <section className="project-card__techstack-button">
         <button className="techstack__trigger">Tech Stack</button>
-        <TechStack />
+        {/* <TechStack /> */}
         <Link
-          to={`${projectObj.id}`}
+          to={`/projects/${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="continue-to-project-detail__link project-detail__link"
         >
