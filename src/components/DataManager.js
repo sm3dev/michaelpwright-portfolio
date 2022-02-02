@@ -19,8 +19,8 @@ export const getAllProjects = () => {
   return projectsArray;
 };
 
-export const getProjectbyID = (id) => {
-  let bingoProject = projectsArray.find((data) => data.id == id);
+export const getProjectbyID = (array, id) => {
+  let bingoProject = array.find((data) => data.id == id);
   return bingoProject;
 };
 

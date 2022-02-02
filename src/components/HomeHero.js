@@ -8,7 +8,6 @@ import { TechStack } from "./TechStack";
 
 export const HomeHero = () => {
   const [portfolioAuthor, setPortfolioAuthor] = useState({});
-  const [allHeroTaglines, setAllHeroTaglines] = useState([]);
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
   useEffect(() => {
@@ -19,7 +18,6 @@ export const HomeHero = () => {
         setPortfolioAuthor(firstUser);
         let taglineOnlyArray = getTaglinesTextArray(data.heroTaglines);
         setTaglineTextArray(taglineOnlyArray);
-        setAllHeroTaglines(data.heroTaglines);
       });
   }, []);
 
@@ -27,10 +25,7 @@ export const HomeHero = () => {
     <>
       <section className="hero__block">
         <h1 className="website__title">I'm {portfolioAuthor.displayName}</h1>
-        <HeroTagline
-          taglineTextArray={taglineTextArray}
-          tagline={getRandomObj(taglineTextArray)}
-        />
+        <HeroTagline tagline={getRandomObj(taglineTextArray)} />
         <figure className="hero headshot__block">
           <Link to="/about">
             <img

@@ -4,21 +4,21 @@ import { getUserByID } from "./components/DataManager";
 import { Footer } from "./components/Footer";
 
 export const Portfolio = () => {
-  const [allUsers, setAllUsers] = useState([]);
   const [user, setUser] = useState({});
 
-  const getTheUser = () => {
-    return getUserByID(1);
-  };
+  // const getTheUser = () => {
+  //   return getUserByID(1);
+  // };
   useEffect(() => {
-    setUser(getTheUser());
+    setUser(getUserByID(1));
   }, []);
 
   useEffect(() => {
     fetch("api/database.json")
       .then((res) => res.json())
       .then((data) => {
-        setAllUsers(data.users);
+        let usersArray = data.users;
+        setUser(getUserByID(usersArray, 1));
       });
   }, []);
 
