@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { getUserByID } from "./DataManager";
+import { getUserById } from "./DataManager";
 import { HeaderLogo } from "./HeaderLogo.js";
 
 export const About = () => {
   const [aboutUser, setAboutUser] = useState({});
 
-  const getTheUser = () => {
-    return getUserByID(1);
-  };
   useEffect(() => {
-    setAboutUser(getTheUser())
+    fetch("api/database.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let usersArray = data.users;
+        setAboutUser(getUserById(usersArray,1))
+      });
   }, []);
 
   return (
@@ -44,6 +46,7 @@ export const About = () => {
               href={aboutUser.photoCollageLink}
               className="full-resolution-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Resolution Image"
             >
               View High Res
@@ -57,7 +60,7 @@ export const About = () => {
         <figure className="additional-image__block">
           <img
             src={`../images/${aboutUser?.additionalPhoto}`}
-            alt={`${aboutUser.displayName} personal photo`}
+            alt={`${aboutUser.displayName} personal`}
             className="additional__image"
           />
           <figcaption>
@@ -66,6 +69,7 @@ export const About = () => {
               href={aboutUser.additionalPhotoLink}
               className="full-resolution-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Resolution Image"
             >
               View High Res

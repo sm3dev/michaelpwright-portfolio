@@ -10,7 +10,7 @@ export const ProjectCard = ({ projectObj }) => {
       <section className="project-card__thumbmail">
         {" "}
         <Link
-          to={`/project/${projectObj.id}`}
+          to={`${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="project-card__link project-detail__link"
         >
@@ -31,7 +31,7 @@ export const ProjectCard = ({ projectObj }) => {
       <p className="project-card-read-more__block">
         {" "}
         <Link
-          to={`/project/${projectObj.id}`}
+          to={`${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="project-detail__link"
         >
@@ -43,7 +43,7 @@ export const ProjectCard = ({ projectObj }) => {
         <button className="techstack__trigger">Tech Stack</button>
         <TechStack />
         <Link
-          to={`/project/${projectObj.id}`}
+          to={`${projectObj.id}`}
           title={`${projectObj.name} Details`}
           className="continue-to-project-detail__link project-detail__link"
         >

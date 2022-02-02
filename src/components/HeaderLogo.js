@@ -2,19 +2,17 @@ import React, { useEffect, useState } from "react";
 import { NavBar } from "./NavBar";
 import "../styles/HeaderNav.scss";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
-import { getNavTaglines } from "./DataManager";
-import { getRandomObj } from "./Helpers";
+import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 
 export const HeaderLogo = () => {
   const [navTaglinesTextOnly, setNavTaglinesTextOnly] = useState([]);
 
-  const taglinesTextArray = (originalArray) => {
-    let newArray = originalArray.map((taglineObj) => taglineObj.tagline);
-    return newArray;
-  };
-
   useEffect(() => {
-    setNavTaglinesTextOnly(taglinesTextArray(getNavTaglines()));
+    fetch("api/database.json")
+      .then((res) => res.json()).then((data) => {
+        let taglineOnlyArray = getTaglinesTextArray(data.navTaglines);
+        setNavTaglinesTextOnly(taglineOnlyArray);
+      });
   }, []);
 
   return (

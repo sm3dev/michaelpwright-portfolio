@@ -1,44 +1,51 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Routes, Route } from "react-router-dom";
+import { getUserById } from "./components/DataManager";
 import { Footer } from "./components/Footer";
+import { About } from "./components/About";
+import { ContactMe } from "./components/ContactMe";
+import { HomeHero } from "./components/HomeHero";
+import { NavBar } from "./components/NavBar";
+import { Project } from "./components/Project";
+import { ProjectList } from "./components/ProjectList";
 
 export const Portfolio = () => {
-  const [databaseData, setDatabaseData] = useState({});
-  const [allNavTaglines, setAllNavTaglines] = useState([]);
-  const [allTechObjects, setAllTechObjects] = useState([]);
-  const [allProjects, setAllProjects] = useState([]);
-  const [allUsers, setAllUsers] = useState([]);
   const [user, setUser] = useState({});
-  const [allHeroTaglines, setAllHeroTaglines] = useState([]);
-  const [allQuotes, setAllQuotes] = useState([]);
-  const [allTestimonials, setAllTestimonials] = useState([]);
-
-  const getFirstUser = () => {
-    allUsers.map((userObj) => setUser(userObj.id === 1));
-  };
 
   useEffect(() => {
     fetch("api/database.json")
       .then((res) => res.json())
       .then((data) => {
-        setDatabaseData(data);
-        setAllNavTaglines(data.navTaglines);
-        setAllTechObjects(data.techStack);
-        setAllProjects(data.projects);
-        setAllUsers(data.users);
-        setUser(getFirstUser());
-        setAllHeroTaglines(data.heroTaglines);
-        setAllQuotes(data.aboutQuotes);
-        setAllTestimonials(data.testimonials);
+        let usersArray = data.users;
+        setUser(getUserById(usersArray, 1));
       });
   }, []);
 
   return (
     <>
-      <Outlet databaseData={databaseData} allNavTaglines={allNavTaglines} />
-
-      {/* Footer needs to have user prop passed into it */}
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomeHero />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<ContactMe />} />
+        <Route path="projects">
+          <Route index element={<ProjectList />} />
+          <Route path=":projectId" element={<Project />} />
+        </Route>
+        <Route
+          path="*"
+          element={
+            <>
+              {" "}
+              <NavBar />
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            </>
+          }
+        />
+      </Routes>
+      <Outlet />
+      <Footer user={user} />
     </>
   );
 };

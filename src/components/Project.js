@@ -1,15 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProjectbyID } from "./DataManager";
 import { HeaderLogo } from "./HeaderLogo";
 
 export const Project = () => {
-  let { projectId } = useParams();
+  const { projectId } = useParams();
   const [projectObj, setProjectObj] = useState({});
 
+  const getProject = (array) => {
+    let bingoProject = array.find((data) => data.id == projectId);
+    return bingoProject;
+  };
+
   useEffect(() => {
-    setProjectObj(getProjectbyID(projectId));
-  }, []);
+    fetch("api/database.json")
+      .then((res) => res.json())
+      .then((data) => {
+        let projectsArray = data.projects;
+        setProjectObj(projectsArray.find((obj) => obj.id === projectId));
+        // let theProject = getProject(projectsArray);
+        // console.log(projectsArray);
+        // console.log(theProject);
+        // setProjectObj(getProject(projectsArray));
+      });
+  }, [projectId]);
 
   return (
     <>
@@ -39,6 +52,7 @@ export const Project = () => {
               href={projectObj?.linkToSite}
               className="project-button__link"
               target="_blank"
+              rel="noreferrer"
               title="Visit live website"
             >
               {" "}
@@ -48,6 +62,7 @@ export const Project = () => {
               href={projectObj?.linkRepo}
               className="project-button__link"
               target="_blank"
+              rel="noreferrer"
               title="Visit GitHub Repository"
             >
               {" "}
@@ -71,6 +86,7 @@ export const Project = () => {
               href={projectObj?.challengeImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -84,7 +100,7 @@ export const Project = () => {
         <figure className="goals-image__block">
           <img
             src={`../images/${projectObj?.goalsImage}`}
-            alt="goals and constraints image"
+            alt="goals and constraints"
             className="goals__image"
           />
           <figcaption>
@@ -93,6 +109,7 @@ export const Project = () => {
               href={projectObj?.goalsImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -108,7 +125,7 @@ export const Project = () => {
         <figure className="process-image__block">
           <img
             src={`../images/${projectObj?.processImage}`}
-            alt="project process image "
+            alt="project process"
             className="process__image"
           />
           <figcaption>
@@ -117,6 +134,7 @@ export const Project = () => {
               href={projectObj?.processImageLink}
               className="full-size-image__link"
               target="_blank"
+              rel="noreferrer"
               title="View High Res Image in New Tab"
             >
               See Full Resolution
@@ -139,6 +157,7 @@ export const Project = () => {
             href={projectObj?.linkToSite}
             className="project-button__link"
             target="_blank"
+            rel="noreferrer"
             title="Visit live website"
           >
             {" "}
@@ -148,6 +167,7 @@ export const Project = () => {
             href={projectObj?.linkRepo}
             className="project-button__link"
             target="_blank"
+            rel="noreferrer"
             title="Visit GitHub Repository"
           >
             {" "}

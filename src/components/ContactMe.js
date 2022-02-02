@@ -136,6 +136,7 @@ import {
                         component="a"
                         href={data.url}
                         target="_blank"
+                        rel="noreferrer"
                         clickable
                         color="info"
                         size="large"
@@ -169,6 +170,7 @@ import {
                 component="a"
                 href="https://drive.google.com/file/d/1q0FZIR742rX9uwlIdSna8WdBnAZ3fW1y/view"
                 target="_blank"
+                rel="noreferrer"
                 title="View/Download My Résumé"
               >
                 Résumé PDF
@@ -206,6 +208,7 @@ import {
                 variant="outlined"
                 component="a"
                 target="_blank"
+                rel="noreferrer"
                 title="Visit C51 Website"
                 href="https://nss-day-cohort-51.github.io/"
               >
@@ -215,6 +218,7 @@ import {
                 variant="outlined"
                 component="a"
                 target="_blank"
+                rel="noreferrer"
                 title="Visit C51 Website GitHub Repository"
                 href="https://github.com/nss-day-cohort-51/nss-day-cohort-51.github.io"
               >

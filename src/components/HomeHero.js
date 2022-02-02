@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getHeroTaglines } from "./DataManager";
+import { Link } from "react-router-dom";
 import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 import { HeroTagline } from "./HeroTagline";
 import { NavBar } from "./NavBar";
@@ -8,7 +8,6 @@ import { TechStack } from "./TechStack";
 
 export const HomeHero = () => {
   const [portfolioAuthor, setPortfolioAuthor] = useState({});
-  const [allHeroTaglines, setAllHeroTaglines] = useState([]);
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
   useEffect(() => {
@@ -16,10 +15,9 @@ export const HomeHero = () => {
       .then((res) => res.json())
       .then((data) => {
         let firstUser = data.users[0];
+        setPortfolioAuthor(firstUser);
         let taglineOnlyArray = getTaglinesTextArray(data.heroTaglines);
         setTaglineTextArray(taglineOnlyArray);
-        setAllHeroTaglines(data.heroTaglines);
-        setPortfolioAuthor(firstUser);
       });
   }, []);
 
@@ -27,18 +25,24 @@ export const HomeHero = () => {
     <>
       <section className="hero__block">
         <h1 className="website__title">I'm {portfolioAuthor.displayName}</h1>
-        <HeroTagline
-          taglineTextArray={taglineTextArray}
-          tagline={getRandomObj(taglineTextArray)}
-        />
-        <div className="hero headshot__block">
-          <img src={`../images/${portfolioAuthor.headshot}`} alt="headshot" className="hero headshot__image" />
-        </div>
+        <HeroTagline tagline={getRandomObj(taglineTextArray)} />
+        <figure className="hero headshot__block">
+          <Link to="/about">
+            <img
+              src={`../images/${portfolioAuthor.headshot}`}
+              alt="headshot"
+              className="hero headshot__image"
+            />
+          </Link>
+        </figure>
 
         <TechStack />
       </section>{" "}
       <NavBar />
-      <Resume resumeLink={portfolioAuthor.resumeLink} />
+      <Resume
+        portfolioAuthor={portfolioAuthor}
+        resumeLink={portfolioAuthor.resumeLink}
+      />
     </>
   );
 };

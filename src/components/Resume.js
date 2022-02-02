@@ -1,14 +1,21 @@
 import React from "react";
 
-export const Resume = ({ resumeLink }) => {
+export const Resume = ({ portfolioAuthor }) => {
   return (
     <article className="resume__block theme__dark">
       <h2 className="resume__title">Résumé</h2>
       <section className="download-resume__block">
-        <button className="download-resume__button">
-          {" "}
-          <span className="icon pdf__icon">😄</span> Download PDF
-        </button>
+        <a
+          href={portfolioAuthor.resumeLink}
+          className="download-resume__link"
+          target="_blank"
+          title="Download/View My Résumé"
+          rel="noreferrer"
+        >
+          <button className="download-resume__button">
+            <span className="icon pdf__icon">😄</span> Download PDF
+          </button>
+        </a>
       </section>
       <section className="resume about__block">
         {" "}
@@ -93,10 +100,17 @@ export const Resume = ({ resumeLink }) => {
       <section className="resume skills__block"></section>
       <section className="resume education__block"></section>
       <section className="resume__footer download-resume__block">
-        <button className="resume__footer download-resume__button">
-          {" "}
-          <span className="icon pdf__icon">😄</span> Download PDF
-        </button>
+        <a
+          href={portfolioAuthor.resumeLink}
+          className="download-resume__link"
+          target="_blank"
+          title="Download/View My Résumé"
+          rel="noreferrer"
+        >
+          <button className="download-resume__button">
+            <span className="icon pdf__icon">😄</span> Download PDF
+          </button>
+        </a>
       </section>
     </article>
   );
