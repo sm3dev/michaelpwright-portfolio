@@ -1,32 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { HeaderLogo } from "./HeaderLogo";
 
-export const Project = () => {
+export const Project = ({ allProjects, allNavTaglines }) => {
   const { projectId } = useParams();
   const [projectObj, setProjectObj] = useState({});
 
-  const getProject = (array) => {
-    let bingoProject = array.find((data) => data.id == projectId);
-    return bingoProject;
-  };
-
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let projectsArray = data.projects;
-        setProjectObj(projectsArray.find((obj) => obj.id === projectId));
-        // let theProject = getProject(projectsArray);
-        // console.log(projectsArray);
-        // console.log(theProject);
-        // setProjectObj(getProject(projectsArray));
-      });
-  }, [projectId]);
+    setProjectObj(allProjects.find((obj) => parseInt(obj.id )=== parseInt(projectId)));
+  }, [projectId, allProjects]);
 
   return (
     <>
-      <HeaderLogo />
       <section className="project__content">
         <section className="project-overview__section">
           <h1 className="project__name">{projectObj?.name}</h1>

@@ -4,16 +4,20 @@ import "../styles/HeaderNav.scss";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
 import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 
-export const HeaderLogo = () => {
+export const HeaderLogo = ({ allNavTaglines }) => {
   const [navTaglinesTextOnly, setNavTaglinesTextOnly] = useState([]);
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json()).then((data) => {
-        let taglineOnlyArray = getTaglinesTextArray(data.navTaglines);
-        setNavTaglinesTextOnly(taglineOnlyArray);
-      });
-  }, []);
+    setNavTaglinesTextOnly(getTaglinesTextArray(allNavTaglines));
+  }, [allNavTaglines]);
+
+  // useEffect(() => {
+  //   fetch("api/database.json")
+  //     .then((res) => res.json()).then((data) => {
+  //       let taglineOnlyArray = getTaglinesTextArray(data.navTaglines);
+  //       setNavTaglinesTextOnly(taglineOnlyArray);
+  //     });
+  // }, []);
 
   return (
     <section className="header">

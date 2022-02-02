@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
-import { HeaderLogo } from "./HeaderLogo";
+import React from "react";
 import { ProjectCard } from "./ProjectCard";
 
-export const ProjectList = () => {
-  const [allProjects, setAllProjects] = useState([]);
+export const ProjectList = ({ allProjects }) => {
+  // const [allProjects, setAllProjects] = useState([]);
 
-  useEffect(() => {
-    fetch("api/database.json").then((res) => res.json()).then((data) => {
-        setAllProjects(data.projects);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("api/database.json").then((res) => res.json()).then((data) => {
+  //       setAllProjects(data.projects);
+  //     });
+  // }, []);
 
   return (
     <>
-      <HeaderLogo />
-      <Outlet />
       <section className="project-list__block">
         {allProjects.map((projectObj) => (
           <ProjectCard key={projectObj.id} projectObj={projectObj} />
