@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { getQuotes } from "./DataManager";
+import { getRandomObj } from "./Helpers";
 
+export const Quotes = ({ quoteObj }) => {
+  const [quote, qetQuote] = useState({});
 
-export const Quotes = ({ allQuotes }) => {
-    
-  return <div className="blockquote__container">
-    <blockquote id="blockquote">
-      <cite></cite>
-    </blockquote>
-  </div>;
+  useEffect(() => {
+    console.log(quoteObj);
+    // setSingleQuote(getRandomObj(quotes));
+  }, []);
+
+  return (
+    <section className="blockquote__container">
+      <blockquote id="blockquote">
+        <p className="blockquote-single-line__text">{quote.quoteText}</p>
+        <cite className="quote__cite">&#8212; {quote.author}</cite>
+      </blockquote>
+    </section>
+  );
 };

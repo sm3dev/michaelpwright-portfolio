@@ -20,4 +20,4 @@ export const getRandomObj = (array) => {
 export const getTaglinesTextArray = (array) => {
   let newArray = array.map((taglineObj) => taglineObj.tagline);
     return newArray;
-} 
+}
