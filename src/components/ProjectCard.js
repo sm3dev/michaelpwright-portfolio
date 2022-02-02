@@ -15,7 +15,7 @@ export const ProjectCard = ({ projectObj }) => {
           className="project-card__link project-detail__link"
         >
           <img
-            src={`./images/${projectObj.thumbnail}`}
+            src={`../images/${projectObj.thumbnail}`}
             alt={`${projectObj.name} thumbnail`}
             className="project-card__thumbnail-image"
           />
