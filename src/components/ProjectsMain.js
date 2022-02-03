@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { HeaderLogo } from "./HeaderLogo";
 
-export const ProjectsMain = () => {
+export const ProjectsMain = ({ allNavTaglines }) => {
   return (
     <>
-      <h2>My Work</h2>
-      <Link to="/projects/all-projects">My Projects</Link>
+      <HeaderLogo allNavTaglines={allNavTaglines} />
       <Outlet />
     </>
   );

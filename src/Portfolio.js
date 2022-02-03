@@ -8,8 +8,8 @@ import { HomeHero } from "./components/HomeHero";
 import { NavBar } from "./components/NavBar";
 import { Project } from "./components/Project";
 import { ProjectList } from "./components/ProjectList";
-import { ProjectsMain } from "./components/ProjectsMain";
 import { HeaderLogo } from "./components/HeaderLogo";
+import { ProjectsMain } from "./components/ProjectsMain";
 
 export const Portfolio = () => {
   const [user, setUser] = useState({});
@@ -60,33 +60,28 @@ export const Portfolio = () => {
           path="/projects"
           element={
             <>
-              <HeaderLogo allNavTaglines={allNavTaglines} />
-              <ProjectsMain />
+              <ProjectsMain allNavTaglines={allNavTaglines} />
             </>
           }
-        />
-        <Route
-          path="/projects/all-projects"
-          element={
-            <>
-              <HeaderLogo allNavTaglines={allNavTaglines} />
-              <ProjectList
-                allProjects={allProjects}
-                allTechStackItems={allTechStackItems}
-                allNavTaglines={allNavTaglines}
-              />
-            </>
-          }
-        />
-        <Route
-          path="/projects/:projectId"
-          element={
-            <>
-              <HeaderLogo allNavTaglines={allNavTaglines} />
-              <Project allProjects={allProjects} />
-            </>
-          }
-        />
+        >
+          <Route index element={<ProjectList allProjects={allProjects} />} />
+          <Route
+            path="all-projects"
+            element={
+              <>
+                <ProjectList allProjects={allProjects} />
+              </>
+            }
+          />
+          <Route
+            path=":projectId"
+            element={
+              <>
+                <Project allProjects={allProjects} allTechStackItems={allTechStackItems} />
+              </>
+            }
+          />
+        </Route>
 
         <Route
           path="*"
