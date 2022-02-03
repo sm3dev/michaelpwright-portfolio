@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getMatch } from "./Helpers";
 
-export const TechStack = ({ allTechStackItems }) => {
+export const TechStack = ({ allTechStackItems, projectObjId }) => {
   const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
 
   // to grab the correct comparison used in getMatch(), the function has to do the following:

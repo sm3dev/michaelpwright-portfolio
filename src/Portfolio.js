@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Outlet, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { getUserById } from "./components/DataManager";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
@@ -77,7 +77,7 @@ export const Portfolio = () => {
             path=":projectId"
             element={
               <>
-                <Project allProjects={allProjects} allTechStackItems={allTechStackItems} />
+                <Project allTechStackItems={allTechStackItems} />
               </>
             }
           />
