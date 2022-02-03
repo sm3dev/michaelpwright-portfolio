@@ -4,21 +4,19 @@ import { Quotes } from "./Quotes";
 
 export const About = ({ user, allQuotes }) => {
   const [aboutUser, setAboutUser] = useState({});
-  const [quotes, setQuotes] = useState([]);
-  const [quoteObj, setQuoteObj] = useState({});
+  const [quotesArray, setQuotesArray] = useState([]);
+  const [singleQuote, setSingleQuote] = useState({});
 
   useEffect(() => {
-    console.log(allQuotes);
     setAboutUser(user);
-  }, [user]);
+    console.log(allQuotes);
+    setQuotesArray(allQuotes);
+    const theRandomQuote = getRandomObj(allQuotes);
+    setSingleQuote(theRandomQuote);
+  }, [user, allQuotes, quotesArray]);
 
-  useEffect(() => {
-    let pickQuote = getRandomObj(allQuotes);
-    console.log(pickQuote);
-    setQuoteObj(pickQuote);
-  }, [allQuotes, quoteObj]);
-
-  console.log(quoteObj)
+  console.log(quotesArray);
+  console.log(singleQuote);
 
   return (
     <>
@@ -82,7 +80,7 @@ export const About = ({ user, allQuotes }) => {
           </figcaption>
         </figure>
 
-        <Quotes quoteObj={quoteObj} />
+        <Quotes singleQuote={singleQuote} />
 
         <section className="testimonial__block">
           <h2 className="testimony__heading">What Teammates Say</h2>
