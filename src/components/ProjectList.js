@@ -5,13 +5,14 @@ export const ProjectList = ({ allProjects }) => {
   const [projectsArray, setProjectsArray] = useState([]);
 
   useEffect(() => {
+    console.log(allProjects);
     setProjectsArray(allProjects);
-  }, [projectsArray, allProjects]);
+  }, [allProjects]);
 
   return (
     <>
       <section className="project-list__block">
-        {allProjects.map((projectObj) => (
+        {projectsArray.map((projectObj) => (
           <ProjectCard key={projectObj.id} projectObj={projectObj} />
         ))}
       </section>

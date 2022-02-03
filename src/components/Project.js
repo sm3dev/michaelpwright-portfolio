@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { TechStack } from "./TechStack";
 
-export const Project = ({ allProjects }) => {
+export const Project = ({ allProjects, allTechStackItems }) => {
   const { projectId } = useParams();
   const [projectObj, setProjectObj] = useState({});
   console.log(allProjects)
@@ -58,9 +59,7 @@ export const Project = ({ allProjects }) => {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          <section className="project-techStack__block">
-            {/* techstack component will go here */}
-          </section>
+          <TechStack projectObj={projectObj} allTechStackItems={allTechStackItems} />
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
