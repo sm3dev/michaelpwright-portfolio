@@ -89,8 +89,9 @@ export const Portfolio = () => {
             <>
               {" "}
               <NavBar allNavTaglines={allNavTaglines} />
-              <main style={{ padding: "1rem" }}>
+              <main style={{ padding: "1rem" }} className="nothing-here__message">
                 <p>There's nothing here!</p>
+                <strong>Try a visiting a different page or reloading</strong>
               </main>
             </>
           }
