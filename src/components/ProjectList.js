@@ -5,7 +5,6 @@ export const ProjectList = ({ allProjects }) => {
   const [projectsArray, setProjectsArray] = useState([]);
 
   useEffect(() => {
-    console.log(allProjects);
     setProjectsArray(allProjects);
   }, [allProjects]);
 

@@ -97,7 +97,6 @@ export const Portfolio = () => {
           }
         />
       </Routes>
-      <Outlet />
       <Footer user={user} />
     </>
   );
