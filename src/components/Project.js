@@ -2,26 +2,24 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 // import { TechStack } from "./TechStack";
 
-export const Project = ({ allTechStackItems }) => {
+export const Project = ({ allProjects, allTechStackItems }) => {
   const { projectId } = useParams();
-  // const [projectsArray, setProjectsArray] = useState([]);
+  const [projectsArray, setProjectsArray] = useState([]);
   const [projectObj, setProjectObj] = useState({});
 
-  // const getProject = () => {
-  //   return fetch()
-  // }
+  useEffect(() => {
+    setProjectsArray(allProjects);
+  }, [allProjects]);
+  
 
   useEffect(() => {
-    fetch("/api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const projectsArray = data.projects;
-        const theProject = projectsArray.find(
-          (obj) => parseInt(obj.id) === parseInt(projectId)
-        );
-        setProjectObj(theProject);
-      });
-  }, [projectId]);
+    const theProject = projectsArray?.find(
+      (obj) => parseInt(obj.id) === parseInt(projectId)
+    );
+    setProjectObj(theProject);
+  }, [projectsArray, projectId]);
+
+
 
   return (
     <>
