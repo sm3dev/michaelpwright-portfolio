@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { getUserById } from "./DataManager";
+import { getRandomObj } from "./Helpers";
+import { Quotes } from "./Quotes";
 
-export const About = () => {
+export const About = ({ user, allQuotes }) => {
   const [aboutUser, setAboutUser] = useState({});
+  const [quotesArray, setQuotesArray] = useState([]);
+  const [singleQuote, setSingleQuote] = useState({});
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        let usersArray = data.users;
-        setAboutUser(getUserById(usersArray,1))
-      });
-  }, []);
+    setAboutUser(user);
+    console.log(allQuotes);
+    setQuotesArray(allQuotes);
+    const theRandomQuote = getRandomObj(allQuotes);
+    setSingleQuote(theRandomQuote);
+  }, [user, allQuotes, quotesArray]);
+
+  console.log(quotesArray);
+  console.log(singleQuote);
 
   return (
     <>
@@ -75,17 +80,7 @@ export const About = () => {
           </figcaption>
         </figure>
 
-        <section className="about-quote__block">
-          {/* This will be brought in by the Quote component */}
-          <blockquote className="blockquote">
-            {" "}
-            <p className="blockquote-single-line__text">
-              {" "}
-              If you can't beat 'em, unfollow their Instagram account
-            </p>
-            <cite className="quote__cite">&#8208; Author</cite>
-          </blockquote>
-        </section>
+        <Quotes singleQuote={singleQuote} />
 
         <section className="testimonial__block">
           <h2 className="testimony__heading">What Teammates Say</h2>
