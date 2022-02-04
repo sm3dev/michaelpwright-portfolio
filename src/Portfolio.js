@@ -22,6 +22,7 @@ import {
   getTeckStack,
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
+import { TechStack } from "./components/TechStack";
 
 function ProjectsMain({ allNavTaglines }) {
   return (
@@ -46,7 +47,7 @@ function ProjectList({ allProjects }) {
   );
 }
 
-function Project() {
+function Project({ allTechStack }) {
   const { projectId } = useParams();
   const project = getProject(projectId);
 
@@ -94,7 +95,7 @@ function Project() {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          {/* <TechStack projectObjId={project.id} allTechStackItems={allTechStack} /> */}
+          <TechStack projectObjId={project.id} allTechStack={allTechStack} />
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
@@ -268,7 +269,7 @@ export default function Portfolio() {
           />
           <Route
             path=":projectId"
-            element={<Project allProjects={allProjects} />}
+            element={<Project allProjects={allProjects} allTechStack={allTechStack} />}
           />
         </Route>
 
