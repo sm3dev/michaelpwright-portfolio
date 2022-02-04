@@ -12,7 +12,15 @@ import { ContactMe } from "./components/ContactMe";
 import { HomeHero } from "./components/HomeHero";
 import { NavBar } from "./components/NavBar";
 import { HeaderLogo } from "./components/HeaderLogo";
-import { getFirstUser, getProject, getProjects, getTeckStack } from "./api";
+import {
+  getAboutQuotes,
+  getFirstUser,
+  getHeroTaglines,
+  getNavTaglines,
+  getProject,
+  getProjects,
+  getTeckStack,
+} from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 
 function ProjectsMain({ allNavTaglines }) {
@@ -24,8 +32,8 @@ function ProjectsMain({ allNavTaglines }) {
   );
 }
 
-function ProjectList() {
-  const projects = getProjects();
+function ProjectList({ allProjects }) {
+  const projects = allProjects;
 
   return (
     <>
@@ -86,7 +94,7 @@ function Project() {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          {/* <TechStack projectObjId={project.id} allTechStackItems={techStackAll} /> */}
+          {/* <TechStack projectObjId={project.id} allTechStackItems={allTechStack} /> */}
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
@@ -195,22 +203,22 @@ function Project() {
 export default function Portfolio() {
   const primaryUser = getFirstUser();
   const techStackAll = getTeckStack();
+  const allNavTaglines = getNavTaglines();
+  const projects = getProjects();
+  const heroTaglines = getHeroTaglines();
+  const allAboutQuotes = getAboutQuotes();
 
-  const [allProjects, setAllProjects] = useState([]);
-  const [allNavTaglines, setAllNavTaglines] = useState([]);
-  const [allHeroTaglines, setAllHeroTaglines] = useState([]);
-  const [allQuotes, setAllQuotes] = useState([]);
+  const [allHeroTaglines, setAllHeroTaglines] = useState([heroTaglines]);
+  const [allQuotes, setAllQuotes] = useState([allAboutQuotes]);
+  const [allProjects, setAllProjects] = useState(projects);
+  const [allTechStack, setAllTechStack] = useState(techStackAll);
 
   useEffect(() => {
-    fetch("api/database.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setAllProjects(data.projects);
-        setAllNavTaglines(data.navTaglines);
-        setAllHeroTaglines(data.heroTaglines);
-        setAllQuotes(data.aboutQuotes);
-      });
-  }, []);
+    setAllHeroTaglines(heroTaglines);
+    setAllQuotes(allAboutQuotes);
+    setAllProjects(projects);
+    setAllTechStack(techStackAll);
+  }, [heroTaglines, allAboutQuotes, techStackAll, projects]);
 
   return (
     <BrowserRouter>
@@ -221,7 +229,7 @@ export default function Portfolio() {
             <HomeHero
               allHeroTaglines={allHeroTaglines}
               user={primaryUser}
-              allTechStackItems={techStackAll}
+              allTechStackItems={allTechStack}
             />
           }
         />
@@ -240,7 +248,7 @@ export default function Portfolio() {
           element={
             <>
               <ProjectsMain
-                allProjects={allProjects}
+                allProjects={projects}
                 allNavTaglines={allNavTaglines}
               />
             </>
@@ -253,12 +261,15 @@ export default function Portfolio() {
               <>
                 <ProjectList
                   allProjects={allProjects}
-                  allTechStackItems={techStackAll}
+                  allTechStackItems={allTechStack}
                 />
               </>
             }
           />
-          <Route path=":projectId" element={<Project />} />
+          <Route
+            path=":projectId"
+            element={<Project allProjects={allProjects} />}
+          />
         </Route>
 
         <Route

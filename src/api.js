@@ -31,17 +31,17 @@ const users = [
   },
 ];
 
-const testimonials = [
-  {
-    id: 1,
-    personFullName: "Brenda L.",
-    testimony: "You are so determined!",
-    userId: 1,
-  },
-  { id: 2, personFullName: "", testimony: "", userId: 1 },
-  { id: 3, personFullName: "", testimony: "", userId: 1 },
-  { id: 4, personFullName: "", testimony: "", userId: 1 },
-];
+// const testimonials = [
+//   {
+//     id: 1,
+//     personFullName: "Brenda L.",
+//     testimony: "You are so determined!",
+//     userId: 1,
+//   },
+//   { id: 2, personFullName: "", testimony: "", userId: 1 },
+//   { id: 3, personFullName: "", testimony: "", userId: 1 },
+//   { id: 4, personFullName: "", testimony: "", userId: 1 },
+// ];
 
 const techStack = [
   {
@@ -376,6 +376,72 @@ const projects = [
   },
 ];
 
+const navTaglines = [
+  {
+    id: 1,
+    tagline: "Michael wants the Metric System to be as cool as Capitalism.",
+  },
+  {
+    id: 2,
+    tagline: "Michael is a UX Developer based in Huntsville.",
+  },
+  {
+    id: 3,
+    tagline: "Michael is a UI/UX Front-End Developer based in Huntsville.",
+  },
+  {
+    id: 4,
+    tagline: "Michael thinks “w” should be prounced WUH.",
+  },
+];
+
+const heroTaglines = [
+  { id: 1, tagline: "But you can call me with a job offer" },
+  { id: 2, tagline: "I’m a User Interface Engineer" },
+  { id: 3, tagline: "I’m a Front-End Developer" },
+  { id: 4, tagline: "I solve UX problems" },
+  { id: 5, tagline: "I’m not super into labels" },
+  { id: 6, tagline: "I would name a dog Bears or Bambi" },
+  { id: 7, tagline: "I’ve probably looked at your work first" },
+  { id: 8, tagline: "I type “?” after questions" },
+  { id: 9, tagline: "My brain is locked in Solution Orientation" },
+];
+
+const aboutQuotes = [
+  {
+    id: 1,
+    author: "Leon 'Wall Street Trapper' Howard",
+    quoteText:
+      "Any hand that has the power to feed you has the power to starve you.",
+  },
+  {
+    id: 2,
+    author: "Seth Godin",
+    quoteText: "Every good idea starts as a new idea.",
+  },
+  {
+    id: 3,
+    author: "Aiden M. Wright",
+    quoteText: "Sometimes, I sleep on myself.",
+  },
+  {
+    id: 4,
+    author: "Maddalyn H. Wright, when asked if she slept well",
+    quoteText: "Yes, but I had 0% dreams.",
+  },
+  {
+    id: 5,
+    author: "Michael P. Wright",
+    quoteText: "I believe in the power of grandiose dreams.",
+  },
+  {
+    id: 6,
+    author: "M. Night Shyamalan",
+    quoteText:
+      "Give everything you have in what you do, and don't worry about the outcome...and then do it again.",
+  },
+];
+
 export const getProjects = () => {
   return projects;
 };
@@ -390,4 +456,16 @@ export const getFirstUser = () => {
 
 export const getTeckStack = () => {
   return techStack;
+};
+
+export const getNavTaglines = () => {
+  return navTaglines;
+};
+
+export const getHeroTaglines = () => {
+  return heroTaglines;
+};
+
+export const getAboutQuotes = () => {
+  return aboutQuotes;
 };

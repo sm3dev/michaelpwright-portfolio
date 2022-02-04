@@ -6,7 +6,7 @@ export const ProjectsMain = ({ allNavTaglines, allProjects }) => {
   return (
     <>
       <HeaderLogo allNavTaglines={allNavTaglines} />
-      <Outlet allProjects={allProjects} />
+      <Outlet />
     </>
   );
 };
