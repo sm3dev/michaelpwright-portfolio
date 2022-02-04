@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { TechStack } from "./TechStack";
+// import { TechStack } from "./TechStack";
 
 export const Project = ({ allProjects, allTechStackItems }) => {
   const { projectId } = useParams();
+  const [projectsArray, setProjectsArray] = useState(allProjects);
   const [projectObj, setProjectObj] = useState({});
-  console.log(allProjects)
+  console.log(projectsArray);
+
+  const getProjectObj = (projectId) => {
+    const theProject = allProjects.find((obj) => obj.id === projectId);
+    setProjectObj(theProject);
+  };
 
   useEffect(() => {
-    let theProject = allProjects.find(
-      (obj) => parseInt(obj.id) === parseInt(projectId)
-    );
+    setProjectsArray(allProjects);
+  }, [allProjects]);
 
-    setProjectObj(theProject);
-  }, [projectId, allProjects]);
+  useEffect(() => {
+    getProjectObj();
+  }, [projectId, projectsArray]);
 
   return (
     <>
@@ -59,7 +65,7 @@ export const Project = ({ allProjects, allTechStackItems }) => {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          <TechStack projectObj={projectObj} allTechStackItems={allTechStackItems} />
+          {/* <TechStack projectObjId={projectObj?.id} allTechStackItems={allTechStackItems} /> */}
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">

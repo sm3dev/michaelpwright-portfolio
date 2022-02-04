@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectList = ({ allProjects }) => {
-  const [projectsArray, setProjectsArray] = useState([]);
+  const [projectsArray, setProjectsArray] = useState(allProjects);
 
   useEffect(() => {
-    console.log(allProjects);
     setProjectsArray(allProjects);
   }, [allProjects]);
 

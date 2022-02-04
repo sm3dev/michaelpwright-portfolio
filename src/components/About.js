@@ -4,19 +4,15 @@ import { Quotes } from "./Quotes";
 
 export const About = ({ user, allQuotes }) => {
   const [aboutUser, setAboutUser] = useState({});
-  const [quotesArray, setQuotesArray] = useState([]);
+  const [quotesArray, setQuotesArray] = useState([allQuotes]);
   const [singleQuote, setSingleQuote] = useState({});
 
   useEffect(() => {
     setAboutUser(user);
-    console.log(allQuotes);
     setQuotesArray(allQuotes);
     const theRandomQuote = getRandomObj(allQuotes);
     setSingleQuote(theRandomQuote);
   }, [user, allQuotes, quotesArray]);
-
-  console.log(quotesArray);
-  console.log(singleQuote);
 
   return (
     <>
