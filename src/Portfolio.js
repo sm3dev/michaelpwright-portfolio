@@ -57,10 +57,10 @@ export const Portfolio = () => {
         />
         <Route path="/contact" element={<ContactMe user={user} />} />
         <Route
-          path="/projects"
+          path="/projects/*"
           element={
             <>
-              <ProjectsMain allNavTaglines={allNavTaglines} />
+              <ProjectsMain allProjects={allProjects} allNavTaglines={allNavTaglines} />
             </>
           }
         >
@@ -77,7 +77,10 @@ export const Portfolio = () => {
             path=":projectId"
             element={
               <>
-                <Project allTechStackItems={allTechStackItems} />
+                <Project
+                  allProjects={allProjects}
+                  allTechStackItems={allTechStackItems}
+                />
               </>
             }
           />
@@ -89,7 +92,10 @@ export const Portfolio = () => {
             <>
               {" "}
               <NavBar allNavTaglines={allNavTaglines} />
-              <main style={{ padding: "1rem" }} className="nothing-here__message">
+              <main
+                style={{ padding: "1rem" }}
+                className="nothing-here__message"
+              >
                 <p>There's nothing here!</p>
                 <strong>Try a visiting a different page or reloading</strong>
               </main>

@@ -14,7 +14,7 @@ export const NavBar = () => {
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? "activeLink" : "notActive")}
-        to="/projects"
+        to="/projects/all-projects"
         aria-current="page"
       >
         My Work
