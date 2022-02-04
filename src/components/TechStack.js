@@ -11,7 +11,6 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
   const [allTechObjects, setAllTechObjects] = useState(allTechStack);
 
   useEffect(() => {
-    console.log(allTechStack)
     setAllTechObjects(allTechStack);
   }, [allTechStack]);
 
