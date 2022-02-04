@@ -255,6 +255,7 @@ const techStack = [
     skillLevel: 3,
   },
 ];
+console.log(techStack.map((obj) => (`${obj.id}--${obj.name}  `)));
 
 const projects = [
   {
@@ -346,8 +347,8 @@ const projects = [
     video: "placeholderVideo.gif",
   },
   {
-    id: "password-inspiration-generator",
-    name: "Password Inspiration Generator",
+    id: "unforgettable-passwords-generator",
+    name: "Unforgettable Passwords Generator",
     description: "Break the internet with the first ever ever created",
     thumbnail: "mpwMinecraft3DGoldLogo512.png",
     desktopMobileImage: "placeholderImage.gif",
