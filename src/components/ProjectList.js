@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectList = ({ allProjects }) => {
@@ -16,7 +15,6 @@ export const ProjectList = ({ allProjects }) => {
           <ProjectCard key={projectObj.id} projectObj={projectObj} />
         ))}
       </section>
-      <Outlet />
     </>
   );
 };

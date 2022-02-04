@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 // import { TechStack } from "./TechStack";
 
 export const Project = ({ allProjects, allTechStackItems }) => {
-  const [projectsArray, setProjectsArray] = useState(allProjects);
   const { projectId } = useParams();
+  const [projectsArray, setProjectsArray] = useState(allProjects);
   const [projectObj, setProjectObj] = useState({});
   console.log(projectsArray);
 
-  const getProjectObj = () => {
-    const theProject = projectsArray.find(({ id }) => id === projectId);
+  const getProjectObj = (projectId) => {
+    const theProject = allProjects.find((obj) => obj.id === projectId);
     setProjectObj(theProject);
   };
 

@@ -57,10 +57,13 @@ export const Portfolio = () => {
         />
         <Route path="/contact" element={<ContactMe user={user} />} />
         <Route
-          path="/projects/*"
+          path="/projects"
           element={
             <>
-              <ProjectsMain allProjects={allProjects} allNavTaglines={allNavTaglines} />
+              <ProjectsMain
+                allProjects={allProjects}
+                allNavTaglines={allNavTaglines}
+              />
             </>
           }
         >
@@ -69,7 +72,10 @@ export const Portfolio = () => {
             path="all-projects"
             element={
               <>
-                <ProjectList allProjects={allProjects} />
+                <ProjectList
+                  allProjects={allProjects}
+                  allTechStackItems={allTechStackItems}
+                />
               </>
             }
           />
