@@ -52,6 +52,11 @@ function Project({ allTechStack }) {
   const project = getProject(projectId);
   const [techUsedArray, setTechUsedArray] = useState([]);
 
+  const projectReactPortfolio = [];
+  const projectC51Website = [];
+  const projectSmilestonesApp = [];
+  const projectPasswordGenerator = [];
+
   return (
     <>
       <section className="project__content">
