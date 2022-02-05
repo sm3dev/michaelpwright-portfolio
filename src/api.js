@@ -120,6 +120,11 @@ const techStack = [
     skillLevel: 4,
   },
   {
+    id: 16,
+    name: "REGEX",
+    skillLevel: 4,
+  },
+  {
     id: 17,
     name: "CRUD",
     skillLevel: 4,
