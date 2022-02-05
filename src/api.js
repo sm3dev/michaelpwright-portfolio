@@ -460,7 +460,7 @@ export const getFirstUser = () => {
   return users[0];
 };
 
-export const getTeckStack = () => {
+export const getTechStack = () => {
   return techStack;
 };
 
@@ -468,7 +468,7 @@ export const getNavTaglines = () => {
   return navTaglines;
 };
 
-export const getHeroTaglines = () => {
+export const getHeroTaglines = () => { 
   return heroTaglines;
 };
 

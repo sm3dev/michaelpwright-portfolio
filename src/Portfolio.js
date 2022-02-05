@@ -19,7 +19,7 @@ import {
   getNavTaglines,
   getProject,
   getProjects,
-  getTeckStack,
+  getTechStack,
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
@@ -50,23 +50,20 @@ function ProjectList({ allProjects }) {
 function Project({ allTechStack }) {
   const { projectId } = useParams();
   const project = getProject(projectId);
-  const [techUsedArray, setTechUsedArray] = useState([]);
+  // const [techUsedArray, setTechUsedArray] = useState([]);
 
-  const projectReactPortfolio = [
-    1, 2, 3, 4, 5, 6, 7, 8, 10, 14, 15, 20, 21, 22, 28, 31, 33, 35, 37, 43,
-  ];
-  const projectC51Website = [
-    1, 2, 3, 4, 5, 6, 7, 8, 10, 13, 14, 15, 18, 20, 21, 22, 23, 24, 25, 26, 27,
-    28, 29, 31, 33, 36, 37, 43,
-  ];
-  const projectSmilestonesApp = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 22, 24, 27, 28,
-    31, 33, 35, 37, 39, 43,
-  ];
-  const projectPasswordGenerator = [
-    1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 24, 27, 28,
-    31, 32, 33, 35, 37, 39, 43,
-  ];
+  // const projectC51Website = [
+  //   1, 2, 3, 4, 5, 6, 7, 8, 10, 13, 14, 15, 18, 20, 21, 22, 23, 24, 25, 26, 27,
+  //   28, 29, 31, 33, 36, 37, 43,
+  // ];
+  // const projectSmilestonesApp = [
+  //   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 22, 24, 27, 28,
+  //   31, 33, 35, 37, 39, 43,
+  // ];
+  // const projectPasswordGenerator = [
+  //   1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 24, 27, 28,
+  //   31, 32, 33, 35, 37, 39, 43,
+  // ];
 
   return (
     <>
@@ -220,7 +217,7 @@ function Project({ allTechStack }) {
 
 export default function Portfolio() {
   const primaryUser = getFirstUser();
-  const techStackAll = getTeckStack();
+  const techStackAll = getTechStack();
   const allNavTaglines = getNavTaglines();
   const projects = getProjects();
   const heroTaglines = getHeroTaglines();
@@ -249,7 +246,7 @@ export default function Portfolio() {
             <HomeHero
               allHeroTaglines={allHeroTaglines}
               user={user}
-              allTechStackItems={allTechStack}
+              allTechStack={allTechStack}
             />
           }
         />
