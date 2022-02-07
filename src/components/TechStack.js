@@ -12,16 +12,14 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
   const [techUsedArray, setTechUsedArray] = useState([]);
 
   const getTechUsed = (id) => {
-    if (projectObjId === "react-portfolio-website") {
-      return setTechUsedArray(projectReactPortfolio);
-    } else if (projectObjId === "nss-cohort-51-website") {
+    if (projectObjId === "nss-cohort-51-website") {
       return setTechUsedArray(projectC51Website);
     } else if (projectObjId === "smilestones-app") {
       return setTechUsedArray(projectSmilestonesApp);
     } else if (projectObjId === "unforgettable-passwords-generator") {
       return setTechUsedArray(projectPasswordGenerator);
     } else {
-      console.log("this is the home page");
+      return setTechUsedArray(projectReactPortfolio);
     }
   };
 

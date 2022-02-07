@@ -23,9 +23,11 @@ export const ProjectCard = ({ projectObj }) => {
       </section>
       <h3 className="project-card-title__text">
         {" "}
-        <a href={`${projectObj.id}`} className="project-detail__link">
+        <Link to={`${projectObj.id}`} className="project-detail__link">
+          {" "}
           {projectObj.name}
-        </a>{" "}
+        </Link>
+
       </h3>
       <p className="project-card__description">{projectObj.description}</p>
       <p className="project-card-read-more__block">
