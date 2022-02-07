@@ -1,19 +1,36 @@
 import React, { useEffect, useState } from "react";
+import {
+  projectC51Website,
+  projectPasswordGenerator,
+  projectReactPortfolio,
+  projectSmilestonesApp,
+} from "../api";
 import { getMatch } from "./Helpers";
 
 export const TechStack = ({ allTechStack, projectObjId }) => {
-  const techUsedArray = [1, 4, 5, 6, 8, 10, 20, 27, 35];
-  console.log(allTechStack)
-
-  // to grab the correct comparison used in getMatch(), the function has to do the following:
-  //  - get the id of the ProjectCard object the techStack component is called on
-  // - include a conditional that returns a given array that will be called techUsedArray
-
   const [allTechObjects, setAllTechObjects] = useState(allTechStack);
+  const [techUsedArray, setTechUsedArray] = useState([]);
+
+  const getTechUsed = () => {
+    if (projectObjId) {
+      return console.log("not the home page");
+    } else if (projectObjId === "react-portfolio-website") {
+      return setTechUsedArray(projectReactPortfolio);
+    } else if (projectObjId === "nss-cohort-51-website") {
+      return setTechUsedArray(projectC51Website);
+    } else if (projectObjId === "smilestones-app") {
+      return setTechUsedArray(projectSmilestonesApp);
+    } else if (projectObjId === "unforgettable-passwords-generator") {
+      return setTechUsedArray(projectPasswordGenerator);
+    } else {
+      console.log("this is the home page");
+    }
+  };
 
   useEffect(() => {
     setAllTechObjects(allTechStack);
-  }, [allTechStack]);
+    getTechUsed();
+  }, [allTechStack, getTechUsed()]);
 
   return (
     <section className="technologies__block">
