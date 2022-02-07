@@ -421,7 +421,7 @@ export const projectC51Website = [
   28, 29, 31, 33, 36, 37, 43,
 ];
 export const projectSmilestonesApp = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 22, 24, 27, 28,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 22, 23, 24, 27, 28,
   31, 33, 35, 37, 39, 43,
 ];
 export const projectPasswordGenerator = [

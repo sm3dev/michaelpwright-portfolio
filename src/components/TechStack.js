@@ -12,9 +12,7 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
   const [techUsedArray, setTechUsedArray] = useState([]);
 
   const getTechUsed = (id) => {
-    if (id) {
-      return console.log("not the home page");
-    } else if (projectObjId === "react-portfolio-website") {
+    if (projectObjId === "react-portfolio-website") {
       return setTechUsedArray(projectReactPortfolio);
     } else if (projectObjId === "nss-cohort-51-website") {
       return setTechUsedArray(projectC51Website);
