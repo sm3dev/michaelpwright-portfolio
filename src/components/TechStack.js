@@ -11,8 +11,8 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
   const [allTechObjects, setAllTechObjects] = useState(allTechStack);
   const [techUsedArray, setTechUsedArray] = useState([]);
 
-  const getTechUsed = () => {
-    if (projectObjId) {
+  const getTechUsed = (id) => {
+    if (id) {
       return console.log("not the home page");
     } else if (projectObjId === "react-portfolio-website") {
       return setTechUsedArray(projectReactPortfolio);
@@ -29,8 +29,8 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
 
   useEffect(() => {
     setAllTechObjects(allTechStack);
-    getTechUsed();
-  }, [allTechStack, getTechUsed()]);
+    getTechUsed(projectObjId);
+  }, []);
 
   return (
     <section className="technologies__block">
