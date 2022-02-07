@@ -1,3 +1,6 @@
+// API Data File
+
+// ********** API DATA **********
 const users = [
   {
     id: 1,
@@ -117,6 +120,11 @@ const techStack = [
   {
     id: 15,
     name: "Wireframing",
+    skillLevel: 4,
+  },
+  {
+    id: 16,
+    name: "REGEX",
     skillLevel: 4,
   },
   {
@@ -346,8 +354,8 @@ const projects = [
     video: "placeholderVideo.gif",
   },
   {
-    id: "password-inspiration-generator",
-    name: "Password Inspiration Generator",
+    id: "unforgettable-passwords-generator",
+    name: "Unforgettable Passwords Generator",
     description: "Break the internet with the first ever ever created",
     thumbnail: "mpwMinecraft3DGoldLogo512.png",
     desktopMobileImage: "placeholderImage.gif",
@@ -407,6 +415,25 @@ const heroTaglines = [
   { id: 9, tagline: "My brain is locked in Solution Orientation" },
 ];
 
+// Arrays of techStack object id's; each integer is the techStack id of a techStack object used in the project written into the array name 
+export const projectC51Website = [
+  1, 2, 3, 4, 5, 6, 7, 8, 10, 13, 14, 15, 18, 20, 21, 22, 23, 24, 25, 26, 27,
+  28, 29, 31, 33, 36, 37, 43,
+];
+export const projectSmilestonesApp = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 22, 23, 24, 27, 28,
+  31, 33, 35, 37, 39, 43,
+];
+export const projectPasswordGenerator = [
+  1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 16, 17, 18, 19, 20, 21, 22, 24, 27,
+  28, 31, 32, 33, 35, 37, 39, 43,
+];
+
+export const projectReactPortfolio = [
+  1, 2, 3, 4, 5, 6, 7, 8, 10, 14, 15, 19, 20, 21, 22, 24, 27, 28, 31, 32, 33,
+  35, 37, 38, 43,
+];
+
 const aboutQuotes = [
   {
     id: 1,
@@ -442,6 +469,9 @@ const aboutQuotes = [
   },
 ];
 
+// ********** END OF API DATA **********
+
+// Functions that retrieve data from the API data
 export const getProjects = () => {
   return projects;
 };
@@ -454,7 +484,7 @@ export const getFirstUser = () => {
   return users[0];
 };
 
-export const getTeckStack = () => {
+export const getTechStack = () => {
   return techStack;
 };
 

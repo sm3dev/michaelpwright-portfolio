@@ -6,7 +6,7 @@ import { NavBar } from "./NavBar";
 import { Resume } from "./Resume";
 import { TechStack } from "./TechStack";
 
-export const HomeHero = ({ allHeroTaglines, user, allTechStackItems }) => {
+export const HomeHero = ({ allHeroTaglines, user, allTechStack }) => {
   const [portfolioAuthor, setPortfolioAuthor] = useState({});
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
@@ -30,7 +30,7 @@ export const HomeHero = ({ allHeroTaglines, user, allTechStackItems }) => {
           </Link>
         </figure>
 
-        <TechStack allTechStackItems={allTechStackItems} />
+        <TechStack allTechStack={allTechStack} />
       </section>{" "}
       <NavBar />
       <Resume

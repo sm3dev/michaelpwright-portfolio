@@ -19,7 +19,7 @@ import {
   getNavTaglines,
   getProject,
   getProjects,
-  getTeckStack,
+  getTechStack,
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
@@ -95,7 +95,7 @@ function Project({ allTechStack }) {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          <TechStack projectObjId={project.id} allTechStack={allTechStack} />
+          <TechStack projectObjId={projectId} allTechStack={allTechStack} />
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
@@ -203,7 +203,7 @@ function Project({ allTechStack }) {
 
 export default function Portfolio() {
   const primaryUser = getFirstUser();
-  const techStackAll = getTeckStack();
+  const techStackAll = getTechStack();
   const allNavTaglines = getNavTaglines();
   const projects = getProjects();
   const heroTaglines = getHeroTaglines();
@@ -213,13 +213,15 @@ export default function Portfolio() {
   const [allQuotes, setAllQuotes] = useState([allAboutQuotes]);
   const [allProjects, setAllProjects] = useState(projects);
   const [allTechStack, setAllTechStack] = useState(techStackAll);
+  const [user, setUser] = useState(primaryUser);
 
   useEffect(() => {
     setAllHeroTaglines(heroTaglines);
     setAllQuotes(allAboutQuotes);
     setAllProjects(projects);
     setAllTechStack(techStackAll);
-  }, [heroTaglines, allAboutQuotes, techStackAll, projects]);
+    setUser(primaryUser);
+  }, [heroTaglines, allAboutQuotes, techStackAll, projects, primaryUser]);
 
   return (
     <BrowserRouter>
@@ -229,8 +231,8 @@ export default function Portfolio() {
           element={
             <HomeHero
               allHeroTaglines={allHeroTaglines}
-              user={primaryUser}
-              allTechStackItems={allTechStack}
+              user={user}
+              allTechStack={allTechStack}
             />
           }
         />
@@ -239,11 +241,11 @@ export default function Portfolio() {
           element={
             <>
               <HeaderLogo allNavTaglines={allNavTaglines} />
-              <About user={primaryUser} allQuotes={allQuotes} />
+              <About user={user} allQuotes={allQuotes} />
             </>
           }
         />
-        <Route path="/contact" element={<ContactMe user={primaryUser} />} />
+        <Route path="/contact" element={<ContactMe user={user} />} />
         <Route
           path="/projects"
           element={
@@ -269,7 +271,9 @@ export default function Portfolio() {
           />
           <Route
             path=":projectId"
-            element={<Project allProjects={allProjects} allTechStack={allTechStack} />}
+            element={
+              <Project allProjects={allProjects} allTechStack={allTechStack} />
+            }
           />
         </Route>
 
@@ -290,7 +294,7 @@ export default function Portfolio() {
           }
         />
       </Routes>
-      <Footer user={primaryUser} />
+      <Footer user={user} />
     </BrowserRouter>
   );
 }
