@@ -227,15 +227,7 @@ export default function Portfolio() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            
-            <ComingSoon
-              user={user}
-            />
-          }
-        />
+        <Route path="/" element={<ComingSoon user={user} />} />
         {/* <Route
           path="/"
           element={
@@ -286,8 +278,8 @@ export default function Portfolio() {
             }
           />
         </Route>
-
-        <Route
+*/}
+        {/* <Route
           path="*"
           element={
             <>
@@ -302,7 +294,8 @@ export default function Portfolio() {
               </main>
             </>
           }
-        /> */}
+        />  */}
+        <Route path="*" element={<ComingSoon user={user} />} />
       </Routes>
       {/* <Footer user={user} /> */}
     </BrowserRouter>
