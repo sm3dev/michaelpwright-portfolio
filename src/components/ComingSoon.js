@@ -23,25 +23,25 @@ import {
 } from "@mui/material";
 import React from "react";
 
-export const ComingSoon = () => {
+export const ComingSoon = ({ user }) => {
   let pageURL = encodeURI(document.location.href);
   const socialChips = [
     {
       key: 1,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/mpw?trk=public-profile-badge-profile-badge-view-profile-cta",
+      url: user.linkedIn,
       connectType: "LinkedIn",
     },
     {
       key: 2,
       label: "GitHub",
-      url: "https://github.com/sm3dev",
+      url: user.gitHub,
       connectType: "GitHub",
     },
     {
       key: 3,
       label: "Email",
-      url: "mailto:mrwry7@gmail.com",
+      url: user.email,
       connectType: "Email",
     },
   ];
@@ -65,10 +65,10 @@ export const ComingSoon = () => {
             fontSize="18"
             component="div"
           >
-            Hi, Michael P Wright!
+            Hi, I'm Michael P Wright!
           </Typography>
           <Typography color="info" variant="subtitle2">
-            Welcome to my portfolio. We're under construction at the moment.{" "}
+            Welcome to my portfolio. Check back soon for launch.{" "}
           </Typography>
         </section>
       </Box>
@@ -168,7 +168,7 @@ export const ComingSoon = () => {
               variant="contained"
               startIcon={<Download />}
               component="a"
-              href="https://drive.google.com/file/d/1q0FZIR742rX9uwlIdSna8WdBnAZ3fW1y/view"
+              href={user.resumeLink}
               target="_blank"
               rel="noreferrer"
               title="View/Download My Résumé"

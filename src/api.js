@@ -14,7 +14,7 @@ const users = [
     linkedIn: "https://www.linkedin.com/in/mpw",
     gitHub: "https://github.com/sm3dev",
     twitter: "",
-    email: "mrwry7@gmail.com",
+    email: "michael@michaelpwright.com",
     aboutMeIntro:
       "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub. \nfor getting students employment and showcasing the UI/UX knowledge and talent.",
     personalInfo1:
@@ -30,7 +30,7 @@ const users = [
     additionalPhoto: "placeholderImage.gif",
     additionalPhotoLink: "https://github.com/sm3dev",
     resumeLink:
-      "https://drive.google.com/file/d/1q0FZIR742rX9uwlIdSna8WdBnAZ3fW1y/view?usp=sharing",
+      "https://www.michaelpwright.com/resume",
   },
 ];
 

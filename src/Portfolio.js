@@ -6,11 +6,11 @@ import {
   BrowserRouter,
   Outlet,
 } from "react-router-dom";
-import { Footer } from "./components/Footer";
-import { About } from "./components/About";
-import { ContactMe } from "./components/ContactMe";
-import { HomeHero } from "./components/HomeHero";
-import { NavBar } from "./components/NavBar";
+// import { Footer } from "./components/Footer";
+// import { About } from "./components/About";
+// import { ContactMe } from "./components/ContactMe";
+// import { HomeHero } from "./components/HomeHero";
+// import { NavBar } from "./components/NavBar";
 import { HeaderLogo } from "./components/HeaderLogo";
 import {
   getAboutQuotes,
@@ -23,6 +23,7 @@ import {
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
+import { ComingSoon } from "./components/ComingSoon";
 
 function ProjectsMain({ allNavTaglines }) {
   return (
@@ -229,14 +230,23 @@ export default function Portfolio() {
         <Route
           path="/"
           element={
+            
+            <ComingSoon
+              user={user}
+            />
+          }
+        />
+        {/* <Route
+          path="/"
+          element={
             <HomeHero
               allHeroTaglines={allHeroTaglines}
               user={user}
               allTechStack={allTechStack}
             />
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/about"
           element={
             <>
@@ -292,9 +302,9 @@ export default function Portfolio() {
               </main>
             </>
           }
-        />
+        /> */}
       </Routes>
-      <Footer user={user} />
+      {/* <Footer user={user} /> */}
     </BrowserRouter>
   );
 }
