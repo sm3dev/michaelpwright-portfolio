@@ -6,11 +6,11 @@ import {
   BrowserRouter,
   Outlet,
 } from "react-router-dom";
-// import { Footer } from "./components/Footer";
-// import { About } from "./components/About";
-// import { ContactMe } from "./components/ContactMe";
-// import { HomeHero } from "./components/HomeHero";
-// import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
+import { About } from "./components/About";
+import { ContactMe } from "./components/ContactMe";
+import { HomeHero } from "./components/HomeHero";
+import { NavBar } from "./components/NavBar";
 import { HeaderLogo } from "./components/HeaderLogo";
 import {
   getAboutQuotes,
@@ -23,7 +23,7 @@ import {
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
-import { ComingSoon } from "./components/ComingSoon";
+// import { ComingSoon } from "./components/ComingSoon";
 
 function ProjectsMain({ allNavTaglines }) {
   return (
@@ -227,8 +227,7 @@ export default function Portfolio() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ComingSoon user={user} />} />
-        {/* <Route
+        <Route
           path="/"
           element={
             <HomeHero
@@ -237,8 +236,8 @@ export default function Portfolio() {
               allTechStack={allTechStack}
             />
           }
-        /> */}
-        {/* <Route
+        />
+        <Route
           path="/about"
           element={
             <>
@@ -278,8 +277,8 @@ export default function Portfolio() {
             }
           />
         </Route>
-*/}
-        {/* <Route
+
+        <Route
           path="*"
           element={
             <>
@@ -294,10 +293,9 @@ export default function Portfolio() {
               </main>
             </>
           }
-        />  */}
-        <Route path="*" element={<ComingSoon user={user} />} />
+        /> 
       </Routes>
-      {/* <Footer user={user} /> */}
+      <Footer user={user} />
     </BrowserRouter>
   );
 }
