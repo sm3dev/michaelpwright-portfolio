@@ -13,7 +13,7 @@ const users = [
     homepageURL: "https://www.michaelpwright.com/",
     linkedIn: "https://www.linkedin.com/in/mpw",
     gitHub: "https://github.com/sm3dev",
-    twitter: "",
+    twitter: "https://twitter.com/mrwryt",
     email: "michael@michaelpwright.com",
     aboutMeIntro:
       "The Cohort website is a staple in the NSS Web Developer Program cirriculum. \nThe UI/UX Students of Cohort 51 were charged with creating a hub. \nfor getting students employment and showcasing the UI/UX knowledge and talent.",
