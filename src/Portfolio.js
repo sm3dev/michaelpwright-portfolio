@@ -23,7 +23,6 @@ import {
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
-// import { ComingSoon } from "./components/ComingSoon";
 
 function ProjectsMain({ allNavTaglines }) {
   return (
