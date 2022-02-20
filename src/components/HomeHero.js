@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getRandomObj, getTaglinesTextArray } from "./Helpers";
+import { getRandomObj, getTaglinesTextArray, sortObjectsByNameProperty } from "./Helpers";
 import { HeroTagline } from "./HeroTagline";
 import { NavBar } from "./NavBar";
 import { Resume } from "./Resume";
@@ -10,6 +10,10 @@ export const HomeHero = ({ allHeroTaglines, user, allTechStack }) => {
   const [portfolioAuthor, setPortfolioAuthor] = useState({});
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
+  // Sort allTechStack by the "name" property 
+  const sortedTechStackList = sortObjectsByNameProperty(allTechStack);
+
+  console.log(sortedTechStackList)
   useEffect(() => {
     setPortfolioAuthor(user);
     setTaglineTextArray(getTaglinesTextArray(allHeroTaglines));
@@ -30,7 +34,7 @@ export const HomeHero = ({ allHeroTaglines, user, allTechStack }) => {
           </Link>
         </figure>
 
-        <TechStack allTechStack={allTechStack} />
+        <TechStack allTechStack={sortedTechStackList} />
       </section>{" "}
       <NavBar />
       <Resume

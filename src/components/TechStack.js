@@ -26,7 +26,7 @@ export const TechStack = ({ allTechStack, projectObjId }) => {
   useEffect(() => {
     setAllTechObjects(allTechStack);
     getTechUsed(projectObjId);
-  }, [getTechUsed, projectObjId]);
+  }, [allTechStack, getTechUsed, projectObjId]);
 
   return (
     <section className="technologies__block">

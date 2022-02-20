@@ -19,5 +19,11 @@ export const getRandomObj = (array) => {
 // Creates a new Array with only the values from the given property "tagline"
 export const getTaglinesTextArray = (array) => {
   let newArray = array.map((taglineObj) => taglineObj.tagline);
-    return newArray;
-}
+  return newArray;
+};
+
+// Sort an array of objects by a property called "name" in ascending order
+export const sortObjectsByNameProperty = (array) => {
+  let sortedArray = array.sort((a, b) => (a.name > b.name ? 1 : -1));
+  return sortedArray;
+};

@@ -23,7 +23,7 @@ import {
 } from "./api";
 import { ProjectCard } from "./components/ProjectCard";
 import { TechStack } from "./components/TechStack";
-// import { ComingSoon } from "./components/ComingSoon";
+import { sortObjectsByNameProperty } from "./components/Helpers";
 
 function ProjectsMain({ allNavTaglines }) {
   return (
@@ -51,6 +51,9 @@ function ProjectList({ allProjects }) {
 function Project({ allTechStack }) {
   const { projectId } = useParams();
   const project = getProject(projectId);
+
+  // Sort allTechStack by the "name" property
+  const sortedTechStackList = sortObjectsByNameProperty(allTechStack);
 
   return (
     <>
@@ -96,7 +99,7 @@ function Project({ allTechStack }) {
               <button className="project-links__button">GitHub Repo</button>
             </a>
           </section>
-          <TechStack projectObjId={projectId} allTechStack={allTechStack} />
+          <TechStack projectObjId={projectId} allTechStack={sortedTechStackList} />
         </section>
         <hr className="section__divider" />{" "}
         <figure className="challenge-image__block">
@@ -293,7 +296,7 @@ export default function Portfolio() {
               </main>
             </>
           }
-        /> 
+        />
       </Routes>
       <Footer user={user} />
     </BrowserRouter>
