@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getRandomObj, getTaglinesTextArray, sortObjectsByProperty } from "./Helpers";
+import { getRandomObj, getTaglinesTextArray, sortObjectsByNameProperty } from "./Helpers";
 import { HeroTagline } from "./HeroTagline";
 import { NavBar } from "./NavBar";
 import { Resume } from "./Resume";
@@ -11,8 +11,8 @@ export const HomeHero = ({ allHeroTaglines, user, allTechStack }) => {
   const [taglineTextArray, setTaglineTextArray] = useState([]);
 
   // Sort allTechStack by the "name" property 
-  const sortedTechStackList = sortObjectsByProperty(allTechStack);
-  
+  const sortedTechStackList = sortObjectsByNameProperty(allTechStack);
+
   console.log(sortedTechStackList)
   useEffect(() => {
     setPortfolioAuthor(user);

@@ -22,8 +22,8 @@ export const getTaglinesTextArray = (array) => {
   return newArray;
 };
 
-// Sorta an array of objects by a property called "name" in ascending order
-export const sortObjectsByProperty = (array) => {
+// Sort an array of objects by a property called "name" in ascending order
+export const sortObjectsByNameProperty = (array) => {
   let sortedArray = array.sort((a, b) => (a.name > b.name ? 1 : -1));
   return sortedArray;
 };
