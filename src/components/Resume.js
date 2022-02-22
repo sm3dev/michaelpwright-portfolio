@@ -3,7 +3,9 @@ import React from "react";
 export const Resume = ({ portfolioAuthor }) => {
   return (
     <article className="resume__block theme__dark">
-      <h2 className="resume__title">Résumé</h2>
+      <h3 className="resume__heading text__all-caps">Résumé</h3>
+      <h2 className="resume__title">Michael P. Wright</h2>
+      <p className="resume__subtitle">UI/UX FRONT-END DEVELOPER</p>
       <section className="download-resume__block">
         <a
           href={portfolioAuthor.resumeLink}
