@@ -13,7 +13,7 @@ export const TechSkillLevels = ({ allTechStack }) => {
             {" "}
             <div className="tech-list-item__container">
               <label htmlFor={`technology-${techObj.id}`}>
-                {techObj.name}:&nbsp;{" "}
+                {techObj.name}&nbsp;{" "}
               </label>
               <meter
                 className="skill__meter"
