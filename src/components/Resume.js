@@ -198,7 +198,7 @@ export const Resume = ({ portfolioAuthor, allTechStack }) => {
         </ul>
       </section>
       <section id="resume-skills" className="resume skills__block">
-      <h4 className="resume__subheading skills__text text__all-caps">Education</h4>
+      <h4 className="resume__subheading skills__text text__all-caps">Skills</h4>
       <TechSkillLevels allTechStack={allTechStack} />
       </section>
 
