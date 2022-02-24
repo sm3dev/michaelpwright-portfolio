@@ -229,7 +229,7 @@ const techStack = [
   },
   {
     id: 37,
-    name: "Single Page Application",
+    name: "Single Page App",
     skillLevel: 4,
   },
   {
@@ -259,9 +259,14 @@ const techStack = [
   },
   {
     id: 43,
-    name: "DevTools",
+    name: "Chrome DevTools",
     skillLevel: 3,
   },
+  {
+    id: 44,
+    name: "Redux",
+    skillLevel: 1,
+  }
 ];
 
 const projects = [
