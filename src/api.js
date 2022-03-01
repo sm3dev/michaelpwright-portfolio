@@ -220,7 +220,7 @@ const techStack = [
   {
     id: 35,
     name: "React Router",
-    skillLevel: 3,
+    skillLevel: 4,
   },
   {
     id: 36,
