@@ -264,7 +264,12 @@ const techStack = [
   },
   {
     id: 44,
-    name: "Redux",
+    name: "REDUX",
+    skillLevel: 1,
+  },
+  {
+    id: 45,
+    name: "TypeScript",
     skillLevel: 1,
   }
 ];
