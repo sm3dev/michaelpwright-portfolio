@@ -1,10 +1,11 @@
 import React from "react";
 
-export const TechSkillLevels = ({ allTechObjects }) => {
+export const TechSkillLevels = ({ allTechStack }) => {
+
   return (
     <section id="tech-skill-levels__block">
       <ul className="tech__list list--no-padding-inline-left">
-        {allTechObjects.map((techObj) => (
+        {allTechStack.map((techObj) => (
           <li
             className="tech__list-item list-item__no-bullet text__white-space--no-wrap"
             key={techObj.id}
@@ -12,7 +13,7 @@ export const TechSkillLevels = ({ allTechObjects }) => {
             {" "}
             <div className="tech-list-item__container">
               <label htmlFor={`technology-${techObj.id}`}>
-                {techObj.name}:&nbsp;{" "}
+                {techObj.name}&nbsp;{" "}
               </label>
               <meter
                 className="skill__meter"

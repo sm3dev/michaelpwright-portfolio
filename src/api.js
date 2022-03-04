@@ -220,7 +220,7 @@ const techStack = [
   {
     id: 35,
     name: "React Router",
-    skillLevel: 3,
+    skillLevel: 4,
   },
   {
     id: 36,
@@ -229,7 +229,7 @@ const techStack = [
   },
   {
     id: 37,
-    name: "Single Page Application",
+    name: "Single Page App",
     skillLevel: 4,
   },
   {
@@ -259,9 +259,19 @@ const techStack = [
   },
   {
     id: 43,
-    name: "DevTools",
+    name: "Chrome DevTools",
     skillLevel: 3,
   },
+  {
+    id: 44,
+    name: "REDUX",
+    skillLevel: 1,
+  },
+  {
+    id: 45,
+    name: "TypeScript",
+    skillLevel: 1,
+  }
 ];
 
 const projects = [
