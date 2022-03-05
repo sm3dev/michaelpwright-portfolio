@@ -12,8 +12,6 @@
   background-color: #333;
 
   a {
-    float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 1rem;
@@ -26,16 +24,3 @@
   }
 }
 
-#my-resume {
-    padding: 1rem;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + #my-resume {
-    padding-top: 4rem;
-}
