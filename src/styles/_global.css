@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "/src/styles/ComingSoon.scss";
-@import "/src/styles/TechSkillLevels.scss";
-@import "/src/styles/TechStack.scss";
-@import "/src/styles/_colors.scss";
-@import "/src/styles/Home.scss";
+@import "/src/styles/ComingSoon.css";
+@import "/src/styles/TechSkillLevels.css";
+@import "/src/styles/TechStack.css";
+@import "/src/styles/_colors.css";
+@import "/src/styles/Home.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
@@ -53,7 +53,7 @@ img {
 
 a {
   text-decoration: none;
-  // color: pink;
+  /* color: pink; */
 }
 a:visited {
   color: none;

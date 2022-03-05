@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavBar } from "./NavBar";
-import "../styles/HeaderNav.scss";
+import "../styles/HeaderNav.css";
 import mpwMinecraft3DGoldLogo512 from "../images/mpwMinecraft3DGoldLogo512.png";
 import { getRandomObj, getTaglinesTextArray } from "./Helpers";
 import { Link } from "react-router-dom";
