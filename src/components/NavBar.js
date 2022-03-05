@@ -4,15 +4,6 @@ import "../styles/HeaderNav.scss";
 
 export const NavBar = () => {
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
   return (
     <nav id="navBar" className="nav-list list-item__no-bullet text__all-caps">
       <NavLink
