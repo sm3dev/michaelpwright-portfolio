@@ -1,10 +1,7 @@
 module.exports = {
-  content: [
-    "./src/components/NavBar.js",
-    "./src/components/HeaderLogo.js",
-  ],
+  content: ["./public/index.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
