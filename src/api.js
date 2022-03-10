@@ -271,6 +271,11 @@ const techStack = [
     id: 45,
     name: "TypeScript",
     skillLevel: 1,
+  },
+  {
+    id: 46,
+    name: "RESTful API",
+    skillLevel: 4,
   }
 ];
 
