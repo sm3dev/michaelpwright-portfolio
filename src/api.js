@@ -457,6 +457,7 @@ const heroTaglines = [
   { id: 7, tagline: "I’ve probably looked at your work first" },
   { id: 8, tagline: "I type “?” after questions" },
   { id: 9, tagline: "My brain is locked in Solution Orientation" },
+  { id: 10, tagline: "I love a good form" },
 ];
 
 // Arrays of techStack object id's; each integer is the techStack id of a techStack object used in the project written into the array name
