@@ -27,3 +27,4 @@ export const sortObjectsByNameProperty = (array) => {
   let sortedArray = array.sort((a, b) => (a.name > b.name ? 1 : -1));
   return sortedArray;
 };
+

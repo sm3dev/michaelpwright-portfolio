@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/HeaderNav.scss";
+import "../styles/HeaderNav.css";
 
 export const NavBar = () => {
+
   return (
     <nav id="navBar" className="nav-list list-item__no-bullet text__all-caps">
       <NavLink

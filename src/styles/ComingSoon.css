@@ -1,0 +1,8 @@
+#mainBox {
+  background-color: transparent;
+  height: 100vh;
+}
+
+#mainBox .card {
+  min-width: 240px;
+}

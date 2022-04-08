@@ -29,8 +29,7 @@ const users = [
       "The UI/UX Students of Cohort 51 were charged with creating a hub for getting students employment",
     additionalPhoto: "placeholderImage.gif",
     additionalPhotoLink: "https://github.com/sm3dev",
-    resumeLink:
-      "https://www.michaelpwright.com/resume",
+    resumeLink: "https://www.michaelpwright.com/resume",
   },
 ];
 
@@ -38,12 +37,32 @@ const users = [
 //   {
 //     id: 1,
 //     personFullName: "Brenda L.",
+//     organization: "Nashville Software School",
 //     testimony: "You are so determined!",
 //     userId: 1,
 //   },
-//   { id: 2, personFullName: "", testimony: "", userId: 1 },
-//   { id: 3, personFullName: "", testimony: "", userId: 1 },
-//   { id: 4, personFullName: "", testimony: "", userId: 1 },
+//   {
+//     id: 2,
+//     personFullName: "Monique R.",
+//     organization: "Leidos",
+//     testimony:
+//       "Michael and I have been friends for over 23 years. He has a great sense of humor, is very positive, and gets along well with others. He is a very meticulous/detailed oriented person who enjoys solving problems and figuring things out.",
+//     userId: 1,
+//   },
+//   {
+//     id: 3,
+//     personFullName: "",
+//     organization: "Leidos",
+//     testimony: "",
+//     userId: 1,
+//   },
+//   {
+//     id: 4,
+//     personFullName: "",
+//     organization: "Leidos",
+//     testimony: "",
+//     userId: 1,
+//   },
 // ];
 
 const techStack = [
@@ -271,7 +290,42 @@ const techStack = [
     id: 45,
     name: "TypeScript",
     skillLevel: 1,
-  }
+  },
+  {
+    id: 46,
+    name: "RESTful API",
+    skillLevel: 4,
+  },
+  {
+    id: 47,
+    name: "Public Speaking",
+    skillLevel: 5,
+  },
+  {
+    id: 48,
+    name: "Presentation",
+    skillLevel: 5,
+  },
+  {
+    id: 49,
+    name: "Google Analytics",
+    skillLevel: 4,
+  },
+  {
+    id: 50,
+    name: "Google Tag Manager",
+    skillLevel: 3,
+  },
+  {
+    id: 51,
+    name: "Google Data Studio",
+    skillLevel: 2,
+  },
+  {
+    id: 52,
+    name: "Google Search Console",
+    skillLevel: 3,
+  },
 ];
 
 const projects = [
@@ -423,9 +477,10 @@ const heroTaglines = [
   { id: 7, tagline: "I’ve probably looked at your work first" },
   { id: 8, tagline: "I type “?” after questions" },
   { id: 9, tagline: "My brain is locked in Solution Orientation" },
+  { id: 10, tagline: "I love a good form" },
 ];
 
-// Arrays of techStack object id's; each integer is the techStack id of a techStack object used in the project written into the array name 
+// Arrays of techStack object id's; each integer is the techStack id of a techStack object used in the project written into the array name
 export const projectC51Website = [
   1, 2, 3, 4, 5, 6, 7, 8, 10, 13, 14, 15, 18, 20, 21, 22, 23, 24, 25, 26, 27,
   28, 29, 31, 33, 36, 37, 43,

@@ -1,0 +1,22 @@
+/* Styles for both HeaderLogo and NavBar components */
+
+.header img.header__logo {
+  width: 60px;
+  height: 60px;
+}
+
+#navBar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navBar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+#navBar .logo__block {
+  height: 40px;
+  width: 40px;
+}
