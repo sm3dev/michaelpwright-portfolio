@@ -306,6 +306,26 @@ const techStack = [
     name: "Presentation",
     skillLevel: 5,
   },
+  {
+    id: 49,
+    name: "Google Analytics",
+    skillLevel: 4,
+  },
+  {
+    id: 50,
+    name: "Google Tag Manager",
+    skillLevel: 3,
+  },
+  {
+    id: 51,
+    name: "Google Data Studio",
+    skillLevel: 2,
+  },
+  {
+    id: 52,
+    name: "Google Search Console",
+    skillLevel: 3,
+  },
 ];
 
 const projects = [
