@@ -298,7 +298,7 @@ const techStack = [
   },
   {
     id: 47,
-    name: "Public Speaking",
+    name: "Oral Communication",
     skillLevel: 5,
   },
   {
@@ -325,6 +325,24 @@ const techStack = [
     id: 52,
     name: "Google Search Console",
     skillLevel: 3,
+  },
+  {
+    id: 53,
+    name: "Attention to Detail",
+    skillLevel: 5,
+  },
+  {
+    id: 54,
+    name: "Written Communication",
+    skillLevel: 5,
+  }, {
+    id: 55,
+    name: "Problem Solving",
+    skillLevel: 5,
+  }, {
+    id: 56,
+    name: "Leadership/Supervisory",
+    skillLevel: 5,
   },
 ];
 
