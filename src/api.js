@@ -214,7 +214,7 @@ const techStack = [
   {
     id: 30,
     name: "Tailwind CSS",
-    skillLevel: 2,
+    skillLevel: 3,
   },
   {
     id: 31,
@@ -269,7 +269,7 @@ const techStack = [
   {
     id: 41,
     name: "Supabase",
-    skillLevel: 1,
+    skillLevel: 2,
   },
   {
     id: 42,
