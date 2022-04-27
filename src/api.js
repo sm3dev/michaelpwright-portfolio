@@ -203,7 +203,7 @@ const techStack = [
   },
   {
     id: 28,
-    name: "Mockups",
+    name: "Paper Mockups",
     skillLevel: 5,
   },
   {
@@ -214,7 +214,7 @@ const techStack = [
   {
     id: 30,
     name: "Tailwind CSS",
-    skillLevel: 2,
+    skillLevel: 3,
   },
   {
     id: 31,
@@ -243,7 +243,7 @@ const techStack = [
   },
   {
     id: 36,
-    name: "Team Collab",
+    name: "Team Collaboration",
     skillLevel: 5,
   },
   {
@@ -269,7 +269,7 @@ const techStack = [
   {
     id: 41,
     name: "Supabase",
-    skillLevel: 1,
+    skillLevel: 2,
   },
   {
     id: 42,
@@ -297,16 +297,6 @@ const techStack = [
     skillLevel: 4,
   },
   {
-    id: 47,
-    name: "Oral Communication",
-    skillLevel: 5,
-  },
-  {
-    id: 48,
-    name: "Presentation",
-    skillLevel: 5,
-  },
-  {
     id: 49,
     name: "Google Analytics",
     skillLevel: 4,
@@ -326,23 +316,40 @@ const techStack = [
     name: "Google Search Console",
     skillLevel: 3,
   },
+];
+
+const professionalSkills = [
   {
-    id: 53,
-    name: "Attention to Detail",
-    skillLevel: 5,
+    id: 1,
+    name: "Team Collaboration",
   },
   {
-    id: 54,
+    id: 2,
+    name: "Oral Communication",
+  },
+  {
+    id: 3,
+    name: "Presentation",
+  },
+  {
+    id: 4,
+    name: "Attention to Detail",
+  },
+  {
+    id: 5,
     name: "Written Communication",
-    skillLevel: 5,
-  }, {
-    id: 55,
+  },
+  {
+    id: 6,
     name: "Problem Solving",
-    skillLevel: 5,
-  }, {
-    id: 56,
+  },
+  {
+    id: 7,
     name: "Leadership/Supervisory",
-    skillLevel: 5,
+  },
+  {
+    id: 8,
+    name: "Conflict Resolution",
   },
 ];
 
