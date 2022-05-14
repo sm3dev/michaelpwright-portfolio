@@ -312,6 +312,11 @@ const techStack = [
     name: "Google Search Console",
     skillLevel: 3,
   },
+  {
+    id: 53,
+    name: "Adobe InDesign",
+    skillLevel: 4,
+  },
 ];
 
 const professionalSkills = [
