@@ -123,7 +123,7 @@ const techStack = [
   },
   {
     id: 12,
-    name: "dbdiagram",
+    name: "DBDiagram",
     skillLevel: 5,
   },
   {
