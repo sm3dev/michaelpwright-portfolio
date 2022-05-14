@@ -241,11 +241,7 @@ const techStack = [
     name: "React Router",
     skillLevel: 4,
   },
-  {
-    id: 36,
-    name: "Team Collaboration",
-    skillLevel: 5,
-  },
+  
   {
     id: 37,
     name: "Single Page App",
