@@ -159,6 +159,7 @@ export const Resume = ({ portfolioAuthor, allTechStack }) => {
                 href="https://nashvillesoftwareschool.com/"
                 className="location__link"
                 target="_blank"
+                rel="noreferrer"
                 title="Nashville Software School"
               >
                 Nashville Software School
@@ -174,6 +175,7 @@ export const Resume = ({ portfolioAuthor, allTechStack }) => {
                 href="https://www.airuniversity.af.edu/Barnes/CCAF/"
                 className="location__link"
                 target="_blank"
+                rel="noreferrer"
                 title="Community College of the Air Force"
               >
                 Community College of the Air Force{" "}
@@ -189,6 +191,7 @@ export const Resume = ({ portfolioAuthor, allTechStack }) => {
                 href="http://www.airuniversity.af.edu/"
                 className="location__link"
                 target="_blank"
+                rel="noreferrer"
                 title="Air University"
               >
                 Air University
